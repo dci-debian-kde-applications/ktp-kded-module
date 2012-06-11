@@ -1,0 +1,311 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2012-05-17 04:10+0200\n"
+"PO-Revision-Date: 2012-05-18 16:15+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 1.4\n"
+
+#: config/telepathy-kded-config.cpp:46
+#, no-c-format
+msgctxt ""
+"Title tag in now playing plugin, use one word and keep the '%' character."
+msgid "%title"
+msgstr "%title"
+
+#: config/telepathy-kded-config.cpp:48
+#, no-c-format
+msgctxt ""
+"Artist tag in now playing plugin, use one word and keep the '%' character."
+msgid "%artist"
+msgstr "%artist"
+
+#: config/telepathy-kded-config.cpp:50
+#, no-c-format
+msgctxt ""
+"Album tag in now playing plugin, use one word and keep the '%' character."
+msgid "%album"
+msgstr "%album"
+
+#: config/telepathy-kded-config.cpp:52
+#, no-c-format
+msgctxt ""
+"Track number tag in now playing plugin, use one word and keep the '%' "
+"character."
+msgid "%track"
+msgstr "%track"
+
+#: config/telepathy-kded-config.cpp:78 config/telepathy-kded-config.cpp:81
+msgctxt ""
+"Unit after number in spinbox, denotes time unit 'minutes', keep the leading "
+"whitespace!"
+msgid " minutes"
+msgstr " minuty"
+
+#: config/telepathy-kded-config.cpp:83 config/telepathy-kded-config.cpp:86
+msgid "Leave empty for no message"
+msgstr "Pozostaw puste przy braku wiadomości"
+
+#: config/telepathy-kded-config.cpp:132
+msgctxt "This is the download directory in user's home"
+msgid "Downloads"
+msgstr "Pobierania"
+
+#: config/telepathy-kded-config.cpp:180 telepathy-mpris.cpp:186
+#, kde-format
+msgctxt ""
+"The default text displayed by now playing plugin. track title: %1, artist: "
+"%2, album: %3"
+msgid "Now listening to %1 by %2 from album %3"
+msgstr "Teraz słucham %1 wykonywanego przez %2 z albumu %3"
+
+#: contact-request-handler.cpp:60
+msgid "No pending contact requests at the moment"
+msgstr "W tym momencie brak oczekujący żądań kontaktu"
+
+#: contact-request-handler.cpp:175
+msgid "New contact request"
+msgstr "Nowe żądanie kontaktu"
+
+#: contact-request-handler.cpp:176
+#, kde-format
+msgid ""
+"The contact %1 added you to its contact list. You can answer this request "
+"using the tray icon."
+msgstr ""
+"Kontakt %1 został dodany do twojej listy kontaktów. Możesz odpowiedzi na to "
+"żądanie przy użyciu ikony tacki."
+
+#: contact-request-handler.cpp:190
+msgid "Error adding contact"
+msgstr "Błąd dodawaniu kontaktu"
+
+#: contact-request-handler.cpp:191
+#, kde-format
+msgid ""
+"%1 has been added successfully to your contact list, but might be unable to "
+"see your presence. Error details: %2"
+msgstr ""
+"%1 został pomyślnie dodany do twojej listy kontaktów, ale możliwym jest, że "
+"nie widzi twojej obecności. Szczegóły błędu: %2"
+
+#: contact-request-handler.cpp:212
+msgid "No incoming contact requests"
+msgstr "Brak przychodzących żądań kontaktu"
+
+#: contact-request-handler.cpp:224
+#, kde-format
+msgid "You have 1 incoming contact request"
+msgid_plural "You have %1 incoming contact requests"
+msgstr[0] "Masz 1 przychodzące żądanie kontaktu"
+msgstr[1] "Masz %1 przychodzące żądania kontaktu"
+msgstr[2] "Masz %1 przychodzących żądań kontaktu"
+
+#: contact-request-handler.cpp:270
+msgid "Error accepting contact request"
+msgstr "Błąd akceptowania żądania kontaktu"
+
+#: contact-request-handler.cpp:271
+#, kde-format
+msgid "There was an error while accepting the request: %1"
+msgstr "Wystąpił błąd podczas akceptowania żądania: %1"
+
+#: contact-request-handler.cpp:279
+msgid "Contact request accepted"
+msgstr "Zaakceptowano żądanie kontaktu"
+
+#: contact-request-handler.cpp:280
+#, kde-format
+msgid "%1 will now be able to see your presence"
+msgstr "%1 będzie teraz mógł zobaczyć twoją obecność"
+
+#: contact-request-handler.cpp:335
+msgid "Error denying contact request"
+msgstr "Błąd odmawiania żądania kontaktu"
+
+#: contact-request-handler.cpp:336
+#, kde-format
+msgid "There was an error while denying the request: %1"
+msgstr "Wystąpił błąd podczas odmawiania żądania: %1"
+
+#: contact-request-handler.cpp:344
+msgid "Contact request denied"
+msgstr "Odmówiono żądania kontaktu"
+
+#: contact-request-handler.cpp:345
+#, kde-format
+msgid "%1 will not be able to see your presence"
+msgstr "%1 nie będzie mógł zobaczyć twojej obecność"
+
+#: contact-request-handler.cpp:362
+msgctxt "Menu title"
+msgid "Pending contact requests"
+msgstr "Oczekujące żądania kontaktu"
+
+#: contact-request-handler.cpp:365
+msgctxt "Context menu title"
+msgid "Received contact requests"
+msgstr "Odebrane żądania kontaktu"
+
+#: contact-request-handler.cpp:383
+#, kde-format
+msgid "Request from %1"
+msgstr "Żądanie od %1"
+
+#: contact-request-handler.cpp:392
+msgid "Approve"
+msgstr "Zatwierdź"
+
+#: contact-request-handler.cpp:398
+msgid "Deny"
+msgstr "Odmów"
+
+#: error-handler.cpp:62
+#, kde-format
+msgctxt "%1 ist the account name"
+msgid "Could not connect %1. Authentication failed (is your password correct?)"
+msgstr ""
+"Nie można połączyć %1. Nieudane uwierzytelnienie (czy twoje hasło jest "
+"poprawne?)"
+
+#: error-handler.cpp:65
+#, kde-format
+msgctxt "%1 ist the account name"
+msgid "Could not connect %1. There was a network error, check your connection"
+msgstr "Nie można połączyć %1. Wystąpił błąd sieci, sprawdź swoje połączenie"
+
+#: error-handler.cpp:68
+#, kde-format
+msgctxt "%1 ist the account name, %2 the error message"
+msgid "There was a problem while trying to connect %1 - %2"
+msgstr "Wystąpił problem przy próbie połączenia %1 - %2"
+
+#: rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Łukasz Wojniłowicz"
+
+#: rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "lukasz.wojnilowicz@gmail.com"
+
+#. i18n: file: config/telepathy-kded-config.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
+#: rc.cpp:5
+msgid "Incoming files"
+msgstr "Przychodzące pliki"
+
+#. i18n: file: config/telepathy-kded-config.ui:23
+#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
+#: rc.cpp:8
+msgid "Download Folder:"
+msgstr "Folder pobierania:"
+
+#. i18n: file: config/telepathy-kded-config.ui:33
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
+#. i18n: file: config/telepathy-kded-config.ui:36
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
+#: rc.cpp:11 rc.cpp:14
+msgid "This is the folder where received files will be saved."
+msgstr "Jest to folder, gdzie będą zapisywane odbierane pliki."
+
+#. i18n: file: config/telepathy-kded-config.ui:46
+#. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
+#: rc.cpp:17
+msgid "Auto-accept file transfers:"
+msgstr "Samoczynnie akceptuj przesyłania plików:"
+
+#. i18n: file: config/telepathy-kded-config.ui:56
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
+#. i18n: file: config/telepathy-kded-config.ui:302
+#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
+#. i18n: file: config/telepathy-kded-config.ui:354
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
+#: rc.cpp:20 rc.cpp:59 rc.cpp:68
+msgid "Enabled"
+msgstr "Włączone"
+
+#. i18n: file: config/telepathy-kded-config.ui:82
+#. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
+#: rc.cpp:23
+msgid "Auto away"
+msgstr "Auto-nieobecność"
+
+#. i18n: file: config/telepathy-kded-config.ui:94
+#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
+#. i18n: file: config/telepathy-kded-config.ui:228
+#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
+#: rc.cpp:26 rc.cpp:44
+msgid "After:"
+msgstr "Po:"
+
+#. i18n: file: config/telepathy-kded-config.ui:123
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: file: config/telepathy-kded-config.ui:166
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:29 rc.cpp:35
+msgid "of inactivity"
+msgstr "nieaktywności"
+
+#. i18n: file: config/telepathy-kded-config.ui:130
+#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
+#. i18n: file: config/telepathy-kded-config.ui:173
+#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
+#: rc.cpp:32 rc.cpp:38
+msgid "With message:"
+msgstr "Z wiadomością:"
+
+#. i18n: file: config/telepathy-kded-config.ui:212
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:41
+msgid "Set my status to:"
+msgstr "Ustaw mój stan na:"
+
+#. i18n: file: config/telepathy-kded-config.ui:241
+#. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
+#: rc.cpp:47
+msgid "Away"
+msgstr "Nieobecny"
+
+#. i18n: file: config/telepathy-kded-config.ui:251
+#. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
+#: rc.cpp:50
+msgid "Not available"
+msgstr "Niedostępny"
+
+#. i18n: file: config/telepathy-kded-config.ui:283
+#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
+#: rc.cpp:53
+msgid "Now playing"
+msgstr "Teraz odtwarzany"
+
+#. i18n: file: config/telepathy-kded-config.ui:292
+#. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
+#: rc.cpp:56
+msgid "'Now playing...' presence:"
+msgstr "'Teraz odtwarzam...' obecność:"
+
+#. i18n: file: config/telepathy-kded-config.ui:341
+#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
+#: rc.cpp:62
+msgid "Auto connect"
+msgstr "Samoczynnie połącz"
+
+#. i18n: file: config/telepathy-kded-config.ui:347
+#. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
+#: rc.cpp:65
+msgid "Restore last presence on login:"
+msgstr "Przy logowaniu, przywróć ostatnią obecność:"
