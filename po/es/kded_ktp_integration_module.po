@@ -2,41 +2,50 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Kira J. Fernández <kirajfdez@gmail.com>, 2011.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-17 04:10+0200\n"
-"PO-Revision-Date: 2011-12-30 15:50+0100\n"
-"Last-Translator: Kira J. Fernández <kirajfdez@gmail.com>\n"
+"POT-Creation-Date: 2012-08-28 20:47+0200\n"
+"PO-Revision-Date: 2012-07-25 21:21+0200\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
-"Language: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.4\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Kira J. Fernández"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kirajfdez@gmail.com"
 
 #: config/telepathy-kded-config.cpp:46
 #, no-c-format
 msgctxt ""
 "Title tag in now playing plugin, use one word and keep the '%' character."
 msgid "%title"
-msgstr ""
+msgstr "%título"
 
 #: config/telepathy-kded-config.cpp:48
 #, no-c-format
 msgctxt ""
 "Artist tag in now playing plugin, use one word and keep the '%' character."
 msgid "%artist"
-msgstr ""
+msgstr "%artista"
 
 #: config/telepathy-kded-config.cpp:50
 #, no-c-format
 msgctxt ""
 "Album tag in now playing plugin, use one word and keep the '%' character."
 msgid "%album"
-msgstr ""
+msgstr "%album"
 
 #: config/telepathy-kded-config.cpp:52
 #, no-c-format
@@ -44,7 +53,7 @@ msgctxt ""
 "Track number tag in now playing plugin, use one word and keep the '%' "
 "character."
 msgid "%track"
-msgstr ""
+msgstr "%pista"
 
 #: config/telepathy-kded-config.cpp:78 config/telepathy-kded-config.cpp:81
 msgctxt ""
@@ -57,20 +66,105 @@ msgstr " minutos"
 msgid "Leave empty for no message"
 msgstr "Déjelo vacío si no hay mensajes"
 
-#: config/telepathy-kded-config.cpp:132
+#: config/telepathy-kded-config.cpp:134
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Descargas"
 
-#: config/telepathy-kded-config.cpp:180 telepathy-mpris.cpp:186
-#, fuzzy, kde-format
-#| msgctxt "The text displayed by now playing plugin"
-#| msgid "Now listening to %title by %author from album %album"
+#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:151
+#, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
 "%2, album: %3"
 msgid "Now listening to %1 by %2 from album %3"
-msgstr "Escuchando %title de %author del álbum %album"
+msgstr "Escuchando %1 por %2 del álbum %3"
+
+#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
+#: config/telepathy-kded-config.ui:17
+msgid "Incoming files"
+msgstr "Archivos entrantes"
+
+#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
+#: config/telepathy-kded-config.ui:23
+msgid "Download Folder:"
+msgstr "Carpeta de descargas:"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
+#: config/telepathy-kded-config.ui:33 config/telepathy-kded-config.ui:36
+msgid "This is the folder where received files will be saved."
+msgstr "Es la carpeta donde se guardarán los archivos recibidos."
+
+#. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
+#: config/telepathy-kded-config.ui:46
+msgid "Auto-accept file transfers:"
+msgstr "Aceptar automáticamente las transferencias de archivos:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
+#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
+#: config/telepathy-kded-config.ui:56 config/telepathy-kded-config.ui:302
+#: config/telepathy-kded-config.ui:354
+msgid "Enabled"
+msgstr "Habilitado"
+
+#. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
+#: config/telepathy-kded-config.ui:82
+msgid "Auto away"
+msgstr "Ausente"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
+#: config/telepathy-kded-config.ui:94 config/telepathy-kded-config.ui:228
+msgid "After:"
+msgstr "Después de:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: config/telepathy-kded-config.ui:123 config/telepathy-kded-config.ui:166
+msgid "of inactivity"
+msgstr "de inactividad"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
+#: config/telepathy-kded-config.ui:130 config/telepathy-kded-config.ui:173
+msgid "With message:"
+msgstr "Con el mensaje:"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: config/telepathy-kded-config.ui:212
+msgid "Set my status to:"
+msgstr "Establecer mi estado a:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
+#: config/telepathy-kded-config.ui:241
+msgid "Away"
+msgstr "Ausente"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
+#: config/telepathy-kded-config.ui:251
+msgid "Not available"
+msgstr "No disponible"
+
+#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
+#: config/telepathy-kded-config.ui:283
+msgid "Now playing"
+msgstr "Reproduciendo ahora"
+
+#. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
+#: config/telepathy-kded-config.ui:292
+msgid "'Now playing...' presence:"
+msgstr "Presencia con «Reproduciendo ahora»:"
+
+#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
+#: config/telepathy-kded-config.ui:341
+msgid "Auto connect"
+msgstr "Conectar automáticamente"
+
+#. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
+#: config/telepathy-kded-config.ui:347
+msgid "Restore last presence on login:"
+msgstr "Restaurar la el último estado presenciar al iniciar la sesión:"
 
 #: contact-request-handler.cpp:60
 msgid "No pending contact requests at the moment"
@@ -172,147 +266,24 @@ msgstr "Aprobar"
 msgid "Deny"
 msgstr "Denegar"
 
-#: error-handler.cpp:62
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not connect %1. Authentication failed (is your password correct?)"
+#: error-handler.cpp:64
+#, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. Authentication failed (is your password correct?)"
 msgstr ""
 "No se ha podido conectar con %1. La autenticación ha fallado (¿es correcta "
 "su contraseña?)"
 
-#: error-handler.cpp:65
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not connect %1. There was a network error, check your connection"
+#: error-handler.cpp:69
+#, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr ""
 "No se ha podido conectar con %1. Ha habido un error de red; revise su "
 "conexión"
 
-#: error-handler.cpp:68
-#, fuzzy, kde-format
-#| msgid "There was a problem while trying to connect %1 - %2"
+#: error-handler.cpp:73
+#, kde-format
 msgctxt "%1 ist the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
-msgstr "Ha habido un problema al intentar conectarse con %1 - %2"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Kira J. Fernández"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kirajfdez@gmail.com"
-
-#. i18n: file: config/telepathy-kded-config.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
-#: rc.cpp:5
-msgid "Incoming files"
-msgstr "Archivos entrantes"
-
-#. i18n: file: config/telepathy-kded-config.ui:23
-#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: rc.cpp:8
-msgid "Download Folder:"
-msgstr "Carpeta de descargas:"
-
-#. i18n: file: config/telepathy-kded-config.ui:33
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
-#. i18n: file: config/telepathy-kded-config.ui:36
-#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: rc.cpp:11 rc.cpp:14
-msgid "This is the folder where received files will be saved."
-msgstr "Es la carpeta donde se guardarán los archivos recibidos."
-
-#. i18n: file: config/telepathy-kded-config.ui:46
-#. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
-#: rc.cpp:17
-msgid "Auto-accept file transfers:"
-msgstr "Aceptar automáticamente las transferencias de archivos:"
-
-#. i18n: file: config/telepathy-kded-config.ui:56
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
-#. i18n: file: config/telepathy-kded-config.ui:302
-#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
-#. i18n: file: config/telepathy-kded-config.ui:354
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
-#: rc.cpp:20 rc.cpp:59 rc.cpp:68
-msgid "Enabled"
-msgstr "Habilitado"
-
-#. i18n: file: config/telepathy-kded-config.ui:82
-#. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: rc.cpp:23
-msgid "Auto away"
-msgstr "Ausente"
-
-#. i18n: file: config/telepathy-kded-config.ui:94
-#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
-#. i18n: file: config/telepathy-kded-config.ui:228
-#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: rc.cpp:26 rc.cpp:44
-msgid "After:"
-msgstr "Después de:"
-
-#. i18n: file: config/telepathy-kded-config.ui:123
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: config/telepathy-kded-config.ui:166
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:29 rc.cpp:35
-msgid "of inactivity"
-msgstr "de inactividad"
-
-#. i18n: file: config/telepathy-kded-config.ui:130
-#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
-#. i18n: file: config/telepathy-kded-config.ui:173
-#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: rc.cpp:32 rc.cpp:38
-msgid "With message:"
-msgstr "Con el mensaje:"
-
-#. i18n: file: config/telepathy-kded-config.ui:212
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:41
-msgid "Set my status to:"
-msgstr "Establecer mi estado a:"
-
-#. i18n: file: config/telepathy-kded-config.ui:241
-#. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: rc.cpp:47
-msgid "Away"
-msgstr "Ausente"
-
-#. i18n: file: config/telepathy-kded-config.ui:251
-#. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: rc.cpp:50
-msgid "Not available"
-msgstr "No disponible"
-
-#. i18n: file: config/telepathy-kded-config.ui:283
-#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: rc.cpp:53
-msgid "Now playing"
-msgstr "Reproduciendo ahora"
-
-#. i18n: file: config/telepathy-kded-config.ui:292
-#. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
-#: rc.cpp:56
-msgid "'Now playing...' presence:"
-msgstr "Presencia con «Reproduciendo ahora»:"
-
-#. i18n: file: config/telepathy-kded-config.ui:341
-#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: rc.cpp:62
-msgid "Auto connect"
-msgstr ""
-
-#. i18n: file: config/telepathy-kded-config.ui:347
-#. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
-#: rc.cpp:65
-msgid "Restore last presence on login:"
-msgstr ""
+msgstr "Ha habido un problema al intentar conectar con %1 - %2"

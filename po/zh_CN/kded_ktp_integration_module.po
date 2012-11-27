@@ -2,21 +2,28 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Ni Hui <shuizhuyuanluo@126.com>, 2012.
-# Weng Xuetian <wengxt@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-17 04:10+0200\n"
-"PO-Revision-Date: 2012-04-20 02:03+0800\n"
-"Last-Translator: Weng Xuetian <wengxt@gmail.com>\n"
-"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"POT-Creation-Date: 2012-08-28 20:47+0200\n"
+"PO-Revision-Date: 2012-01-22 15:05+0800\n"
+"Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
+"Language-Team: Chinese Simplified <kde-china@kde.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 1.4\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "KDE 中国"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kde-china@kde.org"
 
 #: config/telepathy-kded-config.cpp:46
 #, no-c-format
@@ -58,18 +65,106 @@ msgstr " 分钟"
 msgid "Leave empty for no message"
 msgstr "置空则无信息"
 
-#: config/telepathy-kded-config.cpp:132
+#: config/telepathy-kded-config.cpp:134
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "下载"
 
-#: config/telepathy-kded-config.cpp:180 telepathy-mpris.cpp:186
+#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:151
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
 "%2, album: %3"
 msgid "Now listening to %1 by %2 from album %3"
 msgstr "正在收听来自 %2 的专辑 %3 中的 %1"
+
+#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
+#: config/telepathy-kded-config.ui:17
+msgid "Incoming files"
+msgstr "收到文件"
+
+#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
+#: config/telepathy-kded-config.ui:23
+msgid "Download Folder:"
+msgstr "下载文件夹："
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
+#: config/telepathy-kded-config.ui:33 config/telepathy-kded-config.ui:36
+msgid "This is the folder where received files will be saved."
+msgstr "这是保存接受文件的文件夹。"
+
+#. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
+#: config/telepathy-kded-config.ui:46
+msgid "Auto-accept file transfers:"
+msgstr "自动接受文件传输："
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
+#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
+#: config/telepathy-kded-config.ui:56 config/telepathy-kded-config.ui:302
+#: config/telepathy-kded-config.ui:354
+msgid "Enabled"
+msgstr "已启用"
+
+#. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
+#: config/telepathy-kded-config.ui:82
+msgid "Auto away"
+msgstr "自动离开"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
+#: config/telepathy-kded-config.ui:94 config/telepathy-kded-config.ui:228
+#, fuzzy
+msgid "After:"
+msgstr "之后于"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: config/telepathy-kded-config.ui:123 config/telepathy-kded-config.ui:166
+msgid "of inactivity"
+msgstr "后离开"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
+#: config/telepathy-kded-config.ui:130 config/telepathy-kded-config.ui:173
+msgid "With message:"
+msgstr "附加消息"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: config/telepathy-kded-config.ui:212
+msgid "Set my status to:"
+msgstr "设定我的状态为："
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
+#: config/telepathy-kded-config.ui:241
+msgid "Away"
+msgstr "离开"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
+#: config/telepathy-kded-config.ui:251
+msgid "Not available"
+msgstr "不可用"
+
+#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
+#: config/telepathy-kded-config.ui:283
+msgid "Now playing"
+msgstr "正在收听"
+
+#. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
+#: config/telepathy-kded-config.ui:292
+msgid "'Now playing...' presence:"
+msgstr "“正在收听...”状态："
+
+#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
+#: config/telepathy-kded-config.ui:341
+msgid "Auto connect"
+msgstr "自动连接"
+
+#. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
+#: config/telepathy-kded-config.ui:347
+msgid "Restore last presence on login:"
+msgstr "登录时恢复上次状态："
 
 #: contact-request-handler.cpp:60
 msgid "No pending contact requests at the moment"
@@ -107,7 +202,8 @@ msgstr "无联系人请求"
 #, kde-format
 msgid "You have 1 incoming contact request"
 msgid_plural "You have %1 incoming contact requests"
-msgstr[0] "您有 %1 条联系人请求"
+msgstr[0] ""
+msgstr[1] ""
 
 #: contact-request-handler.cpp:270
 msgid "Error accepting contact request"
@@ -168,143 +264,20 @@ msgstr "接受"
 msgid "Deny"
 msgstr "拒绝"
 
-#: error-handler.cpp:62
+#: error-handler.cpp:64
 #, fuzzy, kde-format
-#| msgid ""
-#| "Could not connect %1. Authentication failed (is your password correct?)"
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. Authentication failed (is your password correct?)"
 msgstr "无法连接到 %1。认证失败 (您的密码正确吗？)"
 
-#: error-handler.cpp:65
+#: error-handler.cpp:69
 #, fuzzy, kde-format
-#| msgid ""
-#| "Could not connect %1. There was a network error, check your connection"
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr "无法连接到 %1。网络错误，请检查您的连接。"
 
-#: error-handler.cpp:68
+#: error-handler.cpp:73
 #, fuzzy, kde-format
-#| msgid "There was a problem while trying to connect %1 - %2"
 msgctxt "%1 ist the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "尝试连接到 %1 - %2 是发生错误"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "KDE 中国"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "kde-china@kde.org"
-
-#. i18n: file: config/telepathy-kded-config.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
-#: rc.cpp:5
-msgid "Incoming files"
-msgstr "收到文件"
-
-#. i18n: file: config/telepathy-kded-config.ui:23
-#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: rc.cpp:8
-msgid "Download Folder:"
-msgstr "下载文件夹："
-
-#. i18n: file: config/telepathy-kded-config.ui:33
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
-#. i18n: file: config/telepathy-kded-config.ui:36
-#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: rc.cpp:11 rc.cpp:14
-msgid "This is the folder where received files will be saved."
-msgstr "这是保存接受文件的文件夹。"
-
-#. i18n: file: config/telepathy-kded-config.ui:46
-#. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
-#: rc.cpp:17
-msgid "Auto-accept file transfers:"
-msgstr "自动接受文件传输："
-
-#. i18n: file: config/telepathy-kded-config.ui:56
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
-#. i18n: file: config/telepathy-kded-config.ui:302
-#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
-#. i18n: file: config/telepathy-kded-config.ui:354
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
-#: rc.cpp:20 rc.cpp:59 rc.cpp:68
-msgid "Enabled"
-msgstr "已启用"
-
-#. i18n: file: config/telepathy-kded-config.ui:82
-#. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: rc.cpp:23
-msgid "Auto away"
-msgstr "自动离开"
-
-#. i18n: file: config/telepathy-kded-config.ui:94
-#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
-#. i18n: file: config/telepathy-kded-config.ui:228
-#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: rc.cpp:26 rc.cpp:44
-msgid "After:"
-msgstr "之后："
-
-#. i18n: file: config/telepathy-kded-config.ui:123
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: config/telepathy-kded-config.ui:166
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:29 rc.cpp:35
-msgid "of inactivity"
-msgstr "后离开"
-
-#. i18n: file: config/telepathy-kded-config.ui:130
-#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
-#. i18n: file: config/telepathy-kded-config.ui:173
-#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: rc.cpp:32 rc.cpp:38
-msgid "With message:"
-msgstr "附加消息"
-
-#. i18n: file: config/telepathy-kded-config.ui:212
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:41
-msgid "Set my status to:"
-msgstr "设定我的状态为："
-
-#. i18n: file: config/telepathy-kded-config.ui:241
-#. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: rc.cpp:47
-msgid "Away"
-msgstr "离开"
-
-#. i18n: file: config/telepathy-kded-config.ui:251
-#. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: rc.cpp:50
-msgid "Not available"
-msgstr "不可用"
-
-#. i18n: file: config/telepathy-kded-config.ui:283
-#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: rc.cpp:53
-msgid "Now playing"
-msgstr "正在收听"
-
-#. i18n: file: config/telepathy-kded-config.ui:292
-#. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
-#: rc.cpp:56
-msgid "'Now playing...' presence:"
-msgstr "“正在收听...”状态："
-
-#. i18n: file: config/telepathy-kded-config.ui:341
-#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: rc.cpp:62
-msgid "Auto connect"
-msgstr "自动连接"
-
-#. i18n: file: config/telepathy-kded-config.ui:347
-#. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
-#: rc.cpp:65
-msgid "Restore last presence on login:"
-msgstr "登录时恢复上次状态："
