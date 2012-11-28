@@ -1,3 +1,10 @@
+ktp-kded-integration-module (0.5.1-1) UNRELEASED; urgency=low
+
+  * [1f84ed5] Imported Upstream version 0.5.1
+  * [1cf1b35] update version dependencies
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Wed, 28 Nov 2012 23:52:12 +0530
+
 ktp-kded-integration-module (0.4.0-1) unstable; urgency=low
 
   * Initial release.
