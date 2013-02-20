@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 20:47+0200\n"
-"PO-Revision-Date: 2012-02-07 13:57+0100\n"
+"POT-Creation-Date: 2012-12-12 08:35+0100\n"
+"PO-Revision-Date: 2012-12-10 21:56+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.4\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -32,21 +32,21 @@ msgstr "bjornst@skogkatt.homelinux.org"
 msgctxt ""
 "Title tag in now playing plugin, use one word and keep the '%' character."
 msgid "%title"
-msgstr ""
+msgstr "%tittel"
 
 #: config/telepathy-kded-config.cpp:48
 #, no-c-format
 msgctxt ""
 "Artist tag in now playing plugin, use one word and keep the '%' character."
 msgid "%artist"
-msgstr ""
+msgstr "%artist"
 
 #: config/telepathy-kded-config.cpp:50
 #, no-c-format
 msgctxt ""
 "Album tag in now playing plugin, use one word and keep the '%' character."
 msgid "%album"
-msgstr ""
+msgstr "%album"
 
 #: config/telepathy-kded-config.cpp:52
 #, no-c-format
@@ -54,7 +54,7 @@ msgctxt ""
 "Track number tag in now playing plugin, use one word and keep the '%' "
 "character."
 msgid "%track"
-msgstr ""
+msgstr "%spor"
 
 #: config/telepathy-kded-config.cpp:78 config/telepathy-kded-config.cpp:81
 msgctxt ""
@@ -72,13 +72,13 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Nedlastinger"
 
-#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:151
+#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:170
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
 "%2, album: %3"
 msgid "Now listening to %1 by %2 from album %3"
-msgstr ""
+msgstr "Lytter nå til %1 av %2 fra albumet %3"
 
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
 #: config/telepathy-kded-config.ui:17
@@ -160,12 +160,12 @@ msgstr "«Spiller nå …»-tilstedeværelse:"
 #. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
 #: config/telepathy-kded-config.ui:341
 msgid "Auto connect"
-msgstr ""
+msgstr "Autotilkoble"
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
 #: config/telepathy-kded-config.ui:347
 msgid "Restore last presence on login:"
-msgstr ""
+msgstr "Ved innlogging, sett tilbake siste tilstedeværelse:"
 
 #: contact-request-handler.cpp:60
 msgid "No pending contact requests at the moment"
@@ -267,20 +267,22 @@ msgstr "Godta"
 msgid "Deny"
 msgstr "Avvis"
 
-#: error-handler.cpp:64
+#: error-handler.cpp:69
 #, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. Authentication failed (is your password correct?)"
 msgstr ""
+"Klarte ikke koble til %1. Autentisering mislyktes (er passordet riktig?)"
 
-#: error-handler.cpp:69
+#: error-handler.cpp:72
 #, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr ""
+"Klarte ikke å koble til %1. Det var en nettverksfeil, kontroller tilkoblingen"
 
-#: error-handler.cpp:73
+#: error-handler.cpp:75
 #, kde-format
 msgctxt "%1 ist the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
-msgstr ""
+msgstr "Det oppsto et problem ved forsøk på å koble til %1 – %2"

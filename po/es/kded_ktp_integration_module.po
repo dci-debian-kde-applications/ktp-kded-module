@@ -3,28 +3,29 @@
 #
 # Kira J. Fernández <kirajfdez@gmail.com>, 2011.
 # Eloy Cuadra <ecuadra@eloihr.net>, 2012.
+# Raul Gonzalez <raulgf83@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 20:47+0200\n"
-"PO-Revision-Date: 2012-07-25 21:21+0200\n"
-"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"POT-Creation-Date: 2012-12-12 08:35+0100\n"
+"PO-Revision-Date: 2012-12-06 16:44+0100\n"
+"Last-Translator: Raul Gonzalez <raulgf83@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Kira J. Fernández"
+msgstr "Raúl González,Kira J. Fernández"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kirajfdez@gmail.com"
+msgstr "raulgf83@gmail.com,kirajfdez@gmail.com"
 
 #: config/telepathy-kded-config.cpp:46
 #, no-c-format
@@ -71,7 +72,7 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Descargas"
 
-#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:151
+#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:170
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -164,7 +165,7 @@ msgstr "Conectar automáticamente"
 #. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
 #: config/telepathy-kded-config.ui:347
 msgid "Restore last presence on login:"
-msgstr "Restaurar la el último estado presenciar al iniciar la sesión:"
+msgstr "Restaurar el último estado utilizado al iniciar sesión:"
 
 #: contact-request-handler.cpp:60
 msgid "No pending contact requests at the moment"
@@ -266,7 +267,7 @@ msgstr "Aprobar"
 msgid "Deny"
 msgstr "Denegar"
 
-#: error-handler.cpp:64
+#: error-handler.cpp:69
 #, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. Authentication failed (is your password correct?)"
@@ -274,7 +275,7 @@ msgstr ""
 "No se ha podido conectar con %1. La autenticación ha fallado (¿es correcta "
 "su contraseña?)"
 
-#: error-handler.cpp:69
+#: error-handler.cpp:72
 #, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
@@ -282,7 +283,7 @@ msgstr ""
 "No se ha podido conectar con %1. Ha habido un error de red; revise su "
 "conexión"
 
-#: error-handler.cpp:73
+#: error-handler.cpp:75
 #, kde-format
 msgctxt "%1 ist the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"

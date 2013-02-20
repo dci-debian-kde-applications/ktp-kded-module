@@ -2,20 +2,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Ni Hui <shuizhuyuanluo@126.com>, 2012.
+# Weng Xuetian <wengxt@gmail.com>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 20:47+0200\n"
-"PO-Revision-Date: 2012-01-22 15:05+0800\n"
-"Last-Translator: Ni Hui <shuizhuyuanluo@126.com>\n"
+"POT-Creation-Date: 2012-12-12 08:35+0100\n"
+"PO-Revision-Date: 2013-01-12 11:44-0500\n"
+"Last-Translator: Weng Xuetian <wengxt@gmail.com>\n"
 "Language-Team: Chinese Simplified <kde-china@kde.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -70,7 +71,7 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "下载"
 
-#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:151
+#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:170
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -115,9 +116,8 @@ msgstr "自动离开"
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
 #: config/telepathy-kded-config.ui:94 config/telepathy-kded-config.ui:228
-#, fuzzy
 msgid "After:"
-msgstr "之后于"
+msgstr "之后："
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -202,8 +202,7 @@ msgstr "无联系人请求"
 #, kde-format
 msgid "You have 1 incoming contact request"
 msgid_plural "You have %1 incoming contact requests"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "您有 %1 条联系人请求"
 
 #: contact-request-handler.cpp:270
 msgid "Error accepting contact request"
@@ -264,20 +263,20 @@ msgstr "接受"
 msgid "Deny"
 msgstr "拒绝"
 
-#: error-handler.cpp:64
-#, fuzzy, kde-format
+#: error-handler.cpp:69
+#, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. Authentication failed (is your password correct?)"
 msgstr "无法连接到 %1。认证失败 (您的密码正确吗？)"
 
-#: error-handler.cpp:69
-#, fuzzy, kde-format
+#: error-handler.cpp:72
+#, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr "无法连接到 %1。网络错误，请检查您的连接。"
 
-#: error-handler.cpp:73
-#, fuzzy, kde-format
+#: error-handler.cpp:75
+#, kde-format
 msgctxt "%1 ist the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
-msgstr "尝试连接到 %1 - %2 是发生错误"
+msgstr "尝试连接到 %1 - %2 时发生错误"
