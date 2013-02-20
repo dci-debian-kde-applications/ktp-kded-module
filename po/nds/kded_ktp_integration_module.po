@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telepathy-kded-module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-28 20:47+0200\n"
+"POT-Creation-Date: 2012-12-12 08:35+0100\n"
 "PO-Revision-Date: 2011-11-29 21:52+0100\n"
 "Last-Translator: Manfred Wiese <m.j.wiese@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -71,7 +71,7 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Daalladen"
 
-#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:151
+#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:170
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -262,19 +262,19 @@ msgstr "Beglöven"
 msgid "Deny"
 msgstr "Torüchwiesen"
 
-#: error-handler.cpp:64
+#: error-handler.cpp:69
 #, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. Authentication failed (is your password correct?)"
 msgstr ""
 
-#: error-handler.cpp:69
+#: error-handler.cpp:72
 #, kde-format
 msgctxt "%1 ist the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr ""
 
-#: error-handler.cpp:73
+#: error-handler.cpp:75
 #, kde-format
 msgctxt "%1 ist the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
