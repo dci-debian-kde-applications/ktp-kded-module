@@ -41,24 +41,24 @@ private Q_SLOTS:
     void onAccountsPresenceStatusFiltered();
     void onPresencePublicationRequested(const Tp::Contacts& contacts);
     void onConnectionChanged(const Tp::ConnectionPtr& connection);
-    void updateMenus();
 
     void onContactRequestApproved();
     void onContactRequestDenied();
     void onAuthorizePresencePublicationFinished(Tp::PendingOperation*);
     void onRemovePresencePublicationFinished(Tp::PendingOperation*);
     void onFinalizeSubscriptionFinished(Tp::PendingOperation*);
+    void onContactInvalidated();
+
+    void onNotifierActivated(bool active, const QPoint &pos);
 
 private:
-    void updateNotifierItemTooltip();
-    void monitorPresence(const Tp::ConnectionPtr &connection);
+    void updateMenus();
+    void handleNewConnection(const Tp::ConnectionPtr &connection);
 
     QWeakPointer<KStatusNotifierItem> m_notifierItem;
     Tp::AccountManagerPtr m_accountManager;
-    KMenu *m_notifierMenu;
     QHash<QString, Tp::ContactPtr> m_pendingContacts;
     QHash<QString, KMenu*> m_menuItems;
-    KAction *m_noContactsAction;
 };
 
 #endif // CONTACT_REQUEST_HANDLER_H

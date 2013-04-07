@@ -27,6 +27,7 @@
 #include <TelepathyQt/PendingReady>
 #include <TelepathyQt/Debug>
 
+#include <KTp/contact-factory.h>
 #include <KTp/global-presence.h>
 
 #include "telepathy-mpris.h"
@@ -34,6 +35,7 @@
 #include "autoconnect.h"
 #include "error-handler.h"
 #include "telepathy-kded-module-plugin.h"
+#include "contactnotify.h"
 
 #include <KConfigGroup>
 #include "contact-request-handler.h"
@@ -58,8 +60,9 @@ TelepathyModule::TelepathyModule(QObject* parent, const QList<QVariant>& args)
                                                                                Tp::Features() << Tp::Connection::FeatureCore
                                                                                               << Tp::Connection::FeatureRoster);
 
-    Tp::ContactFactoryPtr contactFactory = Tp::ContactFactory::create(Tp::Features()  << Tp::Contact::FeatureAlias
+    Tp::ContactFactoryPtr contactFactory = KTp::ContactFactory::create(Tp::Features() << Tp::Contact::FeatureAlias
                                                                                       << Tp::Contact::FeatureSimplePresence
+                                                                                      << Tp::Contact::FeatureAvatarToken
                                                                                       << Tp::Contact::FeatureCapabilities);
 
     Tp::ChannelFactoryPtr channelFactory = Tp::ChannelFactory::create(QDBusConnection::sessionBus());
@@ -120,6 +123,9 @@ void TelepathyModule::onAccountManagerReady(Tp::PendingOperation* op)
 
     m_errorHandler = new ErrorHandler(m_accountManager, this);
     m_contactHandler = new ContactRequestHandler(m_accountManager, this);
+    m_contactNotify = new ContactNotify(m_accountManager, this);
+    
+    m_lastUserPresence = m_globalPresence->requestedPresence();
 }
 
 void TelepathyModule::onRequestedPresenceChanged(const KTp::Presence &presence)

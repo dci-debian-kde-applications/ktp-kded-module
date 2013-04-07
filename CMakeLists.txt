@@ -4,6 +4,7 @@ set (CMAKE_MODULE_PATH
      "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules"
      ${CMAKE_MODULE_PATH}
 )
+cmake_policy(SET CMP0002 OLD)
 
 set(IS_KTP_INTERNAL_MODULE TRUE)
 find_package (KDE4 REQUIRED)
@@ -36,6 +37,7 @@ set (kded_ktp_integration_module_SRCS
      telepathy-mpris.cpp
      autoconnect.cpp
      error-handler.cpp
+     contactnotify.cpp
 )
 
 kde4_add_plugin (kded_ktp_integration_module

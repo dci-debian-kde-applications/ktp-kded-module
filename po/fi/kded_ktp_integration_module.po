@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-12-12 08:35+0100\n"
-"PO-Revision-Date: 2013-01-27 20:07+0200\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-03-06 00:38+0200\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -29,28 +29,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translator@legisign.org"
 
-#: config/telepathy-kded-config.cpp:46
+#: config/telepathy-kded-config.cpp:47
 #, no-c-format
 msgctxt ""
 "Title tag in now playing plugin, use one word and keep the '%' character."
 msgid "%title"
 msgstr "%kappale"
 
-#: config/telepathy-kded-config.cpp:48
+#: config/telepathy-kded-config.cpp:49
 #, no-c-format
 msgctxt ""
 "Artist tag in now playing plugin, use one word and keep the '%' character."
 msgid "%artist"
 msgstr "%artisti"
 
-#: config/telepathy-kded-config.cpp:50
+#: config/telepathy-kded-config.cpp:51
 #, no-c-format
 msgctxt ""
 "Album tag in now playing plugin, use one word and keep the '%' character."
 msgid "%album"
 msgstr "%albumi"
 
-#: config/telepathy-kded-config.cpp:52
+#: config/telepathy-kded-config.cpp:53
 #, no-c-format
 msgctxt ""
 "Track number tag in now playing plugin, use one word and keep the '%' "
@@ -58,23 +58,23 @@ msgctxt ""
 msgid "%track"
 msgstr "%raita"
 
-#: config/telepathy-kded-config.cpp:78 config/telepathy-kded-config.cpp:81
+#: config/telepathy-kded-config.cpp:80 config/telepathy-kded-config.cpp:83
 msgctxt ""
 "Unit after number in spinbox, denotes time unit 'minutes', keep the leading "
 "whitespace!"
 msgid " minutes"
 msgstr " minuuttia"
 
-#: config/telepathy-kded-config.cpp:83 config/telepathy-kded-config.cpp:86
+#: config/telepathy-kded-config.cpp:85 config/telepathy-kded-config.cpp:88
 msgid "Leave empty for no message"
 msgstr "Jätä tyhjäksi, jollet halua viestiä"
 
-#: config/telepathy-kded-config.cpp:134
+#: config/telepathy-kded-config.cpp:140
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Lataukset"
 
-#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:170
+#: config/telepathy-kded-config.cpp:188 telepathy-mpris.cpp:156
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -88,203 +88,225 @@ msgid "Incoming files"
 msgstr "Saapuvat tiedostot"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: config/telepathy-kded-config.ui:23
+#: config/telepathy-kded-config.ui:26
 msgid "Download Folder:"
 msgstr "Latauskansio:"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: config/telepathy-kded-config.ui:33 config/telepathy-kded-config.ui:36
+#: config/telepathy-kded-config.ui:36 config/telepathy-kded-config.ui:39
 msgid "This is the folder where received files will be saved."
 msgstr "Tämä on kansio, johon saapuvat tiedostot tallennetaan."
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
-#: config/telepathy-kded-config.ui:46
+#: config/telepathy-kded-config.ui:49
 msgid "Auto-accept file transfers:"
 msgstr "Hyväksy tiedostonsiirrot automaattisesti:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
-#: config/telepathy-kded-config.ui:56 config/telepathy-kded-config.ui:302
-#: config/telepathy-kded-config.ui:354
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:59 config/telepathy-kded-config.ui:311
+#: config/telepathy-kded-config.ui:366 config/telepathy-kded-config.ui:408
 msgid "Enabled"
 msgstr "Käytössä"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: config/telepathy-kded-config.ui:82
+#: config/telepathy-kded-config.ui:85
 msgid "Auto away"
 msgstr "Automaattipoissaolo"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: config/telepathy-kded-config.ui:94 config/telepathy-kded-config.ui:228
+#: config/telepathy-kded-config.ui:100 config/telepathy-kded-config.ui:234
 msgid "After:"
 msgstr "Ajassa:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: config/telepathy-kded-config.ui:123 config/telepathy-kded-config.ui:166
+#: config/telepathy-kded-config.ui:129 config/telepathy-kded-config.ui:172
 msgid "of inactivity"
 msgstr "käyttäjätapahtumista"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: config/telepathy-kded-config.ui:130 config/telepathy-kded-config.ui:173
+#: config/telepathy-kded-config.ui:136 config/telepathy-kded-config.ui:179
 msgid "With message:"
 msgstr "Viestillä:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/telepathy-kded-config.ui:212
+#: config/telepathy-kded-config.ui:218
 msgid "Set my status to:"
 msgstr "Aseta tilakseni:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: config/telepathy-kded-config.ui:241
+#: config/telepathy-kded-config.ui:247
 msgid "Away"
 msgstr "Poissa"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: config/telepathy-kded-config.ui:251
+#: config/telepathy-kded-config.ui:257
 msgid "Not available"
 msgstr "Ei käytettävissä"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: config/telepathy-kded-config.ui:283
+#: config/telepathy-kded-config.ui:289
 msgid "Now playing"
 msgstr "Nyt soi"
 
 #. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
-#: config/telepathy-kded-config.ui:292
+#: config/telepathy-kded-config.ui:301
 msgid "'Now playing...' presence:"
 msgstr "”Nyt soi...” -läsnäolo:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: config/telepathy-kded-config.ui:341
+#: config/telepathy-kded-config.ui:350
 msgid "Auto connect"
 msgstr "Automaattinen yhdistäminen"
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
-#: config/telepathy-kded-config.ui:347
+#: config/telepathy-kded-config.ui:359
 msgid "Restore last presence on login:"
 msgstr "Palauta viime läsnäolo kirjautumisen yhteydessä:"
 
-#: contact-request-handler.cpp:60
-msgid "No pending contact requests at the moment"
-msgstr "Ei odottavia yhteystietopyyntöjä"
+#. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
+#: config/telepathy-kded-config.ui:392
+msgid "Auto Offline"
+msgstr ""
 
-#: contact-request-handler.cpp:175
+#. i18n: ectx: property (text), widget (QLabel, m_autoOfflineLabel)
+#: config/telepathy-kded-config.ui:401
+msgid "Go offline when closing the contact list:"
+msgstr ""
+
+#: contact-request-handler.cpp:177
 msgid "New contact request"
 msgstr "Uusi yhteystietopyyntö"
 
-#: contact-request-handler.cpp:176
+#: contact-request-handler.cpp:178
 #, kde-format
-msgid ""
-"The contact %1 added you to its contact list. You can answer this request "
-"using the tray icon."
-msgstr ""
-"%1 lisäsi sinut yhteystietoluetteloonsa. Voit vastata tähän pyyntöön "
-"ilmoitusaluekuvakkeesta."
+msgid "The contact %1 wants to be able to chat with you."
+msgstr "Käyttäjä %1 haluaa pystyä keskustelemaan kanssasi."
 
-#: contact-request-handler.cpp:190
+#: contact-request-handler.cpp:195
 msgid "Error adding contact"
 msgstr "Virhe lisättäessä yhteystietoa"
 
-#: contact-request-handler.cpp:191
+#: contact-request-handler.cpp:196
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
-"see your presence. Error details: %2"
+"see when you are online. Error details: %2"
 msgstr ""
 "%1 lisättiin onnistuneesti yhteystietoluetteloosi, mutta hän ei ehkä näe "
-"läsnäoloasi. Virheen yksityiskohdat: %2"
+"milloin olet verkossa. Virheen yksityiskohdat: %2"
 
-#: contact-request-handler.cpp:212
-msgid "No incoming contact requests"
-msgstr "Ei saapuvia yhteystietopyyntöjä"
+#: contact-request-handler.cpp:264
+msgid "Error granting contact authorization"
+msgstr "Virhe myönnettäessä lupaa yhteystiedolle"
 
-#: contact-request-handler.cpp:224
-#, kde-format
-msgid "You have 1 incoming contact request"
-msgid_plural "You have %1 incoming contact requests"
-msgstr[0] "Sinulle on 1 saapuva yhteystietopyyntö"
-msgstr[1] "Sinulle on %1 saapuvaa yhteystietopyyntöä"
-
-#: contact-request-handler.cpp:270
-msgid "Error accepting contact request"
-msgstr "Virhe hyväksyttäessä yhteystietopyyntöä"
-
-#: contact-request-handler.cpp:271
+#: contact-request-handler.cpp:265
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Sattui virhe hyväksyttäessä pyyntöä: %1"
 
-#: contact-request-handler.cpp:279
+#: contact-request-handler.cpp:275
 msgid "Contact request accepted"
 msgstr "Yhteystietopyyntö hyväksyttiin"
 
-#: contact-request-handler.cpp:280
+#: contact-request-handler.cpp:276
 #, kde-format
-msgid "%1 will now be able to see your presence"
-msgstr "%1 näkee nyt läsnäolosi"
+msgid "%1 will now be able to see when you are online"
+msgstr "%1 näkee nyt, milloin olet verkossa"
 
-#: contact-request-handler.cpp:335
+#: contact-request-handler.cpp:336
 msgid "Error denying contact request"
 msgstr "Virhe torjuttaessa pyyntöä"
 
-#: contact-request-handler.cpp:336
+#: contact-request-handler.cpp:337
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Sattui virhe torjuttaessa pyyntöä: %1"
 
-#: contact-request-handler.cpp:344
+#: contact-request-handler.cpp:346
 msgid "Contact request denied"
 msgstr "Yhteystietopyyntö torjuttiin"
 
-#: contact-request-handler.cpp:345
+#: contact-request-handler.cpp:347
 #, kde-format
-msgid "%1 will not be able to see your presence"
-msgstr "%1 ei voi nähdä läsnäoloasi"
+msgid "%1 will not be able to see when you are online"
+msgstr "%1 ei voi nähdä, milloin olet verkossa"
 
-#: contact-request-handler.cpp:362
+#: contact-request-handler.cpp:364
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Odottavat yhteystietopyynnöt"
 
-#: contact-request-handler.cpp:365
+#: contact-request-handler.cpp:368
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Vastaanotettiin yhteystietopyyntöjä"
 
-#: contact-request-handler.cpp:383
+#: contact-request-handler.cpp:389
 #, kde-format
 msgid "Request from %1"
 msgstr "Pyyntö käyttäjältä %1"
 
-#: contact-request-handler.cpp:392
+#: contact-request-handler.cpp:398
 msgid "Approve"
 msgstr "Hyväksy"
 
-#: contact-request-handler.cpp:398
+#: contact-request-handler.cpp:404
 msgid "Deny"
 msgstr "Torju"
 
-#: error-handler.cpp:69
+#: contact-request-handler.cpp:431
 #, kde-format
-msgctxt "%1 ist the account name"
-msgid "Could not connect %1. Authentication failed (is your password correct?)"
-msgstr ""
-"Ei voitu yhdistää tiliin %1. Tunnistautuminen epäonnistui (onko salasana "
-"oikein?)"
+msgid "You have 1 contact wanting to chat with you"
+msgid_plural "You have %1 contacts wanting to chat with you"
+msgstr[0] "1 käyttäjä haluaa keskustella kanssasi"
+msgstr[1] "%1 käyttäjää haluaa keskustella kanssasi"
 
-#: error-handler.cpp:72
+#: contactnotify.cpp:74
 #, kde-format
-msgctxt "%1 ist the account name"
+msgctxt "%1 is the contact name, %2 is the presence name"
+msgid "%1 is now %2"
+msgstr "%1 on nyt %2"
+
+#: error-handler.cpp:142
+#, kde-format
+msgctxt "%1 is the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr "Ei saatu yhteyttä tiliin %1. Sattui verkkovirhe, tarkista yhteytesi"
 
-#: error-handler.cpp:75
+#: error-handler.cpp:146 error-handler.cpp:148
 #, kde-format
-msgctxt "%1 ist the account name, %2 the error message"
+msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "Sattui virhe yritettäessä yhdistää tiliin %1 – %2"
+
+#~ msgctxt "%1 is the account name"
+#~ msgid ""
+#~ "Could not connect %1. Authentication failed (is your password correct?)"
+#~ msgstr ""
+#~ "Ei voitu yhdistää tiliin %1. Tunnistautuminen epäonnistui (onko salasana "
+#~ "oikein?)"
+
+#~ msgid ""
+#~ "The contact %1 added you to its contact list. You can answer this request "
+#~ "using the tray icon."
+#~ msgstr ""
+#~ "%1 lisäsi sinut yhteystietoluetteloonsa. Voit vastata tähän pyyntöön "
+#~ "ilmoitusaluekuvakkeesta."
+
+#~ msgid "You have 1 incoming contact request"
+#~ msgid_plural "You have %1 incoming contact requests"
+#~ msgstr[0] "Sinulle on 1 saapuva yhteystietopyyntö"
+#~ msgstr[1] "Sinulle on %1 saapuvaa yhteystietopyyntöä"
+
+#~ msgid "No pending contact requests at the moment"
+#~ msgstr "Ei odottavia yhteystietopyyntöjä"
+
+#~ msgid "No incoming contact requests"
+#~ msgstr "Ei saapuvia yhteystietopyyntöjä"
