@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2012.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-12-12 08:35+0100\n"
-"PO-Revision-Date: 2012-05-17 07:37+0300\n"
+"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"PO-Revision-Date: 2013-03-02 09:32+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -26,28 +26,28 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
-#: config/telepathy-kded-config.cpp:46
+#: config/telepathy-kded-config.cpp:47
 #, no-c-format
 msgctxt ""
 "Title tag in now playing plugin, use one word and keep the '%' character."
 msgid "%title"
 msgstr "%назва"
 
-#: config/telepathy-kded-config.cpp:48
+#: config/telepathy-kded-config.cpp:49
 #, no-c-format
 msgctxt ""
 "Artist tag in now playing plugin, use one word and keep the '%' character."
 msgid "%artist"
 msgstr "%виконавець"
 
-#: config/telepathy-kded-config.cpp:50
+#: config/telepathy-kded-config.cpp:51
 #, no-c-format
 msgctxt ""
 "Album tag in now playing plugin, use one word and keep the '%' character."
 msgid "%album"
 msgstr "%альбом"
 
-#: config/telepathy-kded-config.cpp:52
+#: config/telepathy-kded-config.cpp:53
 #, no-c-format
 msgctxt ""
 "Track number tag in now playing plugin, use one word and keep the '%' "
@@ -55,23 +55,23 @@ msgctxt ""
 msgid "%track"
 msgstr "%композиція"
 
-#: config/telepathy-kded-config.cpp:78 config/telepathy-kded-config.cpp:81
+#: config/telepathy-kded-config.cpp:80 config/telepathy-kded-config.cpp:83
 msgctxt ""
 "Unit after number in spinbox, denotes time unit 'minutes', keep the leading "
 "whitespace!"
 msgid " minutes"
 msgstr " хвилин"
 
-#: config/telepathy-kded-config.cpp:83 config/telepathy-kded-config.cpp:86
+#: config/telepathy-kded-config.cpp:85 config/telepathy-kded-config.cpp:88
 msgid "Leave empty for no message"
 msgstr "Не заповнюйте, якщо у повідомленні немає потреби"
 
-#: config/telepathy-kded-config.cpp:134
+#: config/telepathy-kded-config.cpp:140
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Звантаження"
 
-#: config/telepathy-kded-config.cpp:182 telepathy-mpris.cpp:170
+#: config/telepathy-kded-config.cpp:188 telepathy-mpris.cpp:156
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -85,207 +85,231 @@ msgid "Incoming files"
 msgstr "Вхідні файли"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: config/telepathy-kded-config.ui:23
+#: config/telepathy-kded-config.ui:26
 msgid "Download Folder:"
 msgstr "Тека звантаження:"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: config/telepathy-kded-config.ui:33 config/telepathy-kded-config.ui:36
+#: config/telepathy-kded-config.ui:36 config/telepathy-kded-config.ui:39
 msgid "This is the folder where received files will be saved."
 msgstr "Це тека, у якій зберігатимуться отримані файли."
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
-#: config/telepathy-kded-config.ui:46
+#: config/telepathy-kded-config.ui:49
 msgid "Auto-accept file transfers:"
 msgstr "Автопідтвердження перенесень файлів:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
-#: config/telepathy-kded-config.ui:56 config/telepathy-kded-config.ui:302
-#: config/telepathy-kded-config.ui:354
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:59 config/telepathy-kded-config.ui:311
+#: config/telepathy-kded-config.ui:366 config/telepathy-kded-config.ui:408
 msgid "Enabled"
 msgstr "Увімкнено"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: config/telepathy-kded-config.ui:82
+#: config/telepathy-kded-config.ui:85
 msgid "Auto away"
 msgstr "Автовстановлення відсутності"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: config/telepathy-kded-config.ui:94 config/telepathy-kded-config.ui:228
+#: config/telepathy-kded-config.ui:100 config/telepathy-kded-config.ui:234
 msgid "After:"
 msgstr "Після:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: config/telepathy-kded-config.ui:123 config/telepathy-kded-config.ui:166
+#: config/telepathy-kded-config.ui:129 config/telepathy-kded-config.ui:172
 msgid "of inactivity"
 msgstr "бездіяльності"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: config/telepathy-kded-config.ui:130 config/telepathy-kded-config.ui:173
+#: config/telepathy-kded-config.ui:136 config/telepathy-kded-config.ui:179
 msgid "With message:"
 msgstr "З повідомленням:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/telepathy-kded-config.ui:212
+#: config/telepathy-kded-config.ui:218
 msgid "Set my status to:"
 msgstr "Встановити стан:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: config/telepathy-kded-config.ui:241
+#: config/telepathy-kded-config.ui:247
 msgid "Away"
 msgstr "Відсутній"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: config/telepathy-kded-config.ui:251
+#: config/telepathy-kded-config.ui:257
 msgid "Not available"
 msgstr "Недоступний"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: config/telepathy-kded-config.ui:283
+#: config/telepathy-kded-config.ui:289
 msgid "Now playing"
 msgstr "Зараз відтворюється"
 
 #. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
-#: config/telepathy-kded-config.ui:292
+#: config/telepathy-kded-config.ui:301
 msgid "'Now playing...' presence:"
 msgstr "Повідомлення «Зараз відтворюється…»:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: config/telepathy-kded-config.ui:341
+#: config/telepathy-kded-config.ui:350
 msgid "Auto connect"
 msgstr "Автоз’єднання"
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
-#: config/telepathy-kded-config.ui:347
+#: config/telepathy-kded-config.ui:359
 msgid "Restore last presence on login:"
 msgstr "Відновлювати попередній стан присутності після входу:"
 
-#: contact-request-handler.cpp:60
-msgid "No pending contact requests at the moment"
-msgstr "У черзі немає запитів щодо контакту"
+#. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
+#: config/telepathy-kded-config.ui:392
+msgid "Auto Offline"
+msgstr "Автоматичне від’єднання"
 
-#: contact-request-handler.cpp:175
+#. i18n: ectx: property (text), widget (QLabel, m_autoOfflineLabel)
+#: config/telepathy-kded-config.ui:401
+msgid "Go offline when closing the contact list:"
+msgstr "Від’єднання після закриття списку контактів:"
+
+#: contact-request-handler.cpp:177
 msgid "New contact request"
 msgstr "Новий запит щодо контакту"
 
-#: contact-request-handler.cpp:176
+#: contact-request-handler.cpp:178
 #, kde-format
-msgid ""
-"The contact %1 added you to its contact list. You can answer this request "
-"using the tray icon."
-msgstr ""
-"Контактом %1 додано ваш запис до списку контактів. Ви можете відповісти на "
-"цей запит за допомогою піктограми у системному лотку."
+msgid "The contact %1 wants to be able to chat with you."
+msgstr "Контакт %1 бажає мати можливість спілкуватися з вами."
 
-#: contact-request-handler.cpp:190
+#: contact-request-handler.cpp:195
 msgid "Error adding contact"
 msgstr "Помилка під час додавання контакту"
 
-#: contact-request-handler.cpp:191
+#: contact-request-handler.cpp:196
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
-"see your presence. Error details: %2"
+"see when you are online. Error details: %2"
 msgstr ""
 "%1 було успішно додано до вашого списку контактів, але, ймовірно, він чи "
 "вона не зможе переглядати дані щодо вашої присутності. Дані щодо помилки: %2"
 
-#: contact-request-handler.cpp:212
-msgid "No incoming contact requests"
-msgstr "Немає вхідних запитів щодо контакту"
+#: contact-request-handler.cpp:264
+msgid "Error granting contact authorization"
+msgstr "Помилка під час спроби надання даних щодо уповноваження контакту"
 
-#: contact-request-handler.cpp:224
-#, kde-format
-msgid "You have 1 incoming contact request"
-msgid_plural "You have %1 incoming contact requests"
-msgstr[0] "Маєте %1 вхідний запит щодо контакту"
-msgstr[1] "Маєте %1 вхідних запити щодо контакту"
-msgstr[2] "Маєте %1 вхідних запитів щодо контакту"
-msgstr[3] "Маєте один вхідний запит щодо контакту"
-
-#: contact-request-handler.cpp:270
-msgid "Error accepting contact request"
-msgstr "Помилка під час спроби прийняти запит щодо контакту"
-
-#: contact-request-handler.cpp:271
+#: contact-request-handler.cpp:265
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Під час спроби підтвердити запит сталася помилка: %1"
 
-#: contact-request-handler.cpp:279
+#: contact-request-handler.cpp:275
 msgid "Contact request accepted"
 msgstr "Запит щодо контакту підтверджено"
 
-#: contact-request-handler.cpp:280
+#: contact-request-handler.cpp:276
 #, kde-format
-msgid "%1 will now be able to see your presence"
+msgid "%1 will now be able to see when you are online"
 msgstr "Тепер %1 зможе переглядати дані щодо вашої присутності"
 
-#: contact-request-handler.cpp:335
+#: contact-request-handler.cpp:336
 msgid "Error denying contact request"
 msgstr "Помилка під час спроби відмовити у запиті"
 
-#: contact-request-handler.cpp:336
+#: contact-request-handler.cpp:337
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Під час спроби відмовити у запиті сталася помилка: %1"
 
-#: contact-request-handler.cpp:344
+#: contact-request-handler.cpp:346
 msgid "Contact request denied"
 msgstr "У запиті щодо контакту відмовлено"
 
-#: contact-request-handler.cpp:345
+#: contact-request-handler.cpp:347
 #, kde-format
-msgid "%1 will not be able to see your presence"
+msgid "%1 will not be able to see when you are online"
 msgstr "%1 не зможе переглядати дані щодо вашої присутності"
 
-#: contact-request-handler.cpp:362
+#: contact-request-handler.cpp:364
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Запити щодо контакту у черзі"
 
-#: contact-request-handler.cpp:365
+#: contact-request-handler.cpp:368
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Отримані запити щодо контакту"
 
-#: contact-request-handler.cpp:383
+#: contact-request-handler.cpp:389
 #, kde-format
 msgid "Request from %1"
 msgstr "Запит від %1"
 
-#: contact-request-handler.cpp:392
+#: contact-request-handler.cpp:398
 msgid "Approve"
 msgstr "Підтвердити"
 
-#: contact-request-handler.cpp:398
+#: contact-request-handler.cpp:404
 msgid "Deny"
 msgstr "Відмовити"
 
-#: error-handler.cpp:69
+#: contact-request-handler.cpp:431
 #, kde-format
-msgctxt "%1 ist the account name"
-msgid "Could not connect %1. Authentication failed (is your password correct?)"
-msgstr ""
-"Не вдалося встановити з’єднання з %1. Помилка розпізнавання (можливо, пароль "
-"вказано неправильно)."
+msgid "You have 1 contact wanting to chat with you"
+msgid_plural "You have %1 contacts wanting to chat with you"
+msgstr[0] "%1 контакт бажає мати можливість спілкуватися з вами"
+msgstr[1] "%1 контакти бажають мати можливість спілкуватися з вами"
+msgstr[2] "%1 контактів бажають мати можливість спілкуватися з вами"
+msgstr[3] "Один контакт бажає мати можливість спілкуватися з вами"
 
-#: error-handler.cpp:72
+#: contactnotify.cpp:74
 #, kde-format
-msgctxt "%1 ist the account name"
+msgctxt "%1 is the contact name, %2 is the presence name"
+msgid "%1 is now %2"
+msgstr "%1 тепер є %2"
+
+#: error-handler.cpp:142
+#, kde-format
+msgctxt "%1 is the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr ""
 "Не вдалося встановити з’єднання з %1. Отримано повідомлення про помилку "
 "мережі, перевірте чи працює з’єднання з мережею."
 
-#: error-handler.cpp:75
+#: error-handler.cpp:146 error-handler.cpp:148
 #, kde-format
-msgctxt "%1 ist the account name, %2 the error message"
+msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "Під час спроби встановлення з’єднання з %1 виникли проблеми: %2"
+
+#~ msgctxt "%1 is the account name"
+#~ msgid ""
+#~ "Could not connect %1. Authentication failed (is your password correct?)"
+#~ msgstr ""
+#~ "Не вдалося встановити з’єднання з %1. Помилка розпізнавання (можливо, "
+#~ "пароль вказано неправильно)."
+
+#~ msgid ""
+#~ "The contact %1 added you to its contact list. You can answer this request "
+#~ "using the tray icon."
+#~ msgstr ""
+#~ "Контактом %1 додано ваш запис до списку контактів. Ви можете відповісти "
+#~ "на цей запит за допомогою піктограми у системному лотку."
+
+#~ msgid "You have 1 incoming contact request"
+#~ msgid_plural "You have %1 incoming contact requests"
+#~ msgstr[0] "Маєте %1 вхідний запит щодо контакту"
+#~ msgstr[1] "Маєте %1 вхідних запити щодо контакту"
+#~ msgstr[2] "Маєте %1 вхідних запитів щодо контакту"
+#~ msgstr[3] "Маєте один вхідний запит щодо контакту"
+
+#~ msgid "No pending contact requests at the moment"
+#~ msgstr "У черзі немає запитів щодо контакту"
+
+#~ msgid "No incoming contact requests"
+#~ msgstr "Немає вхідних запитів щодо контакту"

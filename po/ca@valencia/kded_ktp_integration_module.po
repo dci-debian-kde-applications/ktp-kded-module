@@ -1,41 +1,46 @@
-# Burkhard Lück <lueck@hube-lueck.de>, 2011, 2012, 2013.
-# Frederik Schwarzer <schwarzer@kde.org>, 2012.
+# Translation of kded_ktp_integration_module.po to Catalan
+# Copyright (C) 2012 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Josep Ma. Ferrer <txemaq@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-03-08 21:49+0100\n"
-"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
-"Language-Team: de <kde-i18n-de@kde.org>\n"
-"Language: de\n"
+"PO-Revision-Date: 2012-06-15 17:04+0200\n"
+"Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 1.0\n"
+"X-Accelerator-Marker: &\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Frederik Schwarzer"
+msgstr "Josep Ma. Ferrer"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "schwarzer@kde.org"
+msgstr "txemaq@gmail.com"
 
 #: config/telepathy-kded-config.cpp:47
 #, no-c-format
 msgctxt ""
 "Title tag in now playing plugin, use one word and keep the '%' character."
 msgid "%title"
-msgstr "%title"
+msgstr "%titol"
 
 #: config/telepathy-kded-config.cpp:49
 #, no-c-format
 msgctxt ""
 "Artist tag in now playing plugin, use one word and keep the '%' character."
 msgid "%artist"
-msgstr "%artist"
+msgstr "%artista"
 
 #: config/telepathy-kded-config.cpp:51
 #, no-c-format
@@ -50,23 +55,23 @@ msgctxt ""
 "Track number tag in now playing plugin, use one word and keep the '%' "
 "character."
 msgid "%track"
-msgstr "%track"
+msgstr "%peça"
 
 #: config/telepathy-kded-config.cpp:80 config/telepathy-kded-config.cpp:83
 msgctxt ""
 "Unit after number in spinbox, denotes time unit 'minutes', keep the leading "
 "whitespace!"
 msgid " minutes"
-msgstr " Minuten"
+msgstr " minuts"
 
 #: config/telepathy-kded-config.cpp:85 config/telepathy-kded-config.cpp:88
 msgid "Leave empty for no message"
-msgstr "Leer lassen, wenn Sie keine Nachricht einstellen möchten"
+msgstr "Deixeu-ho buit per sense missatge"
 
 #: config/telepathy-kded-config.cpp:140
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
-msgstr "Downloads"
+msgstr "Baixades"
 
 #: config/telepathy-kded-config.cpp:188 telepathy-mpris.cpp:156
 #, kde-format
@@ -74,28 +79,28 @@ msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
 "%2, album: %3"
 msgid "Now listening to %1 by %2 from album %3"
-msgstr "Ich höre gerade %1 von %2 von dem Album %3"
+msgstr "Ara escolto %1 de %2 de l'àlbum %3"
 
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
 #: config/telepathy-kded-config.ui:17
 msgid "Incoming files"
-msgstr "Eingehende Dateien"
+msgstr "Fitxers entrants"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
 #: config/telepathy-kded-config.ui:26
 msgid "Download Folder:"
-msgstr "Download-Ordner:"
+msgstr "Carpeta de baixades:"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
 #: config/telepathy-kded-config.ui:36 config/telepathy-kded-config.ui:39
 msgid "This is the folder where received files will be saved."
-msgstr "In diesem Ordner werden empfangene Dateien gespeichert."
+msgstr "Esta és la carpeta a on es guardaran els fitxers rebuts."
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
 #: config/telepathy-kded-config.ui:49
 msgid "Auto-accept file transfers:"
-msgstr "Dateiübertragungen automatisch annehmen:"
+msgstr "Accepta automàticament les transferències de fitxers:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
@@ -104,206 +109,221 @@ msgstr "Dateiübertragungen automatisch annehmen:"
 #: config/telepathy-kded-config.ui:59 config/telepathy-kded-config.ui:311
 #: config/telepathy-kded-config.ui:366 config/telepathy-kded-config.ui:408
 msgid "Enabled"
-msgstr "Aktiviert"
+msgstr "Activat"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
 #: config/telepathy-kded-config.ui:85
 msgid "Auto away"
-msgstr "Automatische Abwesenheit"
+msgstr "Absència automàtica"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
 #: config/telepathy-kded-config.ui:100 config/telepathy-kded-config.ui:234
 msgid "After:"
-msgstr "Nach:"
+msgstr "Després:"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: config/telepathy-kded-config.ui:129 config/telepathy-kded-config.ui:172
 msgid "of inactivity"
-msgstr "Inaktivität"
+msgstr "d'inactivitat"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
 #: config/telepathy-kded-config.ui:136 config/telepathy-kded-config.ui:179
 msgid "With message:"
-msgstr "Mit Nachricht:"
+msgstr "Amb el missatge:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: config/telepathy-kded-config.ui:218
 msgid "Set my status to:"
-msgstr "Meinen Status setzen auf:"
+msgstr "Estableix el meu estat a:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
 #: config/telepathy-kded-config.ui:247
 msgid "Away"
-msgstr "Abwesend"
+msgstr "Absent"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
 #: config/telepathy-kded-config.ui:257
 msgid "Not available"
-msgstr "Nicht verfügbar"
+msgstr "No disponible"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
 #: config/telepathy-kded-config.ui:289
 msgid "Now playing"
-msgstr "Ich höre gerade"
+msgstr "Ara s'està escoltant"
 
 #. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
 #: config/telepathy-kded-config.ui:301
 msgid "'Now playing...' presence:"
-msgstr "„Ich höre gerade“-Status:"
+msgstr "Presència de «Ara s'està escoltant...»:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
 #: config/telepathy-kded-config.ui:350
 msgid "Auto connect"
-msgstr "Automatisch verbinden"
+msgstr "Connecta automàticament"
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
 #: config/telepathy-kded-config.ui:359
 msgid "Restore last presence on login:"
-msgstr "Beim Verbinden zuletzt gesetzten Status wiederherstellen:"
+msgstr "Restaura la darrera presència en connectar:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:392
 msgid "Auto Offline"
-msgstr "Automatisch Offline"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoOfflineLabel)
 #: config/telepathy-kded-config.ui:401
 msgid "Go offline when closing the contact list:"
-msgstr "Offline gehen beim Schließender Kontaktliste:"
+msgstr ""
 
 #: contact-request-handler.cpp:177
 msgid "New contact request"
-msgstr "Neue Kontaktanfrage"
+msgstr "Sol·licitud nova de contacte"
 
 #: contact-request-handler.cpp:178
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
-msgstr "Der Kontakt %1 möchte mit Ihnen chatten können."
+msgstr ""
 
 #: contact-request-handler.cpp:195
 msgid "Error adding contact"
-msgstr "Fehler beim Hinzufügen des Kontakts"
+msgstr "Error en afegir el contacte"
 
 #: contact-request-handler.cpp:196
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "%1 has been added successfully to your contact list, but might be unable "
+#| "to see your presence. Error details: %2"
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
 "see when you are online. Error details: %2"
 msgstr ""
-"%1 ist erfolgreich zu Ihrer Kontaktliste hinzugefügt worden, könnte aber "
-"möglicherweise nicht sehen, wenn Sie Online sind. Fehlerdetails: %2"
+"S'ha afegit %1 correctament a la llista de contactes, però potser no pot "
+"veure la vostra presència. Detalls de l'error: %2"
 
 #: contact-request-handler.cpp:264
+#, fuzzy
+#| msgid "Error accepting contact request"
 msgid "Error granting contact authorization"
-msgstr "Fehler beim Gewährung der Kontaktautorisierung"
+msgstr "Error en acceptar la sol·licitud de contacte"
 
 #: contact-request-handler.cpp:265
 #, kde-format
 msgid "There was an error while accepting the request: %1"
-msgstr "Ist ist ein Fehler beim Annehmen der Anfrage aufgetreten: %1"
+msgstr "Hi ha hagut un error en acceptar la sol·licitud: %1"
 
 #: contact-request-handler.cpp:275
 msgid "Contact request accepted"
-msgstr "Kontaktanfrage angenommen"
+msgstr "Sol·licitud de contacte acceptada"
 
 #: contact-request-handler.cpp:276
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "%1 will now be able to see your presence"
 msgid "%1 will now be able to see when you are online"
-msgstr "%1 kann jetzt sehen, wenn Sie Online sind"
+msgstr "%1 ara podrà veure la vostra presència"
 
 #: contact-request-handler.cpp:336
 msgid "Error denying contact request"
-msgstr "Fehler beim Ablehnen der Kontaktanfrage"
+msgstr "Error en denegar la sol·licitud de contacte"
 
 #: contact-request-handler.cpp:337
 #, kde-format
 msgid "There was an error while denying the request: %1"
-msgstr "Ist ist ein Fehler beim Ablehnen der Anfrage aufgetreten: %1"
+msgstr "Hi ha hagut un error en denegar la sol·licitud: %1"
 
 #: contact-request-handler.cpp:346
 msgid "Contact request denied"
-msgstr "Kontaktanfrage abgelehnt"
+msgstr "Sol·licitud de contacte denegada"
 
 #: contact-request-handler.cpp:347
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "%1 will not be able to see your presence"
 msgid "%1 will not be able to see when you are online"
-msgstr "%1 wird nicht sehen können, wenn Sie Online sind"
+msgstr "%1 no podrà veure la vostra presència"
 
 #: contact-request-handler.cpp:364
 msgctxt "Menu title"
 msgid "Pending contact requests"
-msgstr "Kontaktanfragen"
+msgstr "Sol·licituds de contacte pendents"
 
 #: contact-request-handler.cpp:368
 msgctxt "Context menu title"
 msgid "Received contact requests"
-msgstr "Empfangene Kontaktanfragen"
+msgstr "Sol·licituds de contacte rebudes"
 
 #: contact-request-handler.cpp:389
 #, kde-format
 msgid "Request from %1"
-msgstr "Anfrage von %1 "
+msgstr "Sol·licitud de %1"
 
 #: contact-request-handler.cpp:398
 msgid "Approve"
-msgstr "Akzeptieren"
+msgstr "Aprova"
 
 #: contact-request-handler.cpp:404
 msgid "Deny"
-msgstr "Ablehnen"
+msgstr "Denega"
 
 #: contact-request-handler.cpp:431
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
-msgstr[0] "Es gibt einen Kontakt, der auf das Chatten mit Ihnen wartet"
-msgstr[1] "Es gibt %1 Kontakte, der auf das Chatten mit Ihnen wartet"
+msgstr[0] ""
+msgstr[1] ""
 
 #: contactnotify.cpp:74
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"
-msgstr "%1 ist jetzt %2"
+msgstr ""
 
 #: error-handler.cpp:142
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "%1 ist the account name"
+#| msgid ""
+#| "Could not connect %1. There was a network error, check your connection"
 msgctxt "%1 is the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr ""
-"„%1“ kann nicht verbunden werden. Es ist ein Netzwerkfehler aufgetreten; "
-"bitte überprüfen Sie Ihre Verbindung."
+"No s'ha pogut connectar amb %1. Hi ha un error de xarxa, comproveu la "
+"connexió"
 
 #: error-handler.cpp:146 error-handler.cpp:148
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "%1 ist the account name, %2 the error message"
+#| msgid "There was a problem while trying to connect %1 - %2"
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
-msgstr "Beim Verbinden von %1 ist ein Fehler aufgetreten - %2 "
+msgstr "Hi ha hagut un problema en intentar connectar amb %1 - %2"
 
+#, fuzzy
+#~| msgctxt "%1 ist the account name"
+#~| msgid ""
+#~| "Could not connect %1. Authentication failed (is your password correct?)"
 #~ msgctxt "%1 is the account name"
 #~ msgid ""
 #~ "Could not connect %1. Authentication failed (is your password correct?)"
 #~ msgstr ""
-#~ "„%1“ kann nicht verbunden werden. Die Authentifizierung ist "
-#~ "fehlgeschlagen. Haben Sie das richtige Passwort verwendet?"
+#~ "No s'ha pogut connectar amb %1. L'autenticació ha fallat (és correcte la "
+#~ "contrasenya?)"
 
 #~ msgid ""
 #~ "The contact %1 added you to its contact list. You can answer this request "
 #~ "using the tray icon."
 #~ msgstr ""
-#~ "Der Kontakt %1 hat Sie zu seiner Kontaktliste hinzugefügt. Sie können "
-#~ "diese Anfrage mit dem Symbol im Systemabschnitt der Kontrollleiste "
-#~ "beantworten."
+#~ "El contacte %1 vos ha afegit a la seua llista de contactes. Podeu "
+#~ "contestar esta sol·licitud utilitzant la icona de la safata."
 
 #~ msgid "You have 1 incoming contact request"
 #~ msgid_plural "You have %1 incoming contact requests"
-#~ msgstr[0] "Sie haben eine eingehende Kontaktanfrage"
-#~ msgstr[1] "Sie haben %1 eingehende Kontaktanfragen"
+#~ msgstr[0] "Teniu 1 sol·licitud de contacte entrant"
+#~ msgstr[1] "Teniu %1 sol·licituds de contacte entrants"
 
 #~ msgid "No pending contact requests at the moment"
-#~ msgstr "Sie haben derzeit keine Kontaktanfragen"
+#~ msgstr "Ara no hi ha sol·licituds de contacte pendents"
 
 #~ msgid "No incoming contact requests"
-#~ msgstr "Keine eingehenden Kontaktanfragen"
+#~ msgstr "No hi ha sol·licituds de contacte entrants"

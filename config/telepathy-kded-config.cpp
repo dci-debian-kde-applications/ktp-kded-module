@@ -23,6 +23,7 @@
 #include "ui_telepathy-kded-config.h"
 
 #include <KPluginFactory>
+#include <KSharedConfig>
 #include <KLocalizedString>
 
 #include <QDBusMessage>
@@ -68,6 +69,7 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
     resizer->addWidgetsFromLayout(ui->autoAwayGroupBox->layout(), 0);
     resizer->addWidgetsFromLayout(ui->nowPlayingGroupBox->layout(), 0);
     resizer->addWidgetsFromLayout(ui->autoConnectGroupBox->layout(), 0);
+    resizer->addWidgetsFromLayout(ui->autoOfflineGroupBox->layout(), 0);
 
     //TODO enable this when it is supported by the approver
     ui->m_autoAcceptLabel->setHidden(true);
@@ -108,6 +110,8 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
             this, SLOT(settingsHasChanged()));
     connect(ui->m_autoConnectCheckBox, SIGNAL(stateChanged(int)),
             this, SLOT(settingsHasChanged()));
+    connect(ui->m_autoOfflineCheckBox, SIGNAL(stateChanged(int)),
+            this, SLOT(settingsHasChanged()));
 
     connect(ui->m_awayCheckBox, SIGNAL(clicked(bool)),
             this, SLOT(autoAwayChecked(bool)));
@@ -115,6 +119,8 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
             this, SLOT(autoXAChecked(bool)));
     connect(ui->m_nowPlayingCheckBox, SIGNAL(clicked(bool)),
             this, SLOT(nowPlayingChecked(bool)));
+    connect(ui->m_autoOfflineCheckBox, SIGNAL(clicked(bool)),
+            this, SLOT(autoOfflineChecked(bool)));
 }
 
 TelepathyKDEDConfig::~TelepathyKDEDConfig()
@@ -126,7 +132,7 @@ void TelepathyKDEDConfig::load()
 {
     KSharedConfigPtr config = KSharedConfig::openConfig(QLatin1String("ktelepathyrc"));
 
-// File transfers config
+    // File transfers config
     KConfigGroup filetransferConfig = config->group(QLatin1String("File Transfers"));
 
     // download directory
@@ -138,7 +144,7 @@ void TelepathyKDEDConfig::load()
     bool autoAcceptEnabled = filetransferConfig.readEntry(QLatin1String("autoAccept"), false);
     ui->m_autoAcceptCheckBox->setChecked(autoAcceptEnabled);
 
-// KDED module config
+    // KDED module config
     KConfigGroup kdedConfig = config->group("KDED");
 
     //check if auto-away is enabled
@@ -210,6 +216,22 @@ void TelepathyKDEDConfig::load()
         ui->m_autoConnectCheckBox->setTristate(true);
         ui->m_autoConnectCheckBox->setCheckState(Qt::PartiallyChecked);
     }
+
+    KSharedConfigPtr contactListConfig = KSharedConfig::openConfig(QLatin1String("ktp-contactlistrc"));
+    KConfigGroup generalConfigGroup(contactListConfig, "General");
+    KConfigGroup notifyConfigGroup(contactListConfig, "Notification Messages");
+
+    bool dontCheckForPlasmoid = notifyConfigGroup.readEntry("dont_check_for_plasmoid", false);
+    if (dontCheckForPlasmoid) {
+        bool shouldGoOffline = generalConfigGroup.readEntry("go_offline_when_closing", false);
+        if (shouldGoOffline == true) {
+            ui->m_autoOfflineCheckBox->setChecked(true);
+        } else {
+            ui->m_autoOfflineCheckBox->setChecked(false);
+        }
+    } else {
+      ui->m_autoOfflineCheckBox->setCheckState(Qt::PartiallyChecked);
+    }
 }
 
 void TelepathyKDEDConfig::save()
@@ -253,6 +275,21 @@ void TelepathyKDEDConfig::save()
         kdedConfig.writeEntry(QLatin1String("autoConnect"), AutoConnect::modeToString(AutoConnect::Enabled));
     }
 
+    KSharedConfigPtr contactListConfig = KSharedConfig::openConfig(QLatin1String("ktp-contactlistrc"));
+    KConfigGroup generalConfigGroup(contactListConfig, "General");
+    KConfigGroup notifyConfigGroup(contactListConfig, "Notification Messages");
+
+    if (ui->m_autoOfflineCheckBox->checkState() == Qt::Unchecked) {
+            notifyConfigGroup.writeEntry("dont_check_for_plasmoid", true);
+            generalConfigGroup.writeEntry("go_offline_when_closing", false);
+    } else if (ui->m_autoOfflineCheckBox->checkState() == Qt::Checked) {
+            notifyConfigGroup.writeEntry("dont_check_for_plasmoid", true);
+            generalConfigGroup.writeEntry("go_offline_when_closing", true);
+    }
+
+    generalConfigGroup.sync();
+    notifyConfigGroup.sync();
+
     kdedConfig.sync();
 
     QDBusMessage message = QDBusMessage::createSignal(QLatin1String("/Telepathy"),
@@ -291,4 +328,11 @@ void TelepathyKDEDConfig::nowPlayingChecked(bool checked)
 void TelepathyKDEDConfig::settingsHasChanged()
 {
     Q_EMIT changed(true);
+}
+
+void TelepathyKDEDConfig::autoOfflineChecked(bool checked)
+{
+    Q_UNUSED(checked)
+
+    ui->m_autoOfflineCheckBox->setTristate(false);
 }
