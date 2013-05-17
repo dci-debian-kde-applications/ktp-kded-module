@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-03-06 00:38+0200\n"
+"PO-Revision-Date: 2013-04-08 17:29+0300\n"
 "Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
 "Language-Team: Finnish <lokalisointi@lists.coss.fi>\n"
 "Language: fi\n"
@@ -173,12 +173,12 @@ msgstr "Palauta viime läsnäolo kirjautumisen yhteydessä:"
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:392
 msgid "Auto Offline"
-msgstr ""
+msgstr "Automaattinen verkosta poistuminen"
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoOfflineLabel)
 #: config/telepathy-kded-config.ui:401
 msgid "Go offline when closing the contact list:"
-msgstr ""
+msgstr "Poistu verkosta suljettaessa yhteystietoluettelo:"
 
 #: contact-request-handler.cpp:177
 msgid "New contact request"
