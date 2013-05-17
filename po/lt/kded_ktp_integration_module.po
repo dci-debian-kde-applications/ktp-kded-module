@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the l package.
 #
 # Automatically generated, 2012.
-# Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2012.
+# Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2012-08-05 19:01+0300\n"
+"PO-Revision-Date: 2013-04-11 20:26+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -172,12 +172,12 @@ msgstr "Atstatyti paskutinę būseną prisijungus:"
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:392
 msgid "Auto Offline"
-msgstr ""
+msgstr "Auto Atsijungęs"
 
 #. i18n: ectx: property (text), widget (QLabel, m_autoOfflineLabel)
 #: config/telepathy-kded-config.ui:401
 msgid "Go offline when closing the contact list:"
-msgstr ""
+msgstr "Atsijungti kai uždaromas kontaktų sąrašas:"
 
 #: contact-request-handler.cpp:177
 msgid "New contact request"
@@ -186,14 +186,14 @@ msgstr "Nauja kontakto užklausa"
 #: contact-request-handler.cpp:178
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
-msgstr ""
+msgstr "Kontaktas %1 nori galėti kalbėti su Jumis."
 
 #: contact-request-handler.cpp:195
 msgid "Error adding contact"
 msgstr "Klaida pridedant kontaktą"
 
 #: contact-request-handler.cpp:196
-#, fuzzy, kde-format
+#, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
 "see when you are online. Error details: %2"
@@ -202,9 +202,8 @@ msgstr ""
 "buvimo. Klaidos informacija: %2"
 
 #: contact-request-handler.cpp:264
-#, fuzzy
 msgid "Error granting contact authorization"
-msgstr "Klaida patvirtinant kontakto užklausą"
+msgstr "Klaida patvirtinant kontakto prieigos teisę"
 
 #: contact-request-handler.cpp:265
 #, kde-format
@@ -216,9 +215,9 @@ msgid "Contact request accepted"
 msgstr "Kontakto užklausa patvirtinta"
 
 #: contact-request-handler.cpp:276
-#, fuzzy, kde-format
+#, kde-format
 msgid "%1 will now be able to see when you are online"
-msgstr "%1 dabar galės matyti Jūsų būseną"
+msgstr "%1 dabar galės matyti kai esate prisijungę"
 
 #: contact-request-handler.cpp:336
 msgid "Error denying contact request"
@@ -234,9 +233,9 @@ msgid "Contact request denied"
 msgstr "Kontakto užklausa uždrausta"
 
 #: contact-request-handler.cpp:347
-#, fuzzy, kde-format
+#, kde-format
 msgid "%1 will not be able to see when you are online"
-msgstr "%1 negalės matyti Jūsų būseną"
+msgstr "%1 negalės matyti kada esate prisijungę"
 
 #: contact-request-handler.cpp:364
 msgctxt "Menu title"
@@ -265,25 +264,25 @@ msgstr "Drausti"
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Turite 1 kontaktą norintį kalbėti su Jumis"
+msgstr[1] "Turite %1 kontaktus norinčius kalbėti su Jumis"
+msgstr[2] "Turite %1 kontaktų norinčių kalbėti su Jumis"
+msgstr[3] "Turite %1 kontaktą norinti kalbėti su Jumis"
 
 #: contactnotify.cpp:74
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"
-msgstr ""
+msgstr "%1 dabar yra %2"
 
 #: error-handler.cpp:142
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "%1 is the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr "Nepavyko prisijungti %1. Buvo tinklo klaida, patikrinkite Jūsų ryšį"
 
 #: error-handler.cpp:146 error-handler.cpp:148
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "Buvo problema mėginant prisijungti %1 - %2"

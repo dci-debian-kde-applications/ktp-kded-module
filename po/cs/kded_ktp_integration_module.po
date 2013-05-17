@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-02-06 11:25+0100\n"
+"PO-Revision-Date: 2013-04-12 20:18+0200\n"
 "Last-Translator: Tomáš Chvátal <tomas.chvatal@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -184,7 +184,7 @@ msgstr "Nová žádost o kontakt"
 #: contact-request-handler.cpp:178
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
-msgstr ""
+msgstr "Kontakt %1 si přeje mít možnost s vámi komunikovat."
 
 #: contact-request-handler.cpp:195
 msgid "Error adding contact"
@@ -262,9 +262,9 @@ msgstr "Zakázat"
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Jeden kontakt čeká na rozhovor"
+msgstr[1] "%1 kontakty čekají na rozhovor"
+msgstr[2] "%1 kontaktů čeká na rozhovor"
 
 #: contactnotify.cpp:74
 #, kde-format
