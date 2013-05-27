@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"POT-Creation-Date: 2013-04-16 19:06+0200\n"
 "PO-Revision-Date: 2013-04-05 19:07+0200\n"
 "Last-Translator: Josep Ma. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -281,7 +281,7 @@ msgstr ""
 "No s'ha pogut connectar amb %1. Hi ha un error de xarxa, comproveu la "
 "connexió"
 
-#: error-handler.cpp:146 error-handler.cpp:148
+#: error-handler.cpp:149 error-handler.cpp:151
 #, kde-format
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"

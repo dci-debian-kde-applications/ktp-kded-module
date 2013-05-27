@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"POT-Creation-Date: 2013-04-16 19:06+0200\n"
 "PO-Revision-Date: 2013-03-10 14:32+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -287,7 +287,7 @@ msgctxt "%1 is the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr "Не могу да повежем %1. Дошло је до грешке на мрежи, проверите везу."
 
-#: error-handler.cpp:146 error-handler.cpp:148
+#: error-handler.cpp:149 error-handler.cpp:151
 #, kde-format
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"

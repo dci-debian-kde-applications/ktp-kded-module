@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"POT-Creation-Date: 2013-04-16 19:06+0200\n"
 "PO-Revision-Date: 2012-12-04 06:45+0200\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
@@ -277,7 +277,7 @@ msgid "Could not connect %1. There was a network error, check your connection"
 msgstr ""
 "Ühendumine kontoga %1 nurjus. Tekkis võrgutõrge, kontrolli oma ühendust."
 
-#: error-handler.cpp:146 error-handler.cpp:148
+#: error-handler.cpp:149 error-handler.cpp:151
 #, kde-format
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
