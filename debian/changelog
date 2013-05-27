@@ -1,4 +1,4 @@
-ktp-kded-integration-module (0.6.1-1) UNRELEASED; urgency=low
+ktp-kded-integration-module (0.6.2-1) UNRELEASED; urgency=low
 
   [ Ritesh Raj Sarraf ]
   * [1f84ed5] Imported Upstream version 0.5.1
@@ -8,8 +8,10 @@ ktp-kded-integration-module (0.6.1-1) UNRELEASED; urgency=low
 
   [ Diane Trout ]
   * [25dbf41] Imported Upstream version 0.6.1
+  * Bump ktp-common-internals and kde-telepathy-data dependencies.
+  * Bump ktp-common-internals and kde-telepathy-data dependencies.
 
- -- Diane Trout <diane@ghic.org>  Fri, 17 May 2013 14:05:41 -0700
+ -- Diane Trout <diane@ghic.org>  Sun, 26 May 2013 22:54:14 -0700
 
 ktp-kded-integration-module (0.4.0-1) unstable; urgency=low
 
