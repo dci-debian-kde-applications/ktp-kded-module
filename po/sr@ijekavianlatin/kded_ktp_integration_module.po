@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
+"POT-Creation-Date: 2013-04-16 19:06+0200\n"
 "PO-Revision-Date: 2013-03-10 14:32+0100\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -173,7 +173,7 @@ msgstr "Automatsko povezivanje"
 #. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
 #: config/telepathy-kded-config.ui:359
 msgid "Restore last presence on login:"
-msgstr "Povrati poslednju prisutnost po prijavljivanju:"
+msgstr "Povrati posljednju prisutnost po prijavljivanju:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:392
@@ -287,7 +287,7 @@ msgctxt "%1 is the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
 msgstr "Ne mogu da povežem %1. Došlo je do greške na mreži, provjerite vezu."
 
-#: error-handler.cpp:146 error-handler.cpp:148
+#: error-handler.cpp:149 error-handler.cpp:151
 #, kde-format
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"

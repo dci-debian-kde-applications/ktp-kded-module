@@ -4,20 +4,21 @@
 # Xosé <xosecalvo@gmail.com>, 2012.
 # Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2012, 2013.
 # Miguel Branco <mgl.branco@gmail.com>, 2013.
+# Marce Villarino <mvillarino@kde-espana.es>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-27 10:06+0100\n"
-"PO-Revision-Date: 2013-01-31 08:36+0100\n"
-"Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
+"POT-Creation-Date: 2013-04-16 19:06+0200\n"
+"PO-Revision-Date: 2013-04-20 11:08+0200\n"
+"Last-Translator: Marce Villarino <mvillarino@kde-espana.es>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 1.4\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -188,7 +189,7 @@ msgstr "Nova solicitude de contacto"
 #: contact-request-handler.cpp:178
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
-msgstr ""
+msgstr "O contacto %1 quer poder chatear contigo."
 
 #: contact-request-handler.cpp:195
 msgid "Error adding contact"
@@ -266,8 +267,8 @@ msgstr "Denegar"
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ten 1 contacto que quer chatear contigo"
+msgstr[1] "Ten %1 contactos que queren chatear contigo"
 
 #: contactnotify.cpp:74
 #, kde-format
@@ -282,7 +283,7 @@ msgid "Could not connect %1. There was a network error, check your connection"
 msgstr ""
 "Non foi posíbel conectar %1. Houbo un erro da rede. Comprobe a conexión."
 
-#: error-handler.cpp:146 error-handler.cpp:148
+#: error-handler.cpp:149 error-handler.cpp:151
 #, kde-format
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
