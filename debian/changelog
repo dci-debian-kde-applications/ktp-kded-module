@@ -1,11 +1,15 @@
-ktp-kded-integration-module (0.5.3-1) UNRELEASED; urgency=low
+ktp-kded-integration-module (0.6.1-1) UNRELEASED; urgency=low
 
+  [ Ritesh Raj Sarraf ]
   * [1f84ed5] Imported Upstream version 0.5.1
   * [4ada56e] Imported Upstream version 0.5.3
   * [1cf1b35] update version dependencies
   * [906a0d8] drop patch 01_no_kcmutils_dep.diff
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Thu, 21 Feb 2013 00:02:58 +0530
+  [ Diane Trout ]
+  * [25dbf41] Imported Upstream version 0.6.1
+
+ -- Diane Trout <diane@ghic.org>  Fri, 17 May 2013 14:05:41 -0700
 
 ktp-kded-integration-module (0.4.0-1) unstable; urgency=low
 
