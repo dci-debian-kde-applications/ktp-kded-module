@@ -10,6 +10,7 @@ ktp-kded-integration-module (0.6.2-1) UNRELEASED; urgency=low
   * [25dbf41] Imported Upstream version 0.6.1
   * Bump ktp-common-internals and kde-telepathy-data dependencies.
   * Bump ktp-common-internals and kde-telepathy-data dependencies.
+  * Set Uploaders to Diane Trout and Michał Zając
 
  -- Diane Trout <diane@ghic.org>  Sun, 26 May 2013 22:54:14 -0700
 
