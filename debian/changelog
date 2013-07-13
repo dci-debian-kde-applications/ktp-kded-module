@@ -1,9 +1,6 @@
 ktp-kded-integration-module (0.6.2-1) UNRELEASED; urgency=low
 
   [ Ritesh Raj Sarraf ]
-  * [1f84ed5] Imported Upstream version 0.5.1
-  * [4ada56e] Imported Upstream version 0.5.3
-  * [1cf1b35] update version dependencies
   * [906a0d8] drop patch 01_no_kcmutils_dep.diff
 
   [ Diane Trout ]
