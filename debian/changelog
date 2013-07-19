@@ -1,11 +1,10 @@
 ktp-kded-integration-module (0.6.2-1) UNRELEASED; urgency=low
 
   [ Ritesh Raj Sarraf ]
-  * [906a0d8] drop patch 01_no_kcmutils_dep.diff
+  * drop patch 01_no_kcmutils_dep.diff
 
   [ Diane Trout ]
-  * [25dbf41] Imported Upstream version 0.6.1
-  * Bump ktp-common-internals and kde-telepathy-data dependencies.
+  * Imported Upstream version 0.6.1
   * Bump ktp-common-internals and kde-telepathy-data dependencies.
   * Set Uploaders to Diane Trout and Michał Zając
   * Update Standards-Version to 3.9.4. No changes needed.
