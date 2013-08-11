@@ -2,13 +2,13 @@ Source: ktp-kded-integration-module
 Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
-Uploaders: Diane Trout <diane@ghic.org>, Michał Zając <quintasan@kubuntu.org>
+Uploaders: Diane Trout <diane@ghic.org>, Michał Zając <quintasan@kubuntu.org>, Mark Purcell <msp@debian.org>
 Build-Depends: debhelper (>= 9),
  pkg-kde-tools (>= 0.9),
  libtelepathy-qt4-dev (>= 0.9.3),
  kdelibs5-dev (>= 4:4.6),
  cmake (>= 2.8),
- libktpcommoninternalsprivate-dev (>= 0.6.2)
+ libktpcommoninternalsprivate-dev (>= 0.6.3)
 Standards-Version: 3.9.4
 Homepage: https://projects.kde.org/projects/extragear/network/telepathy/ktp-kded-module
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-kded-integration-module.git
