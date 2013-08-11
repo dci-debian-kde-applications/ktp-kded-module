@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-04-16 19:06+0200\n"
-"PO-Revision-Date: 2013-03-10 14:32+0100\n"
+"PO-Revision-Date: 2013-05-21 14:22+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
 "Language: sr@ijekavian\n"
@@ -99,7 +99,7 @@ msgstr "Фасцикла у коју ће се уписивати примљен
 #. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
 #: config/telepathy-kded-config.ui:49
 msgid "Auto-accept file transfers:"
-msgstr "Аутоматско прихватање преноса фајлова:"
+msgstr "Аутоматски прихватај преносе фајлова:"
 
 # >! Why this at all? Checked box means "enabled".
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
