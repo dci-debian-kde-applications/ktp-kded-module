@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-04-16 19:06+0200\n"
-"PO-Revision-Date: 2013-03-09 12:43+0400\n"
+"PO-Revision-Date: 2013-06-09 01:29+0400\n"
 "Last-Translator: Yuri Efremov <yur.arh@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -153,12 +153,12 @@ msgstr "Недоступен"
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
 #: config/telepathy-kded-config.ui:289
 msgid "Now playing"
-msgstr "Сейчас проигрывается"
+msgstr "Статус «Сейчас слушаю…»"
 
 #. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
 #: config/telepathy-kded-config.ui:301
 msgid "'Now playing...' presence:"
-msgstr "Сообщение «Сейчас проигрывается…»:"
+msgstr "Использование статуса"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
 #: config/telepathy-kded-config.ui:350
