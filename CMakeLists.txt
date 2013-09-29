@@ -1,5 +1,7 @@
 project(ktp-kded-integration-module)
 
+set(KTP_CONTACT_LIST_VERSION "0.6.80")
+
 set (CMAKE_MODULE_PATH
      "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules"
      ${CMAKE_MODULE_PATH}
@@ -38,6 +40,7 @@ set (kded_ktp_integration_module_SRCS
      autoconnect.cpp
      error-handler.cpp
      contactnotify.cpp
+     screensaveraway.cpp
 )
 
 kde4_add_plugin (kded_ktp_integration_module

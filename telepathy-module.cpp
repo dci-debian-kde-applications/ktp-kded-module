@@ -36,6 +36,7 @@
 #include "error-handler.h"
 #include "telepathy-kded-module-plugin.h"
 #include "contactnotify.h"
+#include "screensaveraway.h"
 
 #include <KConfigGroup>
 #include "contact-request-handler.h"
@@ -45,6 +46,14 @@ K_EXPORT_PLUGIN(TelepathyModuleFactory("ktp_integration_module", "kded_ktp_integ
 
 TelepathyModule::TelepathyModule(QObject* parent, const QList<QVariant>& args)
     : KDEDModule(parent)
+    , m_autoAway( 0 )
+    , m_mpris( 0 )
+    , m_autoConnect( 0 )
+    , m_errorHandler( 0 )
+    , m_globalPresence( 0 )
+    , m_contactHandler( 0 )
+    , m_contactNotify( 0 )
+    , m_screenSaverAway( 0 )
 {
     Q_UNUSED(args)
 
@@ -105,6 +114,13 @@ void TelepathyModule::onAccountManagerReady(Tp::PendingOperation* op)
     connect(this, SIGNAL(settingsChanged()),
             m_autoAway, SLOT(onSettingsChanged()));
 
+    m_screenSaverAway = new ScreenSaverAway(m_globalPresence, this);
+    connect(m_screenSaverAway, SIGNAL(activate(bool)),
+            this, SLOT(onPluginActivated(bool)));
+
+    connect(this, SIGNAL(settingsChanged()),
+            m_screenSaverAway, SLOT(onSettingsChanged()));
+
     m_mpris = new TelepathyMPRIS(m_globalPresence, this);
     connect(m_mpris, SIGNAL(activate(bool)),
             this, SLOT(onPluginActivated(bool)));
@@ -115,39 +131,35 @@ void TelepathyModule::onAccountManagerReady(Tp::PendingOperation* op)
     m_autoConnect = new AutoConnect(this);
     m_autoConnect->setAccountManager(m_accountManager);
 
-    connect(this, SIGNAL(settingsChanged()),
-            m_autoConnect, SLOT(onSettingsChanged()));
-
     //earlier in list = higher priority
-    m_pluginStack << m_autoAway << m_mpris;
+    m_pluginStack << m_autoAway << m_screenSaverAway << m_mpris;
 
     m_errorHandler = new ErrorHandler(m_accountManager, this);
     m_contactHandler = new ContactRequestHandler(m_accountManager, this);
     m_contactNotify = new ContactNotify(m_accountManager, this);
-    
+
     m_lastUserPresence = m_globalPresence->requestedPresence();
 }
 
 void TelepathyModule::onRequestedPresenceChanged(const KTp::Presence &presence)
 {
+    // the difference between user requested offline and network related offline is the connectionStatus is connected or not
+    // offline caused by network offline shold not be recorded as user requested.
+    if (presence.type() == Tp::ConnectionPresenceTypeOffline
+     && m_globalPresence->connectionStatus() != Tp::ConnectionStatusConnected) {
+        return;
+    }
+
     //if it's changed to what we set it to. Ignore it.
     if (presence == currentPluginPresence()) {
         return;
     }
 
-    //user is manually setting the presnece.
+    //user is manually setting the presence.
     m_lastUserPresence = presence;
 
-    KSharedConfigPtr config = KSharedConfig::openConfig(QLatin1String("ktelepathyrc"));
-    KConfigGroup presenceConfig = config->group("LastPresence");
-
-    presenceConfig.writeEntry(QLatin1String("PresenceType"), (uint)presence.type());
-    presenceConfig.writeEntry(QLatin1String("PresenceStatus"), presence.status());
-    presenceConfig.writeEntry(QLatin1String("PresenceMessage"), presence.statusMessage());
-
-    presenceConfig.sync();
-
-    m_autoConnect->setAutomaticPresence(presence);
+    //save presence (needed for autoconnect)
+    m_autoConnect->savePresence(presence);
 }
 
 void TelepathyModule::onPluginActivated(bool active)
@@ -160,8 +172,9 @@ void TelepathyModule::onPluginActivated(bool active)
 void TelepathyModule::setPresence(const KTp::Presence &presence)
 {
     Q_FOREACH(const Tp::AccountPtr &account, m_accountManager->allAccounts()) {
-        //change the state of any online account.
-        if (account->isEnabled() && account->isOnline()) {
+        if (account->isEnabled() &&
+            (account->connectionStatusReason() == Tp::ConnectionStatusReasonNoneSpecified ||
+             account->connectionStatusReason() == Tp::ConnectionStatusReasonRequested)) {
             account->setRequestedPresence(presence);
         }
     }

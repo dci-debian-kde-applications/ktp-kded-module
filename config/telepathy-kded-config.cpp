@@ -51,6 +51,8 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
                         << i18nc("Album tag in now playing plugin, use one word and keep the '%' character.", "%album")
                         // xgettext: no-c-format
                         << i18nc("Track number tag in now playing plugin, use one word and keep the '%' character.", "%track");
+    // xgettext: no-c-format
+    m_localizedTimeTagName = i18nc("Time tag. Use one word and keep the '%' character.", "%time");
 
     QStringList itemsIcons;
     itemsIcons << QLatin1String("view-media-lyrics")   //%title
@@ -72,7 +74,6 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
     resizer->addWidgetsFromLayout(ui->autoOfflineGroupBox->layout(), 0);
 
     //TODO enable this when it is supported by the approver
-    ui->m_autoAcceptLabel->setHidden(true);
     ui->m_autoAcceptCheckBox->setHidden(true);
 
     //FIXME: figure out how to use i18ncp without argument for suffix
@@ -83,10 +84,16 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
                                     " minutes"));
 
     ui->m_awayMessage->setClickMessage(i18n("Leave empty for no message"));
-    ui->m_awayMessage->setToolTip(ui->m_awayMessage->clickMessage()); //use the same i18n string
+    // xgettext: no-c-format
+    ui->m_awayMessage->setToolTip(i18n("Use %time to insert UTC time of when you went away"));
 
     ui->m_xaMessage->setClickMessage(i18n("Leave empty for no message"));
-    ui->m_xaMessage->setToolTip(ui->m_xaMessage->clickMessage()); //use the same i18n string
+    // xgettext: no-c-format
+    ui->m_xaMessage->setToolTip(i18n("Use %time to insert UTC time of when you went not available"));
+
+    ui->m_screenSaverAwayMessage->setClickMessage(i18n("Leave empty for no message"));
+    // xgettext: no-c-format
+    ui->m_screenSaverAwayMessage->setToolTip(i18n("Use %time to insert UTC time of when the screen saver was activated"));
 
     connect(ui->m_downloadUrlRequester, SIGNAL(textChanged(QString)),
             this, SLOT(settingsHasChanged()));
@@ -112,6 +119,12 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
             this, SLOT(settingsHasChanged()));
     connect(ui->m_autoOfflineCheckBox, SIGNAL(stateChanged(int)),
             this, SLOT(settingsHasChanged()));
+    connect(ui->m_screenSaverAwayCheckBox, SIGNAL(stateChanged(int)),
+            this, SLOT(settingsHasChanged()));
+    connect(ui->m_screenSaverAwayMessage, SIGNAL(textChanged(QString)),
+            this, SLOT(settingsHasChanged()));
+    connect(ui->m_downloadUrlCheckBox, SIGNAL(clicked(bool)),
+            this, SLOT(downloadUrlCheckBoxChanged(bool)));
 
     connect(ui->m_awayCheckBox, SIGNAL(clicked(bool)),
             this, SLOT(autoAwayChecked(bool)));
@@ -121,6 +134,8 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
             this, SLOT(nowPlayingChecked(bool)));
     connect(ui->m_autoOfflineCheckBox, SIGNAL(clicked(bool)),
             this, SLOT(autoOfflineChecked(bool)));
+    connect(ui->m_screenSaverAwayCheckBox, SIGNAL(clicked(bool)),
+            this, SLOT(screenSaverAwayChecked(bool)));
 }
 
 TelepathyKDEDConfig::~TelepathyKDEDConfig()
@@ -139,6 +154,8 @@ void TelepathyKDEDConfig::load()
     QString downloadDirectory = filetransferConfig.readPathEntry(QLatin1String("downloadDirectory"),
                     QDir::homePath() + QLatin1String("/") + i18nc("This is the download directory in user's home", "Downloads"));
     ui->m_downloadUrlRequester->setUrl(KUrl(downloadDirectory));
+    ui->m_downloadUrlCheckBox->setChecked(filetransferConfig.readEntry(QLatin1String("alwaysAsk"), false));
+    ui->m_downloadUrlRequester->setEnabled(!ui->m_downloadUrlCheckBox->isChecked());
 
     // check if auto-accept file transfers is enabled
     bool autoAcceptEnabled = filetransferConfig.readEntry(QLatin1String("autoAccept"), false);
@@ -157,9 +174,9 @@ void TelepathyKDEDConfig::load()
 
     ui->m_awayCheckBox->setChecked(autoAwayEnabled);
     ui->m_awayMins->setValue(awayTime);
-    ui->m_awayMins->setEnabled(autoAwayEnabled);
-    ui->m_awayMessage->setText(awayMessage);
-    ui->m_awayMessage->setEnabled(autoAwayEnabled);
+    // Display the localized tag because the unlocalized one is saved
+    ui->m_awayMessage->setText(awayMessage.replace(QLatin1String("%time"), m_localizedTimeTagName));
+    enableAwayWidgets(autoAwayEnabled);
 
     //check for x-away
     bool autoXAEnabled = kdedConfig.readEntry(QLatin1String("autoXAEnabled"), true);
@@ -170,12 +187,23 @@ void TelepathyKDEDConfig::load()
     QString xaMessage = kdedConfig.readEntry(QLatin1String("xaMessage"), QString());
 
     //enable auto-x-away only if auto-away is enabled
-    ui->m_xaCheckBox->setChecked(autoXAEnabled && autoAwayEnabled);
     ui->m_xaCheckBox->setEnabled(autoAwayEnabled);
+    ui->m_xaCheckBox->setChecked(autoXAEnabled && autoAwayEnabled);
     ui->m_xaMins->setValue(xaTime);
-    ui->m_xaMins->setEnabled(autoXAEnabled && autoAwayEnabled);
-    ui->m_xaMessage->setText(xaMessage);
-    ui->m_xaMessage->setEnabled(autoXAEnabled && autoAwayEnabled);
+    // Display the localized tag because the unlocalized one is saved
+    ui->m_xaMessage->setText(xaMessage.replace(QLatin1String("%time"),
+            m_localizedTimeTagName));
+    enableXAWidgets(autoXAEnabled && autoAwayEnabled);
+
+        //check if screen-server-away is enabled
+    bool screenSaverAwayEnabled = kdedConfig.readEntry(QLatin1String("screenSaverAwayEnabled"), true);
+
+    QString screenSaverAwayMessage = kdedConfig.readEntry(QLatin1String("screenSaverAwayMessage"), QString());
+
+    ui->m_screenSaverAwayCheckBox->setChecked(screenSaverAwayEnabled);
+    // Display the localized tag because the unlocalized one is saved
+    ui->m_screenSaverAwayMessage->setText(screenSaverAwayMessage.replace(QLatin1String("%time"), m_localizedTimeTagName));
+    ui->m_screenSaverAwayMessage->setEnabled(screenSaverAwayEnabled);
 
     //check if 'Now playing..' is enabled
     bool nowPlayingEnabled = kdedConfig.readEntry(QLatin1String("nowPlayingEnabled"), false);
@@ -243,6 +271,7 @@ void TelepathyKDEDConfig::save()
 
     filetransferConfig.writeEntry(QLatin1String("downloadDirectory"), ui->m_downloadUrlRequester->url().toLocalFile());
     filetransferConfig.writeEntry(QLatin1String("autoAccept"), ui->m_autoAcceptCheckBox->isChecked());
+    filetransferConfig.writeEntry(QLatin1String("alwaysAsk"), ui->m_downloadUrlCheckBox->isChecked());
     filetransferConfig.sync();
 
 // KDED module config
@@ -250,11 +279,22 @@ void TelepathyKDEDConfig::save()
 
     kdedConfig.writeEntry(QLatin1String("autoAwayEnabled"), ui->m_awayCheckBox->isChecked());
     kdedConfig.writeEntry(QLatin1String("awayAfter"), ui->m_awayMins->value());
-    kdedConfig.writeEntry(QLatin1String("awayMessage"), ui->m_awayMessage->text());
+    // We store the unlocalized tag name
+    QString awayMessage = ui->m_awayMessage->text();
+    kdedConfig.writeEntry(QLatin1String("awayMessage"),
+                          awayMessage.replace(m_localizedTimeTagName, QLatin1String("%time")));
     kdedConfig.writeEntry(QLatin1String("autoXAEnabled"), ui->m_xaCheckBox->isChecked());
     kdedConfig.writeEntry(QLatin1String("xaAfter"), ui->m_xaMins->value());
-    kdedConfig.writeEntry(QLatin1String("xaMessage"), ui->m_xaMessage->text());
+    // We store the unlocalized tag name
+    QString xaMessage = ui->m_xaMessage->text();
+    kdedConfig.writeEntry(QLatin1String("xaMessage"),
+                          xaMessage.replace(m_localizedTimeTagName, QLatin1String("%time")));
     kdedConfig.writeEntry(QLatin1String("nowPlayingEnabled"), ui->m_nowPlayingCheckBox->isChecked());
+    kdedConfig.writeEntry(QLatin1String("screenSaverAwayEnabled"), ui->m_screenSaverAwayCheckBox->isChecked());
+    // We store the unlocalized tag name
+    QString screenSaverAwayMessage = ui->m_screenSaverAwayMessage->text();
+    kdedConfig.writeEntry(QLatin1String("screenSaverAwayMessage"),
+                          screenSaverAwayMessage.replace(m_localizedTimeTagName, QLatin1String("%time")));
 
     //we store a nowPlayingText version with untranslated tag names
     QString modifiedNowPlayingText = ui->m_nowPlayingText->text();
@@ -298,23 +338,42 @@ void TelepathyKDEDConfig::save()
     QDBusConnection::sessionBus().send(message);
 }
 
+void TelepathyKDEDConfig::enableAwayWidgets(bool enable)
+{
+    ui->m_awayMins->setEnabled(enable);
+    ui->m_awayMessage->setEnabled(enable);
+    ui->m_awayMessageLabel->setEnabled(enable);
+    ui->m_awayMinsLabel->setEnabled(enable);
+    ui->m_awayInactivityLabel->setEnabled(enable);
+}
+
+void TelepathyKDEDConfig::enableXAWidgets(bool enable)
+{
+    ui->m_xaMins->setEnabled(enable);
+    ui->m_xaMessage->setEnabled(enable);
+    ui->m_xaMessageLabel->setEnabled(enable);
+    ui->m_xaMinsLabel->setEnabled(enable);
+    ui->m_xaInactivityLabel->setEnabled(enable);
+}
+
 void TelepathyKDEDConfig::autoAwayChecked(bool checked)
 {
     ui->m_xaCheckBox->setEnabled(checked);
-    ui->m_xaMins->setEnabled(checked && ui->m_xaCheckBox->isChecked());
-    ui->m_xaMessage->setEnabled(checked && ui->m_xaCheckBox->isChecked());
+    enableXAWidgets(checked && ui->m_xaCheckBox->isChecked());
+    enableAwayWidgets(checked);
+    Q_EMIT changed(true);
+}
 
-    ui->m_awayMins->setEnabled(checked);
-    ui->m_awayMessage->setEnabled(checked);
-
+void TelepathyKDEDConfig::screenSaverAwayChecked(bool checked)
+{
+    ui->m_screenSaverAwayMessage->setEnabled(checked);
+    ui->m_screenSaverAwayLabel->setEnabled(checked);
     Q_EMIT changed(true);
 }
 
 void TelepathyKDEDConfig::autoXAChecked(bool checked)
 {
-    ui->m_xaMins->setEnabled(checked);
-    ui->m_xaMessage->setEnabled(checked);
-
+    enableXAWidgets(checked);
     Q_EMIT changed(true);
 }
 
@@ -335,4 +394,10 @@ void TelepathyKDEDConfig::autoOfflineChecked(bool checked)
     Q_UNUSED(checked)
 
     ui->m_autoOfflineCheckBox->setTristate(false);
+}
+
+void TelepathyKDEDConfig::downloadUrlCheckBoxChanged(bool checked)
+{
+    ui->m_downloadUrlRequester->setEnabled(!checked);
+    Q_EMIT changed(true);
 }

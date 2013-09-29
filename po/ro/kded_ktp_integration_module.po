@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-04-16 19:06+0200\n"
-"PO-Revision-Date: 2013-01-10 17:06+0200\n"
+"PO-Revision-Date: 2013-05-25 09:48+0300\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -184,7 +184,7 @@ msgstr "Cerere nouă de contact"
 #: contact-request-handler.cpp:178
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
-msgstr ""
+msgstr "Contactul %1 vrea să poată comunica cu dumneavoastră."
 
 #: contact-request-handler.cpp:195
 msgid "Error adding contact"
@@ -262,9 +262,9 @@ msgstr "Respinge"
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Aveți 1 contact care dorește să discute cu dumneavoastră"
+msgstr[1] "Aveți %1 contacte care doresc să discute cu dumneavoastră"
+msgstr[2] "Aveți de %1 contacte care doresc să discute cu dumneavoastră"
 
 #: contactnotify.cpp:74
 #, kde-format
