@@ -1,12 +1,12 @@
 # Translation of kded_ktp_integration_module to Norwegian Bokmål
 #
-# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2012.
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-04-16 19:06+0200\n"
-"PO-Revision-Date: 2012-12-10 21:56+0100\n"
+"PO-Revision-Date: 2013-09-17 20:45+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.5\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -131,7 +131,7 @@ msgstr "uten aktivitet"
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
 #: config/telepathy-kded-config.ui:136 config/telepathy-kded-config.ui:179
 msgid "With message:"
-msgstr "med melding:"
+msgstr "Med melding:"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: config/telepathy-kded-config.ui:218
@@ -185,7 +185,7 @@ msgstr "Ny kontaktforespørsel"
 #: contact-request-handler.cpp:178
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
-msgstr ""
+msgstr "Kontakten %1 vil gjerne kunne prate med deg."
 
 #: contact-request-handler.cpp:195
 msgid "Error adding contact"
@@ -263,8 +263,8 @@ msgstr "Avvis"
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Du har %1 kontakt som venter på å prate med deg"
+msgstr[1] "Du har %1 kontakter som venter på å prate med deg"
 
 #: contactnotify.cpp:74
 #, kde-format

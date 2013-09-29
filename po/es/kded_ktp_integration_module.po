@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2013-04-16 19:06+0200\n"
-"PO-Revision-Date: 2013-05-06 17:40+0200\n"
+"PO-Revision-Date: 2013-07-22 11:20+0200\n"
 "Last-Translator: Raul Gonzalez <raulgf83@gmail.com>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -32,7 +32,7 @@ msgstr "raulgf83@gmail.com,kirajfdez@gmail.com"
 msgctxt ""
 "Title tag in now playing plugin, use one word and keep the '%' character."
 msgid "%title"
-msgstr "%título"
+msgstr "%titulo"
 
 #: config/telepathy-kded-config.cpp:49
 #, no-c-format
