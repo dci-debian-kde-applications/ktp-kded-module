@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-04-16 19:06+0200\n"
-"PO-Revision-Date: 2013-03-23 08:27+0100\n"
+"POT-Creation-Date: 2013-10-09 05:28+0000\n"
+"PO-Revision-Date: 2013-09-24 19:09+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@comhem.se>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -54,23 +54,45 @@ msgctxt ""
 msgid "%track"
 msgstr "%spår"
 
-#: config/telepathy-kded-config.cpp:80 config/telepathy-kded-config.cpp:83
+#: config/telepathy-kded-config.cpp:55
+#, no-c-format
+msgctxt "Time tag. Use one word and keep the '%' character."
+msgid "%time"
+msgstr "%time"
+
+#: config/telepathy-kded-config.cpp:81 config/telepathy-kded-config.cpp:84
 msgctxt ""
 "Unit after number in spinbox, denotes time unit 'minutes', keep the leading "
 "whitespace!"
 msgid " minutes"
 msgstr " minuter"
 
-#: config/telepathy-kded-config.cpp:85 config/telepathy-kded-config.cpp:88
+#: config/telepathy-kded-config.cpp:86 config/telepathy-kded-config.cpp:90
+#: config/telepathy-kded-config.cpp:94
 msgid "Leave empty for no message"
 msgstr "Lämna tom för inget meddelande"
 
-#: config/telepathy-kded-config.cpp:140
+#: config/telepathy-kded-config.cpp:88
+#, no-c-format
+msgid "Use %time to insert UTC time of when you went away"
+msgstr "Använd %tid för att infoga UTC-tiden då gick ifrån"
+
+#: config/telepathy-kded-config.cpp:92
+#, no-c-format
+msgid "Use %time to insert UTC time of when you went not available"
+msgstr "Använd %tid för att infoga UTC-tiden då du blev inte tillgänglig"
+
+#: config/telepathy-kded-config.cpp:96
+#, no-c-format
+msgid "Use %time to insert UTC time of when the screen saver was activated"
+msgstr "Använd %tid för att infoga UTC-tiden då skärmsläckaren aktiverades"
+
+#: config/telepathy-kded-config.cpp:155
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Nerladdningar"
 
-#: config/telepathy-kded-config.cpp:188 telepathy-mpris.cpp:156
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -78,118 +100,133 @@ msgctxt ""
 msgid "Now listening to %1 by %2 from album %3"
 msgstr "Lyssnar nu på %1 av %2 från album %3"
 
-#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
-#: config/telepathy-kded-config.ui:17
-msgid "Incoming files"
-msgstr "Inkommande filer"
+#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
+#: config/telepathy-kded-config.ui:35
+msgid "Auto connect"
+msgstr "Anslut automatiskt"
 
-#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: config/telepathy-kded-config.ui:26
-msgid "Download Folder:"
-msgstr "Nerladdningskatalog:"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
-#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: config/telepathy-kded-config.ui:36 config/telepathy-kded-config.ui:39
-msgid "This is the folder where received files will be saved."
-msgstr "Det här är katalogen där mottagna filer kommer att sparas."
-
-#. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
-#: config/telepathy-kded-config.ui:49
-msgid "Auto-accept file transfers:"
-msgstr "Acceptera filöverföringar automatiskt:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
-#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
-#: config/telepathy-kded-config.ui:59 config/telepathy-kded-config.ui:311
-#: config/telepathy-kded-config.ui:366 config/telepathy-kded-config.ui:408
-msgid "Enabled"
-msgstr "Aktiverad"
+#: config/telepathy-kded-config.ui:44
+msgid "Restore last presence on login"
+msgstr "Återställ senaste närvaro vid inloggning"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: config/telepathy-kded-config.ui:85
+#: config/telepathy-kded-config.ui:54
 msgid "Auto away"
 msgstr "Automatisk frånvaro"
 
-#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
-#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: config/telepathy-kded-config.ui:100 config/telepathy-kded-config.ui:234
-msgid "After:"
-msgstr "Efter:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: config/telepathy-kded-config.ui:129 config/telepathy-kded-config.ui:172
-msgid "of inactivity"
-msgstr "utan aktivitet"
-
-#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
-#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: config/telepathy-kded-config.ui:136 config/telepathy-kded-config.ui:179
-msgid "With message:"
-msgstr "Med meddelande:"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/telepathy-kded-config.ui:218
+#: config/telepathy-kded-config.ui:63
 msgid "Set my status to:"
 msgstr "Ange min status som:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: config/telepathy-kded-config.ui:247
+#: config/telepathy-kded-config.ui:74
 msgid "Away"
 msgstr "Borta"
 
+#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
+#: config/telepathy-kded-config.ui:103
+msgid "After:"
+msgstr "Efter:"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayInactivityLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_xaInactivityLabel)
+#: config/telepathy-kded-config.ui:132 config/telepathy-kded-config.ui:231
+msgid "of inactivity"
+msgstr "utan aktivitet"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
+#: config/telepathy-kded-config.ui:143 config/telepathy-kded-config.ui:300
+msgid "With &message:"
+msgstr "Med &meddelande:"
+
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: config/telepathy-kded-config.ui:257
+#: config/telepathy-kded-config.ui:170
 msgid "Not available"
 msgstr "Inte tillgänglig"
 
-#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: config/telepathy-kded-config.ui:289
-msgid "Now playing"
-msgstr "Spelar nu"
+#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
+#: config/telepathy-kded-config.ui:202
+msgid "Aft&er:"
+msgstr "&Efter:"
 
-#. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
-#: config/telepathy-kded-config.ui:301
-msgid "'Now playing...' presence:"
-msgstr "Närvaro med 'Spelar nu...':"
+#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
+#: config/telepathy-kded-config.ui:242
+msgid "With messa&ge:"
+msgstr "Med me&ddelande:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: config/telepathy-kded-config.ui:350
-msgid "Auto connect"
-msgstr "Anslut automatiskt"
-
-#. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
-#: config/telepathy-kded-config.ui:359
-msgid "Restore last presence on login:"
-msgstr "Återställ senaste närvaro vid inloggning:"
+#. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
+#: config/telepathy-kded-config.ui:273
+msgid "Set my status to Away when the screen saver is activated"
+msgstr "Ställ in min status som Borta när skärmsläckaren aktiveras"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
-#: config/telepathy-kded-config.ui:392
+#: config/telepathy-kded-config.ui:323
 msgid "Auto Offline"
 msgstr "Automatisk nerkoppling"
 
-#. i18n: ectx: property (text), widget (QLabel, m_autoOfflineLabel)
-#: config/telepathy-kded-config.ui:401
-msgid "Go offline when closing the contact list:"
-msgstr "Koppla ner när kontaktlistan stängs:"
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:332
+msgid "Go offline when closing the contact list"
+msgstr "Koppla ner när kontaktlistan stängs"
 
-#: contact-request-handler.cpp:177
+#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
+#: config/telepathy-kded-config.ui:342
+msgid "Incoming files"
+msgstr "Inkommande filer"
+
+#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
+#: config/telepathy-kded-config.ui:353
+msgid "Download folder:"
+msgstr "Nerladdningskatalog:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
+#: config/telepathy-kded-config.ui:366
+msgid "Always Ask"
+msgstr "Fråga alltid"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
+#: config/telepathy-kded-config.ui:373 config/telepathy-kded-config.ui:376
+msgid "This is the folder where received files will be saved."
+msgstr "Det här är katalogen där mottagna filer kommer att sparas."
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
+#: config/telepathy-kded-config.ui:388
+msgid "Automatically accept file transfers"
+msgstr "Acceptera filöverföringar automatiskt"
+
+#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
+#: config/telepathy-kded-config.ui:398
+msgid "Now playing"
+msgstr "Spelar nu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
+#: config/telepathy-kded-config.ui:407
+msgid "Enable \"Now playing...\" presence"
+msgstr "Aktivera närvaro med \"Spelar nu...\""
+
+#. i18n: ectx: property (text), widget (QLabel, message_format_label)
+#: config/telepathy-kded-config.ui:419
+msgid "Message format:"
+msgstr "Meddelandeformat:"
+
+#: contact-request-handler.cpp:178
 msgid "New contact request"
 msgstr "Ny kontaktbegäran"
 
-#: contact-request-handler.cpp:178
+#: contact-request-handler.cpp:179
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "Kontakten %1 vill kunna chatta med dig."
 
-#: contact-request-handler.cpp:195
+#: contact-request-handler.cpp:196
 msgid "Error adding contact"
 msgstr "Fel när kontakt skulle läggas till"
 
-#: contact-request-handler.cpp:196
+#: contact-request-handler.cpp:197
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -198,66 +235,70 @@ msgstr ""
 "%1 har lagts till i din kontaktlista med lyckat resultat, men kanske inte "
 "kan se när du är uppkopplad. Felinformation: %2"
 
-#: contact-request-handler.cpp:264
+#: contact-request-handler.cpp:283
 msgid "Error granting contact authorization"
 msgstr "Fel vid försök att ge kontakt behörighet"
 
-#: contact-request-handler.cpp:265
+#: contact-request-handler.cpp:284
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Ett fel uppstod när begäran skulle accepteras: %1"
 
-#: contact-request-handler.cpp:275
+#: contact-request-handler.cpp:294
 msgid "Contact request accepted"
 msgstr "Kontaktbegäran accepterad"
 
-#: contact-request-handler.cpp:276
+#: contact-request-handler.cpp:295
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 kommer nu att kunna se när du är uppkopplad"
 
-#: contact-request-handler.cpp:336
+#: contact-request-handler.cpp:355
 msgid "Error denying contact request"
 msgstr "Fel när kontaktbegäran skulle avslås"
 
-#: contact-request-handler.cpp:337
+#: contact-request-handler.cpp:356
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Ett fel uppstod när begäran skulle avslås: %1"
 
-#: contact-request-handler.cpp:346
+#: contact-request-handler.cpp:365
 msgid "Contact request denied"
 msgstr "Kontaktbegäran avslagen"
 
-#: contact-request-handler.cpp:347
+#: contact-request-handler.cpp:366
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 kommer inte att kunna se när du är uppkopplad"
 
-#: contact-request-handler.cpp:364
+#: contact-request-handler.cpp:383
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Väntande kontaktbegäran"
 
-#: contact-request-handler.cpp:368
+#: contact-request-handler.cpp:387
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Tog emot kontaktbegäran"
 
-#: contact-request-handler.cpp:389
+#: contact-request-handler.cpp:408
 #, kde-format
 msgid "Request from %1"
 msgstr "Begäran från %1"
 
-#: contact-request-handler.cpp:398
+#: contact-request-handler.cpp:418
+msgid "Contact Details"
+msgstr "Kontaktinformation"
+
+#: contact-request-handler.cpp:426
 msgid "Approve"
 msgstr "Godkänn"
 
-#: contact-request-handler.cpp:404
+#: contact-request-handler.cpp:432
 msgid "Deny"
 msgstr "Neka"
 
-#: contact-request-handler.cpp:431
+#: contact-request-handler.cpp:459
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
@@ -283,6 +324,9 @@ msgstr ""
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "Ett problem uppstod vid försök att ansluta %1 - %2"
+
+#~ msgid "Enabled"
+#~ msgstr "Aktiverad"
 
 #~ msgctxt "%1 is the account name"
 #~ msgid ""

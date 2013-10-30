@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-04-16 19:06+0200\n"
-"PO-Revision-Date: 2013-03-03 12:55+0100\n"
+"POT-Creation-Date: 2013-10-09 05:28+0000\n"
+"PO-Revision-Date: 2013-10-15 18:39+0200\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -56,23 +56,46 @@ msgctxt ""
 msgid "%track"
 msgstr "%skladba"
 
-#: config/telepathy-kded-config.cpp:80 config/telepathy-kded-config.cpp:83
+#: config/telepathy-kded-config.cpp:55
+#, no-c-format
+msgctxt "Time tag. Use one word and keep the '%' character."
+msgid "%time"
+msgstr "%čas"
+
+#: config/telepathy-kded-config.cpp:81 config/telepathy-kded-config.cpp:84
 msgctxt ""
 "Unit after number in spinbox, denotes time unit 'minutes', keep the leading "
 "whitespace!"
 msgid " minutes"
 msgstr " minut"
 
-#: config/telepathy-kded-config.cpp:85 config/telepathy-kded-config.cpp:88
+#: config/telepathy-kded-config.cpp:86 config/telepathy-kded-config.cpp:90
+#: config/telepathy-kded-config.cpp:94
 msgid "Leave empty for no message"
 msgstr "Pustite prazno, če ne želite sporočila"
 
-#: config/telepathy-kded-config.cpp:140
+#: config/telepathy-kded-config.cpp:88
+#, no-c-format
+msgid "Use %time to insert UTC time of when you went away"
+msgstr "Uporabite %čas, da vstavite čas UTC, ko ste postali odsotni"
+
+#: config/telepathy-kded-config.cpp:92
+#, no-c-format
+msgid "Use %time to insert UTC time of when you went not available"
+msgstr "Uporabite %čas, da vstavite čas UTC, ko niste bili več na voljo"
+
+#: config/telepathy-kded-config.cpp:96
+#, no-c-format
+msgid "Use %time to insert UTC time of when the screen saver was activated"
+msgstr ""
+"Uporabite %čas, da vstavite čas UTC, ko se je omogočil ohranjevalnik zaslona"
+
+#: config/telepathy-kded-config.cpp:155
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Prejemi"
 
-#: config/telepathy-kded-config.cpp:188 telepathy-mpris.cpp:156
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -80,118 +103,133 @@ msgctxt ""
 msgid "Now listening to %1 by %2 from album %3"
 msgstr "Poslušanje %1 izvajalca %2 iz albuma %3"
 
-#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
-#: config/telepathy-kded-config.ui:17
-msgid "Incoming files"
-msgstr "Dohodne datoteke"
+#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
+#: config/telepathy-kded-config.ui:35
+msgid "Auto connect"
+msgstr "Samodejno poveži"
 
-#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: config/telepathy-kded-config.ui:26
-msgid "Download Folder:"
-msgstr "Mapa s prejemi:"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
-#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: config/telepathy-kded-config.ui:36 config/telepathy-kded-config.ui:39
-msgid "This is the folder where received files will be saved."
-msgstr "To je mapa, kamor se bodo shranile prejete datoteke."
-
-#. i18n: ectx: property (text), widget (QLabel, m_autoAcceptLabel)
-#: config/telepathy-kded-config.ui:49
-msgid "Auto-accept file transfers:"
-msgstr "Samodejno sprejmi prenose datotek:"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
-#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
-#: config/telepathy-kded-config.ui:59 config/telepathy-kded-config.ui:311
-#: config/telepathy-kded-config.ui:366 config/telepathy-kded-config.ui:408
-msgid "Enabled"
-msgstr "Omogočeno"
+#: config/telepathy-kded-config.ui:44
+msgid "Restore last presence on login"
+msgstr "Obnovi zadnjo prisotnost ob prijavi"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: config/telepathy-kded-config.ui:85
+#: config/telepathy-kded-config.ui:54
 msgid "Auto away"
 msgstr "Samodejna odsotnost"
 
-#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
-#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: config/telepathy-kded-config.ui:100 config/telepathy-kded-config.ui:234
-msgid "After:"
-msgstr "Po:"
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: config/telepathy-kded-config.ui:129 config/telepathy-kded-config.ui:172
-msgid "of inactivity"
-msgstr "nedejavnosti"
-
-#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
-#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: config/telepathy-kded-config.ui:136 config/telepathy-kded-config.ui:179
-msgid "With message:"
-msgstr "S sporočilom:"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/telepathy-kded-config.ui:218
+#: config/telepathy-kded-config.ui:63
 msgid "Set my status to:"
 msgstr "Nastavi moje stanje na:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: config/telepathy-kded-config.ui:247
+#: config/telepathy-kded-config.ui:74
 msgid "Away"
 msgstr "Odsoten"
 
+#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
+#: config/telepathy-kded-config.ui:103
+msgid "After:"
+msgstr "Po:"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayInactivityLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_xaInactivityLabel)
+#: config/telepathy-kded-config.ui:132 config/telepathy-kded-config.ui:231
+msgid "of inactivity"
+msgstr "nedejavnosti"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
+#: config/telepathy-kded-config.ui:143 config/telepathy-kded-config.ui:300
+msgid "With &message:"
+msgstr "S &sporočilom:"
+
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: config/telepathy-kded-config.ui:257
+#: config/telepathy-kded-config.ui:170
 msgid "Not available"
 msgstr "Ni na voljo"
 
-#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: config/telepathy-kded-config.ui:289
-msgid "Now playing"
-msgstr "Trenutno se predvaja"
+#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
+#: config/telepathy-kded-config.ui:202
+msgid "Aft&er:"
+msgstr "&Po:"
 
-#. i18n: ectx: property (text), widget (QLabel, m_nowPlayingLabel)
-#: config/telepathy-kded-config.ui:301
-msgid "'Now playing...' presence:"
-msgstr "Prisotnost 'Trenutno se predvaja ...':"
+#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
+#: config/telepathy-kded-config.ui:242
+msgid "With messa&ge:"
+msgstr "S spo&ročilom:"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: config/telepathy-kded-config.ui:350
-msgid "Auto connect"
-msgstr "Samodejno poveži"
-
-#. i18n: ectx: property (text), widget (QLabel, m_autoConnectLabel)
-#: config/telepathy-kded-config.ui:359
-msgid "Restore last presence on login:"
-msgstr "Obnovi zadnjo prisotnost ob prijavi:"
+#. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
+#: config/telepathy-kded-config.ui:273
+msgid "Set my status to Away when the screen saver is activated"
+msgstr "Nastavi stanje na odsoten, ko se vklopi ohranjevalnik zaslona"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
-#: config/telepathy-kded-config.ui:392
+#: config/telepathy-kded-config.ui:323
 msgid "Auto Offline"
 msgstr "Samodejno nepovezan"
 
-#. i18n: ectx: property (text), widget (QLabel, m_autoOfflineLabel)
-#: config/telepathy-kded-config.ui:401
-msgid "Go offline when closing the contact list:"
-msgstr "Ob zaprtju seznama stikov prestavi v nepovezan način:"
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:332
+msgid "Go offline when closing the contact list"
+msgstr "Ob zaprtju seznama stikov prestavi v nepovezan način"
 
-#: contact-request-handler.cpp:177
+#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
+#: config/telepathy-kded-config.ui:342
+msgid "Incoming files"
+msgstr "Dohodne datoteke"
+
+#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
+#: config/telepathy-kded-config.ui:353
+msgid "Download folder:"
+msgstr "Mapa s prejemi:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
+#: config/telepathy-kded-config.ui:366
+msgid "Always Ask"
+msgstr "Vedno vprašaj"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
+#: config/telepathy-kded-config.ui:373 config/telepathy-kded-config.ui:376
+msgid "This is the folder where received files will be saved."
+msgstr "To je mapa, kamor se bodo shranile prejete datoteke."
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
+#: config/telepathy-kded-config.ui:388
+msgid "Automatically accept file transfers"
+msgstr "Samodejno sprejmi prenose datotek"
+
+#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
+#: config/telepathy-kded-config.ui:398
+msgid "Now playing"
+msgstr "Trenutno se predvaja"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
+#: config/telepathy-kded-config.ui:407
+msgid "Enable \"Now playing...\" presence"
+msgstr "Omogoči prisotnost 'Trenutno se predvaja ...':"
+
+#. i18n: ectx: property (text), widget (QLabel, message_format_label)
+#: config/telepathy-kded-config.ui:419
+msgid "Message format:"
+msgstr "Oblika sporočil:"
+
+#: contact-request-handler.cpp:178
 msgid "New contact request"
 msgstr "Zahteva za nov stik"
 
-#: contact-request-handler.cpp:178
+#: contact-request-handler.cpp:179
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "Stik %1 želi klepetati z vami"
 
-#: contact-request-handler.cpp:195
+#: contact-request-handler.cpp:196
 msgid "Error adding contact"
 msgstr "Napaka med dodajanjem stika"
 
-#: contact-request-handler.cpp:196
+#: contact-request-handler.cpp:197
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -200,66 +238,70 @@ msgstr ""
 "%1 je bil uspešno dodan v vaš seznam stikov, ampak vas morda ne bo mogel "
 "videti, ko boste povezani. Podrobnosti napake: %2"
 
-#: contact-request-handler.cpp:264
+#: contact-request-handler.cpp:283
 msgid "Error granting contact authorization"
 msgstr "Napaka med pooblaščanjem stika"
 
-#: contact-request-handler.cpp:265
+#: contact-request-handler.cpp:284
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Med sprejemanjem zahteve je prišlo do napake: %1"
 
-#: contact-request-handler.cpp:275
+#: contact-request-handler.cpp:294
 msgid "Contact request accepted"
 msgstr "Zahteva za stik sprejeta"
 
-#: contact-request-handler.cpp:276
+#: contact-request-handler.cpp:295
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 vas bo lahko sedaj videl, ko boste povezani"
 
-#: contact-request-handler.cpp:336
+#: contact-request-handler.cpp:355
 msgid "Error denying contact request"
 msgstr "Napaka med zavračanjem zahteve stika"
 
-#: contact-request-handler.cpp:337
+#: contact-request-handler.cpp:356
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Med zavračanjem zahteve je prišlo do napake: %1"
 
-#: contact-request-handler.cpp:346
+#: contact-request-handler.cpp:365
 msgid "Contact request denied"
 msgstr "Zahteva za stik zavrnjena"
 
-#: contact-request-handler.cpp:347
+#: contact-request-handler.cpp:366
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 vas ne bo mogel videti, ko boste povezani"
 
-#: contact-request-handler.cpp:364
+#: contact-request-handler.cpp:383
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Zahteve za stik na čakanju"
 
-#: contact-request-handler.cpp:368
+#: contact-request-handler.cpp:387
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Prejete zahteve za stik"
 
-#: contact-request-handler.cpp:389
+#: contact-request-handler.cpp:408
 #, kde-format
 msgid "Request from %1"
 msgstr "Zahteva od %1"
 
-#: contact-request-handler.cpp:398
+#: contact-request-handler.cpp:418
+msgid "Contact Details"
+msgstr "Podrobnosti stika"
+
+#: contact-request-handler.cpp:426
 msgid "Approve"
 msgstr "Odobri"
 
-#: contact-request-handler.cpp:404
+#: contact-request-handler.cpp:432
 msgid "Deny"
 msgstr "Zavrni"
 
-#: contact-request-handler.cpp:431
+#: contact-request-handler.cpp:459
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
@@ -287,6 +329,9 @@ msgstr ""
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "Med poskusom povezave %1 je prišlo do napake: %2"
+
+#~ msgid "Enabled"
+#~ msgstr "Omogočeno"
 
 #~ msgctxt "%1 is the account name"
 #~ msgid ""
