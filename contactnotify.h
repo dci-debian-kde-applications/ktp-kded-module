@@ -19,20 +19,16 @@
 #ifndef CONTACTNOTIFY_H
 #define CONTACTNOTIFY_H
 
+#include <TelepathyQt/Presence>
 #include <TelepathyQt/Types>
-#include <TelepathyQt/Connection>
 
-#include <KTp/global-contact-manager.h>
-
-class KIcon;
-
-using namespace KTp;
+class QPixmap;
 
 class ContactNotify : public QObject
 {
     Q_OBJECT
 public:
-    ContactNotify(const Tp::AccountManagerPtr &accountMgr, QObject *parent = 0);
+    ContactNotify(QObject *parent = 0);
 
 private Q_SLOTS:
     void onContactsChanged(const Tp::Contacts &contactsAdded, const Tp::Contacts &contactsRemoved);
@@ -41,9 +37,8 @@ private Q_SLOTS:
     void saveAvatarTokens();
 
 private:
-    void sendNotification(const QString &text, const KIcon &icon, const Tp::ContactPtr &contact);
+    void sendNotification(const QString &text, const QPixmap &pixmap, const Tp::ContactPtr &contact);
 
-    Tp::AccountManagerPtr m_accountManager;
     QHash<QString, int> m_presenceHash;
     QHash<QString, QString> m_avatarTokensHash;
 };

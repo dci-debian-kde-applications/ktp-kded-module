@@ -1,6 +1,5 @@
 /*
-    Auto away-presence setter-class
-    Copyright (C) 2011  Martin Klapetek <martin.klapetek@gmail.com>
+    Copyright (C) 2014  Alexandr Akulich <akulichalexander@gmail.com>
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -17,39 +16,18 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+#include "contact-cache.h"
 
-#ifndef AUTOAWAY_H
-#define AUTOAWAY_H
+#include <QCoreApplication>
 
-#include "telepathy-kded-module-plugin.h"
+#include <TelepathyQt/Types>
 
-namespace KTp {
-class GlobalPresence;
-}
-
-class AutoAway : public TelepathyKDEDModulePlugin
+int main(int argc, char *argv[])
 {
-    Q_OBJECT
+    QCoreApplication app(argc, argv);
+    Tp::registerTypes();
 
-public:
-    explicit AutoAway(KTp::GlobalPresence *globalPresence, QObject *parent = 0);
-    ~AutoAway();
+    ContactCache cache(&app);
 
-    QString pluginName() const;
-
-public Q_SLOTS:
-    void reloadConfig();
-
-private Q_SLOTS:
-    void timeoutReached(int);
-    void backFromIdle();
-
-private:
-    int m_awayTimeoutId;
-    int m_extAwayTimeoutId;
-
-    QString m_awayMessage;
-    QString m_xaMessage;
-};
-
-#endif // AUTOAWAY_H
+    return app.exec();
+}

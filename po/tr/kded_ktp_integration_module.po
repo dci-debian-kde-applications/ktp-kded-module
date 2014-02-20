@@ -1,54 +1,50 @@
-# translation of kded_ktp_integration_module.po to Khmer
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Khoem Sokhem <khoemsokhem@khmeros.info>, 2012.
-# Sophea <sophea@khmeros.info>, 2012.
+#
+# Volkan Gezer <volkangezer@gmail.com>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: kded_ktp_integration_module\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-02-12 01:29+0000\n"
-"PO-Revision-Date: 2012-07-03 08:13+0700\n"
-"Last-Translator: Sophea <sophea@khmeros.info>\n"
-"Language-Team: Khmer <>\n"
-"Language: \n"
+"PO-Revision-Date: 2013-10-29 17:54+0100\n"
+"Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: WordForge 0.8 RC1\n"
-"X-Language: km-KH\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
+msgstr "Volkan Gezer"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
-"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
-"ratanak@khmeros.info,sophea@khmeros.info"
+msgstr "volkangezer@gmail.com"
 
 #: config/telepathy-kded-config.cpp:47
 #, no-c-format
 msgctxt ""
 "Title tag in now playing plugin, use one word and keep the '%' character."
 msgid "%title"
-msgstr "%ចំនងជើង"
+msgstr "%başlık"
 
 #: config/telepathy-kded-config.cpp:49
 #, no-c-format
 msgctxt ""
 "Artist tag in now playing plugin, use one word and keep the '%' character."
 msgid "%artist"
-msgstr "%សិល្បករ"
+msgstr "%sanatçı"
 
 #: config/telepathy-kded-config.cpp:51
 #, no-c-format
 msgctxt ""
 "Album tag in now playing plugin, use one word and keep the '%' character."
 msgid "%album"
-msgstr "%អាល់ប៊ុម"
+msgstr "%albüm"
 
 #: config/telepathy-kded-config.cpp:53
 #, no-c-format
@@ -56,45 +52,46 @@ msgctxt ""
 "Track number tag in now playing plugin, use one word and keep the '%' "
 "character."
 msgid "%track"
-msgstr "%បទ"
+msgstr "%parça"
 
 #: config/telepathy-kded-config.cpp:55
 #, no-c-format
 msgctxt "Time tag. Use one word and keep the '%' character."
 msgid "%time"
-msgstr ""
+msgstr "%zaman"
 
 #: config/telepathy-kded-config.cpp:81 config/telepathy-kded-config.cpp:84
 msgctxt ""
 "Unit after number in spinbox, denotes time unit 'minutes', keep the leading "
 "whitespace!"
 msgid " minutes"
-msgstr "នាទី"
+msgstr " dakika"
 
 #: config/telepathy-kded-config.cpp:86 config/telepathy-kded-config.cpp:90
 #: config/telepathy-kded-config.cpp:94
 msgid "Leave empty for no message"
-msgstr "ទុកឲ្យ​ទទេ​សម្រាប់​គ្មាន​សារ"
+msgstr "Boş mesaj için boş bırakın"
 
 #: config/telepathy-kded-config.cpp:88
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went away"
-msgstr ""
+msgstr "Uzakta olduğunuzda UTC zamanı eklemek için %zaman kullanın"
 
 #: config/telepathy-kded-config.cpp:92
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went not available"
-msgstr ""
+msgstr "Uygun olmadığınızda UTC zamanı eklemek için %zaman kullanın"
 
 #: config/telepathy-kded-config.cpp:96
 #, no-c-format
 msgid "Use %time to insert UTC time of when the screen saver was activated"
 msgstr ""
+"Ekran koruyucu etkinleştirildiğinde UTC zamanı eklemek için %zaman kullanın"
 
 #: config/telepathy-kded-config.cpp:155
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
-msgstr "ទាញ​យក"
+msgstr "İndirilenler"
 
 #: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
 #, kde-format
@@ -102,280 +99,227 @@ msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
 "%2, album: %3"
 msgid "Now listening to %1 by %2 from album %3"
-msgstr "ឥឡូវ​កំពុង​ស្ដាប់​បទ %1 ច្រៀង​ដោយ %2 ពី​អាល់ប៊ុម %3"
+msgstr "Şimdi dinlenen %1, %2 sanatçısının %3 albümünden"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
 #: config/telepathy-kded-config.ui:35
 msgid "Auto connect"
-msgstr "តភ្ជាប់​ដោយ​ស្វ័យប្រវត្តិ"
+msgstr "Otomatik bağlan"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
 #: config/telepathy-kded-config.ui:44
-#, fuzzy
-#| msgid "Restore last presence on login:"
 msgid "Restore last presence on login"
-msgstr "ស្ដារ​វត្តមាន​ចុងក្រោយ​នៅ​ពេល​ចូល ៖"
+msgstr "Oturumda son iletişim durumunu geri yükle"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
 #: config/telepathy-kded-config.ui:54
 msgid "Auto away"
-msgstr "ចាក​ឆ្ងាយ​ដោយ​ស្វ័យប្រវត្តិ"
+msgstr "Otomatik uzakta"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: config/telepathy-kded-config.ui:63
 msgid "Set my status to:"
-msgstr "កំណត់​ស្ថានភាព​របស់​ខ្ញុំ​ទៅ ៖"
+msgstr "Durumumu şuna ayarla:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
 #: config/telepathy-kded-config.ui:74
 msgid "Away"
-msgstr "ចាក​ឆ្ងាយ"
+msgstr "Uzakta"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
 #: config/telepathy-kded-config.ui:103
 msgid "After:"
-msgstr "បន្ទាប់ពី ៖"
+msgstr "Şu kadar sonra:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayInactivityLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaInactivityLabel)
 #: config/telepathy-kded-config.ui:132 config/telepathy-kded-config.ui:231
 msgid "of inactivity"
-msgstr "នៃ​អសកម្មភាព"
+msgstr "bir şey yapmadığımda"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
 #: config/telepathy-kded-config.ui:143 config/telepathy-kded-config.ui:300
-#, fuzzy
-#| msgid "With message:"
 msgid "With &message:"
-msgstr "ជាមួយ​សារ ៖"
+msgstr "&Şu ileti ile:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
 #: config/telepathy-kded-config.ui:170
 msgid "Not available"
-msgstr "មិន​មាន"
+msgstr "Uygun değil"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
 #: config/telepathy-kded-config.ui:202
 msgid "Aft&er:"
-msgstr ""
+msgstr "&Sonra"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
 #: config/telepathy-kded-config.ui:242
-#, fuzzy
-#| msgid "With message:"
 msgid "With messa&ge:"
-msgstr "ជាមួយ​សារ ៖"
+msgstr "&Şu ileti ile:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
 #: config/telepathy-kded-config.ui:273
 msgid "Set my status to Away when the screen saver is activated"
-msgstr ""
+msgstr "Ekran koruyucu etkinleştirildiğinde durumumu Uzakta işaretle"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:323
 msgid "Auto Offline"
-msgstr ""
+msgstr "Otomatik Çevrimdışı"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
 #: config/telepathy-kded-config.ui:332
 msgid "Go offline when closing the contact list"
-msgstr ""
+msgstr "Kişi listesi kapatıldığında otomatik olarak çevrimdışı ol"
 
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
 #: config/telepathy-kded-config.ui:342
 msgid "Incoming files"
-msgstr "ឯកសារ​ចូល"
+msgstr "Gelen dosyalar"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
 #: config/telepathy-kded-config.ui:353
-#, fuzzy
-#| msgid "Download Folder:"
 msgid "Download folder:"
-msgstr "ថត​ទាញ​យក ៖"
+msgstr "Dosya indirme dizini:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
 #: config/telepathy-kded-config.ui:366
 msgid "Always Ask"
-msgstr ""
+msgstr "Her Zaman Sor"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
 #: config/telepathy-kded-config.ui:373 config/telepathy-kded-config.ui:376
 msgid "This is the folder where received files will be saved."
-msgstr "នេះ​ជា​ថត​សម្រាប់​រក្សាទុក​ឯកសារ​ដែល​បាន​ទទួល ។"
+msgstr "Bu alınan dosyaların kaydedileceği klasördür."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
 #: config/telepathy-kded-config.ui:388
-#, fuzzy
-#| msgid "Auto-accept file transfers:"
 msgid "Automatically accept file transfers"
-msgstr "ព្រម​ទទួល​ការ​ផ្ទេរ​ឯកសារ​ដោយ​ស្វ័យប្រវត្តិ ៖"
+msgstr "Dosya aktarımlarını otomatik olarak kabul et"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
 #: config/telepathy-kded-config.ui:398
 msgid "Now playing"
-msgstr "កំពុង​ចាក់"
+msgstr "Şimdi çalınıyor"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-#, fuzzy
-#| msgid "'Now playing...' presence:"
 msgid "Enable \"Now playing...\" presence on login"
-msgstr "'កំពុង​ចាក់...' វត្តមាន ៖"
+msgstr "Oturum açtığımda \"Şimdi çalınıyor...\" durumunu etkinleştir"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
 #: config/telepathy-kded-config.ui:419
 msgid "Message format:"
-msgstr ""
+msgstr "İleti biçimi:"
 
 #: contact-request-handler.cpp:179
 msgid "New contact request"
-msgstr "មាន​សំណើ​ទំនាក់ទំនង​ថ្មី"
+msgstr "Yeni kişi isteği"
 
 #: contact-request-handler.cpp:180
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
-msgstr ""
+msgstr "%1 adlı kişi sizinle sohbet edebilmek istiyor."
 
 #: contact-request-handler.cpp:197
 msgid "Error adding contact"
-msgstr "កំហុស​ក្នុង​ការ​បន្ថែម​ទំនាក់ទំនង"
+msgstr "Kişi eklenirken hata"
 
 #: contact-request-handler.cpp:198
-#, fuzzy, kde-format
-#| msgid ""
-#| "%1 has been added successfully to your contact list, but might be unable "
-#| "to see your presence. Error details: %2"
+#, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
 "see when you are online. Error details: %2"
 msgstr ""
-"បាន​បន្ថែម %1 ដោយ​ជោគជ័យ​ទៅកាន់​បញ្ជី​ទំនាក់ទំនង​របស់​អ្នក ប៉ុន្តែ​មិន​អាច​ឃើញ​វត្តមាន​របស់​អ្នក​ទេ ។ កំហុស​"
-"លម្អិត ៖ %2"
+"%1 kişi listenize başarıyla eklendi ancak çevrimiçi olduğunuzu "
+"göremeyebilir. Hata ayrıntıları: %2"
 
 #: contact-request-handler.cpp:284
-#, fuzzy
-#| msgid "Error accepting contact request"
 msgid "Error granting contact authorization"
-msgstr "កំហុស​ក្នុង​ការ​ទទួល​យក​សំណើ​ទំនាក់ទំនង"
+msgstr "Kişi doğrulaması verilirken hata"
 
 #: contact-request-handler.cpp:285
 #, kde-format
 msgid "There was an error while accepting the request: %1"
-msgstr "មាន​កំហុស​ពេល​ទទួល​សំណើ ៖ %1"
+msgstr "İstek kabul edilirken bir hata oluştu: %1"
 
 #: contact-request-handler.cpp:295
 msgid "Contact request accepted"
-msgstr "បាន​ព្រម​ទទួល​សំណើ​ទំនាក់ទំនង"
+msgstr "Kişi talebi kabul edildi"
 
 #: contact-request-handler.cpp:296
-#, fuzzy, kde-format
-#| msgid "%1 will now be able to see your presence"
+#, kde-format
 msgid "%1 will now be able to see when you are online"
-msgstr "%1 ឥឡូវ​អាច​មើល​ឃើញ​វត្តមាន​របស់​អ្នក​ហើយ"
+msgstr "%1 artık çevrimiçi olduğunuzu görebilecek"
 
 #: contact-request-handler.cpp:363
 msgid "Error denying contact request"
-msgstr "កំហុស​ក្នុង​ការ​បដិសេធ​សំណើ​ទំនាក់ទំនង"
+msgstr "Kişi talebi reddedilirken hata"
 
 #: contact-request-handler.cpp:364
 #, kde-format
 msgid "There was an error while denying the request: %1"
-msgstr "មាន​កំហុស​នៅ​ពេល​បដិសេធ​សំណើ ៖ %1"
+msgstr "İstek reddedilirken bir hata oluştu: %1"
 
 #: contact-request-handler.cpp:373
 msgid "Contact request denied"
-msgstr "បាន​បដិសេធ​សំណើ​ទំនាក់ទំនង"
+msgstr "Kişi isteği reddedildi"
 
 #: contact-request-handler.cpp:374
-#, fuzzy, kde-format
-#| msgid "%1 will not be able to see your presence"
+#, kde-format
 msgid "%1 will not be able to see when you are online"
-msgstr "%1 នឹង​មិន​អាច​មើល​ឃើញ​វត្តមាន​របស់​អ្នក​ទេ"
+msgstr "%1 çevrimiçi olduğunuzu göremeyecek"
 
 #: contact-request-handler.cpp:391
 msgctxt "Menu title"
 msgid "Pending contact requests"
-msgstr "សំណើ​ទំនាក់ទំនង​មិន​ទាន់​សម្រេច"
+msgstr "Bekleyen kişi istekleri"
 
 #: contact-request-handler.cpp:395
 msgctxt "Context menu title"
 msgid "Received contact requests"
-msgstr "បាន​ទទួល​សំណើ​ទំនាក់ទំនង"
+msgstr "Alınan kişi istekleri"
 
 #: contact-request-handler.cpp:416
 #, kde-format
 msgid "Request from %1"
-msgstr "សំណើ​ពី %1"
+msgstr "%1 kişisinden istek"
 
 #: contact-request-handler.cpp:426
 msgid "Contact Details"
-msgstr ""
+msgstr "Kişi Ayrıntıları"
 
 #: contact-request-handler.cpp:434
 msgid "Approve"
-msgstr "យល់ព្រម"
+msgstr "Onayla"
 
 #: contact-request-handler.cpp:440
 msgid "Deny"
-msgstr "បដិសេធ"
+msgstr "Reddet"
 
 #: contact-request-handler.cpp:467
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
-msgstr[0] ""
+msgstr[0] "Sizinle sohbet etmek isteyen 1 kişi var"
+msgstr[1] "Sizinle sohbet etmek isteyen %1 kişi var"
 
 #: contactnotify.cpp:65
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"
-msgstr ""
+msgstr "%1 artık %2"
 
 #: error-handler.cpp:142
-#, fuzzy, kde-format
-#| msgctxt "%1 ist the account name"
-#| msgid ""
-#| "Could not connect %1. There was a network error, check your connection"
+#, kde-format
 msgctxt "%1 is the account name"
 msgid "Could not connect %1. There was a network error, check your connection"
-msgstr "មិន​អាច​តភ្ជាប់ %1 បាន​ទេ ។ មាន​កំហុស​បណ្ដាញ ពិនិត្យមើល​ការ​តភ្ជាប់​របស់​អ្នក"
+msgstr "%1 bağlantısı yapılamadı. Ağ hatası oluştu, bağlantınızı denetleyin"
 
 #: error-handler.cpp:149 error-handler.cpp:151
-#, fuzzy, kde-format
-#| msgctxt "%1 ist the account name, %2 the error message"
-#| msgid "There was a problem while trying to connect %1 - %2"
+#, kde-format
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
-msgstr "មាន​បញ្ហា​នៅ​ពេល​ព្យាយាម​តភ្ជាប់ %1 - %2"
-
-#~ msgid "Enabled"
-#~ msgstr "បាន​បើក"
-
-#, fuzzy
-#~| msgctxt "%1 ist the account name"
-#~| msgid ""
-#~| "Could not connect %1. Authentication failed (is your password correct?)"
-#~ msgctxt "%1 is the account name"
-#~ msgid ""
-#~ "Could not connect %1. Authentication failed (is your password correct?)"
-#~ msgstr ""
-#~ "មិន​អាច​តភ្ជាប់ %1 បាន​ទេ ។ ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​បាន​បរាជ័យ (តើ​ពាក្យសម្ងាត់​របស់​អ្នក​"
-#~ "ត្រឹមត្រូវ​ដែរ​ឬទេ ?)"
-
-#~ msgid ""
-#~ "The contact %1 added you to its contact list. You can answer this request "
-#~ "using the tray icon."
-#~ msgstr ""
-#~ "ទំនាក់ទំនង %1 បាន​បន្ថែម​អ្នក​ទៅកាន់​បញ្ជី ។ អ្នក​អាច​ឆ្លើយតប​សំណើ​នេះ​បាន​ដោយ​ប្រើ​រូបតំណាង​ថាស ។"
-
-#~ msgid "You have 1 incoming contact request"
-#~ msgid_plural "You have %1 incoming contact requests"
-#~ msgstr[0] "អ្នក​មាន %1សំណើ​ទំនាក់ទំនង​ចូល"
-
-#~ msgid "No pending contact requests at the moment"
-#~ msgstr "គ្មាន​ទំនាក់ទំនង​មិន​ទាន់​សម្រេច​ទេ​នៅ​ពេល​នេះ"
-
-#~ msgid "No incoming contact requests"
-#~ msgstr "គ្មាន​សំណើ​ទំនាក់ទំនង​ចូល​ទេ"
+msgstr "%1 bağlantısı yapılırken bir hata oluştu - %2"

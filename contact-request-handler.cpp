@@ -20,17 +20,17 @@
 
 #include "contact-request-handler.h"
 
+#include <KTp/error-dictionary.h>
+#include <KTp/contact-info-dialog.h>
+#include <KTp/core.h>
+
+#include <TelepathyQt/Account>
+#include <TelepathyQt/AccountManager>
 #include <TelepathyQt/Connection>
 #include <TelepathyQt/Contact>
 #include <TelepathyQt/ContactManager>
-#include <TelepathyQt/PendingOperation>
 #include <TelepathyQt/PendingComposite>
-#include <TelepathyQt/Account>
-
-#include <KTp/error-dictionary.h>
-#include <KTp/contact-info-dialog.h>
-
-#include <QtCore/QFutureWatcher>
+#include <TelepathyQt/PendingOperation>
 
 #include <KDebug>
 #include <KGlobal>
@@ -39,21 +39,22 @@
 #include <KAction>
 #include <KStatusNotifierItem>
 
+#include <QtCore/QFutureWatcher>
+
 Q_DECLARE_METATYPE(Tp::ContactPtr)
 
 static bool kde_tp_filter_contacts_by_publication_status(const Tp::ContactPtr &contact)
 {
-    return contact->publishState() == Tp::Contact::PresenceStateAsk;
+    return contact->publishState() == Tp::Contact::PresenceStateAsk && !contact->isBlocked();
 }
 
-ContactRequestHandler::ContactRequestHandler(const Tp::AccountManagerPtr& am, QObject *parent)
+ContactRequestHandler::ContactRequestHandler(QObject *parent)
     : QObject(parent)
 {
-    m_accountManager = am;
-    connect(m_accountManager.data(), SIGNAL(newAccount(Tp::AccountPtr)),
+    connect(KTp::accountManager().data(), SIGNAL(newAccount(Tp::AccountPtr)),
             this, SLOT(onNewAccountAdded(Tp::AccountPtr)));
 
-    QList<Tp::AccountPtr> accounts = m_accountManager->allAccounts();
+    QList<Tp::AccountPtr> accounts = KTp::accountManager()->allAccounts();
 
     Q_FOREACH(const Tp::AccountPtr &account, accounts) {
         onNewAccountAdded(account);
@@ -66,7 +67,7 @@ ContactRequestHandler::~ContactRequestHandler()
 
 }
 
-void ContactRequestHandler::onNewAccountAdded(const Tp::AccountPtr& account)
+void ContactRequestHandler::onNewAccountAdded(const Tp::AccountPtr &account)
 {
     kWarning();
     Q_ASSERT(account->isReady(Tp::Account::FeatureCore));
@@ -80,7 +81,7 @@ void ContactRequestHandler::onNewAccountAdded(const Tp::AccountPtr& account)
             this, SLOT(onConnectionChanged(Tp::ConnectionPtr)));
 }
 
-void ContactRequestHandler::onConnectionChanged(const Tp::ConnectionPtr& connection)
+void ContactRequestHandler::onConnectionChanged(const Tp::ConnectionPtr &connection)
 {
     if (!connection.isNull()) {
         handleNewConnection(connection);
@@ -134,7 +135,7 @@ void ContactRequestHandler::onAccountsPresenceStatusFiltered()
     watcher->deleteLater();
 }
 
-void ContactRequestHandler::onPresencePublicationRequested(const Tp::Contacts& contacts)
+void ContactRequestHandler::onPresencePublicationRequested(const Tp::Contacts &contacts)
 {
     kDebug() << "New contact requested";
 
@@ -263,7 +264,7 @@ void ContactRequestHandler::onShowContactDetails()
     if (!contactId.isEmpty()) {
         const Tp::ContactPtr contact = m_pendingContacts.find(contactId).value();
         const Tp::ContactManagerPtr manager = contact->manager();
-        Q_FOREACH (const Tp::AccountPtr &account, m_accountManager->allAccounts()) {
+        Q_FOREACH (const Tp::AccountPtr &account, KTp::accountManager()->allAccounts()) {
             if (account->connection() == manager->connection()) {
                 KTp::ContactInfoDialog *dialog = new KTp::ContactInfoDialog(account, contact);
                 connect(dialog, SIGNAL(closeClicked()), dialog, SLOT(deleteLater()));
@@ -326,14 +327,21 @@ void ContactRequestHandler::onContactRequestDenied()
         QHash<QString, Tp::ContactPtr>::const_iterator i = m_pendingContacts.constFind(contactId);
         while (i != m_pendingContacts.constEnd() && i.key() == contactId) {
             if (!i.value()->manager().isNull()) {
+                //don't publish our presence to that user
                 Tp::PendingOperation *op = i.value()->manager()->removePresencePublication(QList< Tp::ContactPtr >() << i.value());
                 op->setProperty("__contact", QVariant::fromValue(i.value()));
                 operations.append(op);
+
+                //and block that contact
+                if (i.value()->manager()->canBlockContacts()) {
+                    Tp::PendingOperation *blockOp = i.value()->manager()->blockContacts(QList<Tp::ContactPtr>() << i.value());
+                    operations.append(blockOp);
+                }
             }
             ++i;
         }
 
-        // Take the first value, if any
+        // Wait until all operations complete
         if (!operations.isEmpty()) {
             Tp::ContactPtr contact = m_pendingContacts.find(contactId).value();
 

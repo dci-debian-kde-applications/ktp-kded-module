@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bosnianuniversetranslation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-09 05:28+0000\n"
-"PO-Revision-Date: 2013-09-24 21:52+0100\n"
-"Last-Translator: Samir Ribić <megaribi@epn.ba>\n"
+"POT-Creation-Date: 2014-02-12 01:29+0000\n"
+"PO-Revision-Date: 2013-11-10 23:44+0000\n"
+"Last-Translator: Amra Dautbegovic <adautbegov1@etf.unsa.ba>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
 "Language: bs\n"
 "MIME-Version: 1.0\n"
@@ -17,16 +17,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2012-12-21 01:44+0000\n"
-"X-Generator: Launchpad (build 16378)\n"
+"X-Generator: Launchpad (build 16820)\n"
+"X-Launchpad-Export-Date: 2013-11-12 06:17+0000\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Dejan Azinović,Dzenana Mahmutspahic,Samir Ribić"
+msgstr ""
+"Dejan Azinović,Dzenana Mahmutspahic,Samir Ribić,Amra Dautbegovic,Vedran "
+"Ljubovic"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "dazinovic1@etf.unsa.ba,dmahmutspa1@etf.unsa.ba,samir.ribic@etf.unsa.ba"
+msgstr ""
+"dazinovic1@etf.unsa.ba,dmahmutspa1@etf.unsa.ba,samir.ribic@etf.unsa.ba,"
+"adautbegov1@etf.unsa.ba,ljubovic@smartnet.ba"
 
 #: config/telepathy-kded-config.cpp:47
 #, no-c-format
@@ -78,25 +82,26 @@ msgstr "Ostavite prazno bez poruke"
 #: config/telepathy-kded-config.cpp:88
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went away"
-msgstr "Koristite %time da ubacite griničko vrijeme kada ste otišli"
+msgstr "Koristite %time da unesete UTC vrijeme Vašeg odlaska"
 
 #: config/telepathy-kded-config.cpp:92
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went not available"
-msgstr "Koristite %time da ubacite griničko vrijeme kada niste dostupni"
+msgstr "Koristite %time da unesete UTC vrijeme kada nista bili dostupni"
 
 #: config/telepathy-kded-config.cpp:96
 #, no-c-format
 msgid "Use %time to insert UTC time of when the screen saver was activated"
 msgstr ""
-"Koristite %time da ubacite griničko vrijeme kada se aktivirao čuvar ekrana"
+"Koristite %time da unesete UTC vrijeme kada Vam se aktivirao program za "
+"zaštitu ekrana"
 
 #: config/telepathy-kded-config.cpp:155
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Preuzimanja"
 
-#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -112,7 +117,7 @@ msgstr "Automatska konekcija"
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
 #: config/telepathy-kded-config.ui:44
 msgid "Restore last presence on login"
-msgstr "Vraćanje posljednje prisutnosti na prijavu"
+msgstr "Vrati posljednje prisustvo u prijavi"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
 #: config/telepathy-kded-config.ui:54
@@ -154,7 +159,7 @@ msgstr "Nije dostupno"
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
 #: config/telepathy-kded-config.ui:202
 msgid "Aft&er:"
-msgstr "&Nakon:"
+msgstr "&Poslije:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
 #: config/telepathy-kded-config.ui:242
@@ -164,7 +169,8 @@ msgstr "Sa poru&kom:"
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
 #: config/telepathy-kded-config.ui:273
 msgid "Set my status to Away when the screen saver is activated"
-msgstr "Postavi moj status na otsutan kada se aktivirao čuvar ekrana"
+msgstr ""
+"Postavi moj status na Odsutan kad je program za zaštitu ekrana aktiviran"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:323
@@ -174,7 +180,7 @@ msgstr "Automatko odjavljivanje"
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
 #: config/telepathy-kded-config.ui:332
 msgid "Go offline when closing the contact list"
-msgstr "Odjavi se pri zatvaranju liste kontakta"
+msgstr "Odjavi se pri zatvaranju kontakt liste"
 
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
 #: config/telepathy-kded-config.ui:342
@@ -184,7 +190,7 @@ msgstr "dolazni dokumenti"
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
 #: config/telepathy-kded-config.ui:353
 msgid "Download folder:"
-msgstr "Direktorij za preuzimanje:"
+msgstr "Folder sa preuzetim podacima:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
 #: config/telepathy-kded-config.ui:366
@@ -200,7 +206,7 @@ msgstr "Ovo je direktorij gdje ce se spremiti primljene datoteke."
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
 #: config/telepathy-kded-config.ui:388
 msgid "Automatically accept file transfers"
-msgstr "Automatski prihvati prijenos datoteka:"
+msgstr "Automatski prihvati prijenos datoteka"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
 #: config/telepathy-kded-config.ui:398
@@ -209,28 +215,28 @@ msgstr "Sad puštam"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-msgid "Enable \"Now playing...\" presence"
-msgstr "Uključi \"Sad puštam...\" prisutnost:"
+msgid "Enable \"Now playing...\" presence on login"
+msgstr "Omogući prisustvo \"Sad puštam..\" pri prijavi"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
 #: config/telepathy-kded-config.ui:419
 msgid "Message format:"
 msgstr "Format poruke:"
 
-#: contact-request-handler.cpp:178
+#: contact-request-handler.cpp:179
 msgid "New contact request"
 msgstr "Novi kontakt zahtjev"
 
-#: contact-request-handler.cpp:179
+#: contact-request-handler.cpp:180
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "Kontakt %1 želi da ćaska s vama"
 
-#: contact-request-handler.cpp:196
+#: contact-request-handler.cpp:197
 msgid "Error adding contact"
 msgstr "Greška prilikom dodavanja kontakta"
 
-#: contact-request-handler.cpp:197
+#: contact-request-handler.cpp:198
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -239,70 +245,70 @@ msgstr ""
 "%1 je uspješno dodan na vaš popis kontakata, ali bi mogli biti u "
 "nemogućnosti da  vidite svoju prisutnost. Detalji o pogrešci: %2"
 
-#: contact-request-handler.cpp:283
+#: contact-request-handler.cpp:284
 msgid "Error granting contact authorization"
 msgstr "Greška prilikom prihvaćanja kontakt zahtjeva"
 
-#: contact-request-handler.cpp:284
+#: contact-request-handler.cpp:285
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Došlo je do greške tokom prihvaćanja zahtjeva: %1"
 
-#: contact-request-handler.cpp:294
+#: contact-request-handler.cpp:295
 msgid "Contact request accepted"
 msgstr "Kontakt zahtjev prihvaćen"
 
-#: contact-request-handler.cpp:295
+#: contact-request-handler.cpp:296
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 ce sada biti u mogucnosti da vidi tvoju prisutnost"
 
-#: contact-request-handler.cpp:355
+#: contact-request-handler.cpp:363
 msgid "Error denying contact request"
 msgstr "Greška prilikom uskraćivanja zahtjeva"
 
-#: contact-request-handler.cpp:356
+#: contact-request-handler.cpp:364
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Došlo je do greške prilikom uskraćivanja zahtjeva: %1"
 
-#: contact-request-handler.cpp:365
+#: contact-request-handler.cpp:373
 msgid "Contact request denied"
 msgstr "Zahtjev odbijen"
 
-#: contact-request-handler.cpp:366
+#: contact-request-handler.cpp:374
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 neće biti u mogućnosti da vidi vašu prisutnost"
 
-#: contact-request-handler.cpp:383
+#: contact-request-handler.cpp:391
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Kontakt zahtjev na čekanju"
 
-#: contact-request-handler.cpp:387
+#: contact-request-handler.cpp:395
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Primljeni kontakt zahtjev"
 
-#: contact-request-handler.cpp:408
+#: contact-request-handler.cpp:416
 #, kde-format
 msgid "Request from %1"
 msgstr "Zahtjev od %1"
 
-#: contact-request-handler.cpp:418
-msgid "Contact Details"
-msgstr "Detalji kontakta"
-
 #: contact-request-handler.cpp:426
+msgid "Contact Details"
+msgstr "Detalji o kontaktu"
+
+#: contact-request-handler.cpp:434
 msgid "Approve"
 msgstr "Odobri"
 
-#: contact-request-handler.cpp:432
+#: contact-request-handler.cpp:440
 msgid "Deny"
 msgstr "Odbij"
 
-#: contact-request-handler.cpp:459
+#: contact-request-handler.cpp:467
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
@@ -310,7 +316,7 @@ msgstr[0] "Imate %1 kontakt koji želi da ćaska s vama"
 msgstr[1] "Imate %1 kontakta koji žele da ćaskaju s vama"
 msgstr[2] "Imate %1 kontakata koji želi da ćaskaju s vama"
 
-#: contactnotify.cpp:74
+#: contactnotify.cpp:65
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"
@@ -329,6 +335,58 @@ msgstr ""
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "Došlo je do problema prilikom pokušaja povezivanja %1 - %2"
+
+#~ msgid "Enable \"Now playing...\" presence"
+#~ msgstr "Uključi \"Sad puštam...\" prisutnost:"
+
+#~ msgctxt ""
+#~ "Title tag in now playing plugin, use one word and keep the 'o/o' "
+#~ "character."
+#~ msgid "%title"
+#~ msgstr "%title"
+
+#~ msgctxt ""
+#~ "Artist tag in now playing plugin, use one word and keep the 'o/o' "
+#~ "character."
+#~ msgid "%artist"
+#~ msgstr "%artist"
+
+#~ msgctxt ""
+#~ "Album tag in now playing plugin, use one word and keep the 'o/o' "
+#~ "character."
+#~ msgid "%album"
+#~ msgstr "%album"
+
+#~ msgctxt ""
+#~ "Track number tag in now playing plugin, use one word and keep the 'o/o' "
+#~ "character."
+#~ msgid "%track"
+#~ msgstr "%track"
+
+#~ msgctxt "Time tag. Use one word and keep the 'o/o' character."
+#~ msgid "%time"
+#~ msgstr "%time"
+
+#~ msgctxt ""
+#~ "The default text displayed by now playing plugin. track title: o/o1, "
+#~ "artist: o/o2, album: o/o3"
+#~ msgid "Now listening to %1 by %2 from album %3"
+#~ msgstr "Sada slušanje %1 do %2 od albuma %3"
+
+#~ msgctxt "o/o1 is the contact name, o/o2 is the presence name"
+#~ msgid "%1 is now %2"
+#~ msgstr "%1 je sada %2"
+
+#~ msgctxt "o/o1 is the account name"
+#~ msgid ""
+#~ "Could not connect %1. There was a network error, check your connection"
+#~ msgstr ""
+#~ "Ne možete se konektovati %1. Došlo je do greške u mreži, provjerite svoju "
+#~ "vezu"
+
+#~ msgctxt "o/o1 is the account name, o/o2 the error message"
+#~ msgid "There was a problem while trying to connect %1 - %2"
+#~ msgstr "Došlo je do problema prilikom pokušaja povezivanja %1 - %2"
 
 #~ msgid "Enabled"
 #~ msgstr "Omogućeno"

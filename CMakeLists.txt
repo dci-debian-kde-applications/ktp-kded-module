@@ -1,6 +1,6 @@
 project(ktp-kded-integration-module)
 
-set(KTP_CONTACT_LIST_VERSION "0.7.0")
+set(KTP_CONTACT_LIST_VERSION "0.7.1")
 
 set (CMAKE_MODULE_PATH
      "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules"
@@ -15,6 +15,9 @@ find_package (KTp REQUIRED)
 
 # set some default settings
 include (KDE4Defaults)
+
+# Add an option for building tests
+option(ENABLE_TESTS "Enable compilation of tests" FALSE)
 
 # make some more macros available
 include (MacroLibrary)
@@ -32,6 +35,7 @@ include_directories (${KDE4_INCLUDES}
 )
 
 set (kded_ktp_integration_module_SRCS
+     contact-cache.cpp
      contact-request-handler.cpp
      telepathy-kded-module-plugin.cpp
      telepathy-module.cpp
@@ -54,6 +58,7 @@ target_link_libraries (kded_ktp_integration_module
                        ${KDE4_KDEUI_LIBS}
                        ${KDE4_KIDLETIME_LIBRARY}
                        ${KDE4_SOLID_LIBS}
+                       ${QT_QTSQL_LIBRARIES}
 )
 
 install (TARGETS kded_ktp_integration_module
@@ -71,6 +76,10 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/org.freedesktop.Telepathy.Client.KTp.K
         DESTINATION ${DBUS_SERVICES_INSTALL_DIR})
 
 add_subdirectory(config)
+
+if(ENABLE_TESTS)
+    add_subdirectory(tests)
+endif()
 find_package(Msgfmt REQUIRED)
 find_package(Gettext REQUIRED)
 add_subdirectory( po )
