@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-09 05:28+0000\n"
-"PO-Revision-Date: 2013-09-24 15:46+0300\n"
+"POT-Creation-Date: 2014-02-12 01:29+0000\n"
+"PO-Revision-Date: 2013-10-09 08:29+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -98,7 +98,7 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Звантаження"
 
-#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -211,28 +211,28 @@ msgstr "Зараз відтворюється"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-msgid "Enable \"Now playing...\" presence"
-msgstr "Увімкнути повідомлення «Зараз відтворюється…»"
+msgid "Enable \"Now playing...\" presence on login"
+msgstr "Увімкнути повідомлення «Зараз відтворюється…» після входу до системи"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
 #: config/telepathy-kded-config.ui:419
 msgid "Message format:"
 msgstr "Формат повідомлень:"
 
-#: contact-request-handler.cpp:178
+#: contact-request-handler.cpp:179
 msgid "New contact request"
 msgstr "Новий запит щодо контакту"
 
-#: contact-request-handler.cpp:179
+#: contact-request-handler.cpp:180
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "Контакт %1 бажає мати можливість спілкуватися з вами."
 
-#: contact-request-handler.cpp:196
+#: contact-request-handler.cpp:197
 msgid "Error adding contact"
 msgstr "Помилка під час додавання контакту"
 
-#: contact-request-handler.cpp:197
+#: contact-request-handler.cpp:198
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -241,70 +241,70 @@ msgstr ""
 "%1 було успішно додано до вашого списку контактів, але, ймовірно, він чи "
 "вона не зможе переглядати дані щодо вашої присутності. Дані щодо помилки: %2"
 
-#: contact-request-handler.cpp:283
+#: contact-request-handler.cpp:284
 msgid "Error granting contact authorization"
 msgstr "Помилка під час спроби надання даних щодо уповноваження контакту"
 
-#: contact-request-handler.cpp:284
+#: contact-request-handler.cpp:285
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Під час спроби підтвердити запит сталася помилка: %1"
 
-#: contact-request-handler.cpp:294
+#: contact-request-handler.cpp:295
 msgid "Contact request accepted"
 msgstr "Запит щодо контакту підтверджено"
 
-#: contact-request-handler.cpp:295
+#: contact-request-handler.cpp:296
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "Тепер %1 зможе переглядати дані щодо вашої присутності"
 
-#: contact-request-handler.cpp:355
+#: contact-request-handler.cpp:363
 msgid "Error denying contact request"
 msgstr "Помилка під час спроби відмовити у запиті"
 
-#: contact-request-handler.cpp:356
+#: contact-request-handler.cpp:364
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Під час спроби відмовити у запиті сталася помилка: %1"
 
-#: contact-request-handler.cpp:365
+#: contact-request-handler.cpp:373
 msgid "Contact request denied"
 msgstr "У запиті щодо контакту відмовлено"
 
-#: contact-request-handler.cpp:366
+#: contact-request-handler.cpp:374
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 не зможе переглядати дані щодо вашої присутності"
 
-#: contact-request-handler.cpp:383
+#: contact-request-handler.cpp:391
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Запити щодо контакту у черзі"
 
-#: contact-request-handler.cpp:387
+#: contact-request-handler.cpp:395
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Отримані запити щодо контакту"
 
-#: contact-request-handler.cpp:408
+#: contact-request-handler.cpp:416
 #, kde-format
 msgid "Request from %1"
 msgstr "Запит від %1"
 
-#: contact-request-handler.cpp:418
+#: contact-request-handler.cpp:426
 msgid "Contact Details"
 msgstr "Дані щодо контакту"
 
-#: contact-request-handler.cpp:426
+#: contact-request-handler.cpp:434
 msgid "Approve"
 msgstr "Підтвердити"
 
-#: contact-request-handler.cpp:432
+#: contact-request-handler.cpp:440
 msgid "Deny"
 msgstr "Відмовити"
 
-#: contact-request-handler.cpp:459
+#: contact-request-handler.cpp:467
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
@@ -313,7 +313,7 @@ msgstr[1] "%1 контакти бажають мати можливість сп
 msgstr[2] "%1 контактів бажають мати можливість спілкуватися з вами"
 msgstr[3] "Один контакт бажає мати можливість спілкуватися з вами"
 
-#: contactnotify.cpp:74
+#: contactnotify.cpp:65
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"

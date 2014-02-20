@@ -19,19 +19,23 @@
 
 #include "telepathy-mpris.h"
 
+#include <KTp/global-presence.h>
+
+#include <KConfigGroup>
+#include <KDebug>
+#include <KLocalizedString>
+#include <KSharedConfig>
+
 #include <QDBusConnectionInterface>
 #include <QDBusInterface>
 #include <QDBusReply>
 #include <QVariant>
 
-#include <KDebug>
-#include <KSharedConfig>
-#include <KConfigGroup>
-#include <KLocalizedString>
+static const QLatin1String dbusInterfaceProperties("org.freedesktop.DBus.Properties");
 
-#include <TelepathyQt/AccountSet>
-
-#include <KTp/global-presence.h>
+static const QLatin1String mprisPath("/org/mpris/MediaPlayer2");
+static const QLatin1String mprisServicePrefix("org.mpris.MediaPlayer2");
+static const QLatin1String mprisInterfaceName("org.mpris.MediaPlayer2.Player");
 
 TelepathyMPRIS::TelepathyMPRIS(KTp::GlobalPresence* globalPresence, QObject* parent)
     : TelepathyKDEDModulePlugin(globalPresence, parent),
@@ -39,7 +43,7 @@ TelepathyMPRIS::TelepathyMPRIS(KTp::GlobalPresence* globalPresence, QObject* par
       m_playbackActive(false)
 {
     //read settings and detect players if plugin is enabled
-    onSettingsChanged();
+    reloadConfig();
 
     QDBusConnection::sessionBus().connect(QString(), QLatin1String("/Telepathy"), QLatin1String("org.kde.Telepathy"),
                                           QLatin1String("activateNowPlaying"), this, SLOT(onActivateNowPlaying()) );
@@ -65,7 +69,7 @@ void TelepathyMPRIS::onPlayerSignalReceived(const QString &interface, const QVar
     }
 
     // this is not the correct property interface, ignore
-    if (interface != QLatin1String("org.mpris.MediaPlayer2.Player")) {
+    if (interface != mprisInterfaceName) {
         return;
     }
 
@@ -102,14 +106,13 @@ void TelepathyMPRIS::serviceNameFetchFinished(QDBusPendingCallWatcher *callWatch
     QStringList mprisServices = reply.value();
 
     Q_FOREACH (const QString &service, mprisServices) {
-        if (!service.contains(QLatin1String("org.mpris.MediaPlayer2"))) {
+        if (!service.startsWith(mprisServicePrefix))
             continue;
-        }
-        newMediaPlayer(service);
-        m_knownPlayers.append(service);
+
+        watchPlayer(service);
     }
 
-    if (m_knownPlayers.isEmpty()) {
+    if (m_watchedPlayers.isEmpty()) {
         kDebug() << "Received empty players list while active, deactivating (player quit)";
         m_lastReceivedMetadata.clear();
         m_playbackActive = false;
@@ -119,7 +122,7 @@ void TelepathyMPRIS::serviceNameFetchFinished(QDBusPendingCallWatcher *callWatch
     }
 }
 
-void TelepathyMPRIS::onSettingsChanged()
+void TelepathyMPRIS::reloadConfig()
 {
     KSharedConfigPtr config = KSharedConfig::openConfig(QLatin1String("ktelepathyrc"));
     config.data()->reparseConfiguration();
@@ -142,30 +145,29 @@ void TelepathyMPRIS::onSettingsChanged()
     }
 }
 
-void TelepathyMPRIS::newMediaPlayer(const QString &service)
+void TelepathyMPRIS::watchPlayer(const QString &service)
 {
     kDebug() << "Found mpris service:" << service;
     requestPlaybackStatus(service);
 
     //check if we are already watching this service
-    if (!m_knownPlayers.contains(service)) {
+    if (!m_watchedPlayers.contains(service)) {
         QDBusConnection::sessionBus().connect(service,
-                                              QLatin1String("/org/mpris/MediaPlayer2"),
-                                              QLatin1String("org.freedesktop.DBus.Properties"),
+                                              mprisPath,
+                                              dbusInterfaceProperties,
                                               QLatin1String("PropertiesChanged"),
                                               this,
                                               SLOT(onPlayerSignalReceived(QString,QVariantMap,QStringList)) );
+        m_watchedPlayers.append(service);
     }
 }
 
 void TelepathyMPRIS::requestPlaybackStatus(const QString& service)
 {
-    QDBusInterface mprisInterface(service,
-                                  QLatin1String("/org/mpris/MediaPlayer2"),
-                                  QLatin1String("org.freedesktop.DBus.Properties"));
+    QDBusMessage mprisMsg = QDBusMessage::createMethodCall(service, mprisPath, dbusInterfaceProperties, QLatin1String("GetAll"));
+    mprisMsg.setArguments(QList<QVariant>() << mprisInterfaceName);
 
-    QDBusPendingCall call = mprisInterface.asyncCall(QLatin1String("GetAll"),
-                                                     QLatin1String("org.mpris.MediaPlayer2.Player"));
+    QDBusPendingCall call = QDBusConnection::sessionBus().asyncCall(mprisMsg);
 
     QDBusPendingCallWatcher *watcher = new QDBusPendingCallWatcher(call, this);
     connect(watcher, SIGNAL(finished(QDBusPendingCallWatcher*)),
@@ -176,11 +178,11 @@ void TelepathyMPRIS::serviceOwnerChanged(const QString &serviceName, const QStri
 {
     Q_UNUSED(oldOwner)
 
-    if (serviceName.contains(QLatin1String("org.mpris.MediaPlayer2"))) {
+    if (serviceName.startsWith(mprisServicePrefix)) {
         if (!newOwner.isEmpty()) {
             //if we have newOwner, we have new player registered at dbus
             kDebug() << "New player appeared on dbus, connecting...";
-            newMediaPlayer(serviceName);
+            watchPlayer(serviceName);
         } else if (newOwner.isEmpty()) {
             //if there's no owner, the player quit, look if there are any other players
             kDebug() << "Player disappeared from dbus, looking for other players...";
@@ -259,14 +261,7 @@ void TelepathyMPRIS::setTrackToPresence()
     statusMessage.replace(QLatin1String("%album"), album, Qt::CaseInsensitive);
     statusMessage.replace(QLatin1String("%track"), trackNumber, Qt::CaseInsensitive);
 
-    Tp::Presence requestedPresence = m_globalPresence->requestedPresence();
-    Tp::SimplePresence presence;
-
-    presence.type = requestedPresence.type();
-    presence.status = requestedPresence.status();
-    presence.statusMessage = statusMessage;
-
-    setRequestedPresence(Tp::Presence(presence));
+    setRequestedStatusMessage(statusMessage);
     setActive(true);
 }
 
@@ -296,14 +291,14 @@ void TelepathyMPRIS::activatePlugin(bool enabled)
 void TelepathyMPRIS::unwatchAllPlayers()
 {
     // disconnect all old player to avoid double connection
-    Q_FOREACH (const QString &service, m_knownPlayers) {
+    Q_FOREACH (const QString &service, m_watchedPlayers) {
         QDBusConnection::sessionBus().disconnect(service,
-                                                 QLatin1String("/org/mpris/MediaPlayer2"),
-                                                 QLatin1String("org.freedesktop.DBus.Properties"),
+                                                 mprisPath,
+                                                 dbusInterfaceProperties,
                                                  QLatin1String("PropertiesChanged"),
                                                  this,
                                                  SLOT(onPlayerSignalReceived(QString,QVariantMap,QStringList)) );
     }
-    m_knownPlayers.clear();
+    m_watchedPlayers.clear();
 }
 
