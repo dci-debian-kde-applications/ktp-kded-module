@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-12 01:29+0000\n"
-"PO-Revision-Date: 2013-10-21 13:37+0800\n"
+"POT-Creation-Date: 2013-12-30 05:15+0000\n"
+"PO-Revision-Date: 2013-10-03 15:05+0800\n"
 "Last-Translator: Franklin Weng <franklin at goodhorse dot idv dot tw>\n"
 "Language-Team: Chinese Traditional <kde-tw@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -24,7 +24,7 @@ msgstr "Frank Weng (a.k.a. Franklin)"
 
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "franklin@goodhorse.idv.tw"
+msgstr "franklin at goodhorse dot idv dot tw"
 
 #: config/telepathy-kded-config.cpp:47
 #, no-c-format
@@ -76,24 +76,24 @@ msgstr "沒有訊息時留白"
 #: config/telepathy-kded-config.cpp:88
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went away"
-msgstr "用 %time 插入您閒置的 UTC 時間"
+msgstr "用 %time 在顯示您離開時的 UTC 時間"
 
 #: config/telepathy-kded-config.cpp:92
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went not available"
-msgstr "用 %time 插入您不在座位上的 UTC 時間"
+msgstr "用 %time 顯示您不在座位上時的 UTC 時間"
 
 #: config/telepathy-kded-config.cpp:96
 #, no-c-format
 msgid "Use %time to insert UTC time of when the screen saver was activated"
-msgstr "用 %time 插入您啟動螢幕保護程式的 UTC 時間"
+msgstr "用 %time 顯示您的螢幕保護程式啟動的 UTC 時間"
 
 #: config/telepathy-kded-config.cpp:155
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "下載"
 
-#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -161,7 +161,7 @@ msgstr "掛上訊息(&G)："
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
 #: config/telepathy-kded-config.ui:273
 msgid "Set my status to Away when the screen saver is activated"
-msgstr "當螢幕保護程式啟動時將我的狀態設為離開"
+msgstr "當螢幕保護程式啟動時，將我的狀態設為「離開」"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:323
@@ -186,7 +186,7 @@ msgstr "下載資料夾："
 #. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
 #: config/telepathy-kded-config.ui:366
 msgid "Always Ask"
-msgstr "一定先詢問"
+msgstr "總是詢問"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
@@ -206,104 +206,104 @@ msgstr "現正播放"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-msgid "Enable \"Now playing...\" presence on login"
-msgstr "登入時開啟「現正播放」呈現"
+msgid "Enable \"Now playing...\" presence"
+msgstr "開啟「現正播放」呈現"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
 #: config/telepathy-kded-config.ui:419
 msgid "Message format:"
 msgstr "訊息格式："
 
-#: contact-request-handler.cpp:179
+#: contact-request-handler.cpp:178
 msgid "New contact request"
 msgstr "新的聯絡人要求"
 
-#: contact-request-handler.cpp:180
+#: contact-request-handler.cpp:179
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "聯絡人 %1 要與您聊天。"
 
-#: contact-request-handler.cpp:197
+#: contact-request-handler.cpp:196
 msgid "Error adding contact"
 msgstr "加入聯絡人時發生錯誤"
 
-#: contact-request-handler.cpp:198
+#: contact-request-handler.cpp:197
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
 "see when you are online. Error details: %2"
 msgstr "%1 已成功加入您的聯絡人清單，但可能無法看到您上線。錯誤詳情：%2"
 
-#: contact-request-handler.cpp:284
+#: contact-request-handler.cpp:283
 msgid "Error granting contact authorization"
 msgstr "取得聯絡人授權時發生錯誤"
 
-#: contact-request-handler.cpp:285
+#: contact-request-handler.cpp:284
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "接受此要求時發生錯誤：%1"
 
-#: contact-request-handler.cpp:295
+#: contact-request-handler.cpp:294
 msgid "Contact request accepted"
 msgstr "聯絡人要求已接受"
 
-#: contact-request-handler.cpp:296
+#: contact-request-handler.cpp:295
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 現在可以看到您上線了"
 
-#: contact-request-handler.cpp:363
+#: contact-request-handler.cpp:362
 msgid "Error denying contact request"
 msgstr "拒絕聯絡人要求時發生錯誤"
 
-#: contact-request-handler.cpp:364
+#: contact-request-handler.cpp:363
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "拒絕此要求時發生錯誤：%1"
 
-#: contact-request-handler.cpp:373
+#: contact-request-handler.cpp:372
 msgid "Contact request denied"
 msgstr "聯絡人要求已拒絕"
 
-#: contact-request-handler.cpp:374
+#: contact-request-handler.cpp:373
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 將無法看到您上線"
 
-#: contact-request-handler.cpp:391
+#: contact-request-handler.cpp:390
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "等待中的聯絡人要求"
 
-#: contact-request-handler.cpp:395
+#: contact-request-handler.cpp:394
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "已接受的聯絡人要求"
 
-#: contact-request-handler.cpp:416
+#: contact-request-handler.cpp:415
 #, kde-format
 msgid "Request from %1"
 msgstr "來自 %1 的要求"
 
-#: contact-request-handler.cpp:426
+#: contact-request-handler.cpp:425
 msgid "Contact Details"
 msgstr "聯絡人詳情"
 
-#: contact-request-handler.cpp:434
+#: contact-request-handler.cpp:433
 msgid "Approve"
 msgstr "確認"
 
-#: contact-request-handler.cpp:440
+#: contact-request-handler.cpp:439
 msgid "Deny"
 msgstr "拒絕"
 
-#: contact-request-handler.cpp:467
+#: contact-request-handler.cpp:466
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
 msgstr[0] "您有 %1 個聯絡人等著與您聊天"
 
-#: contactnotify.cpp:65
+#: contactnotify.cpp:74
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"
