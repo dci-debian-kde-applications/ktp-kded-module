@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-12 01:29+0000\n"
-"PO-Revision-Date: 2013-10-10 13:39+0200\n"
-"Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
-"Language-Team: Interlingua <kde-i18n-ia@kde.org>\n"
+"POT-Creation-Date: 2013-12-30 05:15+0000\n"
+"PO-Revision-Date: 2013-10-02 13:27+0200\n"
+"Last-Translator: G.Sora <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-l10n-ia@kde.org>\n"
 "Language: ia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgstr "%Tracia"
 #, no-c-format
 msgctxt "Time tag. Use one word and keep the '%' character."
 msgid "%time"
-msgstr "%time"
+msgstr "%tempore"
 
 #: config/telepathy-kded-config.cpp:81 config/telepathy-kded-config.cpp:84
 msgctxt ""
@@ -75,27 +75,27 @@ msgstr "Lassa vacue pro necun message"
 #: config/telepathy-kded-config.cpp:88
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went away"
-msgstr "Usa %time pro insertar le tempore UTC de quando tu deveniva absente"
+msgstr "Usa %tempore pro insertar le tempore UTC de quando tu abandona"
 
 #: config/telepathy-kded-config.cpp:92
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went not available"
 msgstr ""
-"Usa %time pro insertar le tempore UTC de quando tu deveniva non disponibile"
+"Usa %tempore pro insertar le tempore UTC de quando tu deveni non disponibile"
 
 #: config/telepathy-kded-config.cpp:96
 #, no-c-format
 msgid "Use %time to insert UTC time of when the screen saver was activated"
 msgstr ""
-"Usa %time  pro insertar le tempore UTC de quando  le salvator de schermo "
-"essseva activate"
+"Usa %tempore pro insertar le tempore UTC de quando le salveguarda schermo "
+"esseva activate"
 
 #: config/telepathy-kded-config.cpp:155
 msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Discargamentos"
 
-#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -153,7 +153,7 @@ msgstr "Non disponibile"
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
 #: config/telepathy-kded-config.ui:202
 msgid "Aft&er:"
-msgstr "P&ost:"
+msgstr "Po&st:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
 #: config/telepathy-kded-config.ui:242
@@ -163,7 +163,7 @@ msgstr "Con messa&ge:"
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
 #: config/telepathy-kded-config.ui:273
 msgid "Set my status to Away when the screen saver is activated"
-msgstr "Fixa mi stato a foras quando le salvator de schermo es activate"
+msgstr "Fixa mi stato a foras quando le salveguarda schermo es activate"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:323
@@ -199,7 +199,7 @@ msgstr "Isto es le dossier ubi files recipite essera salveguardate."
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
 #: config/telepathy-kded-config.ui:388
 msgid "Automatically accept file transfers"
-msgstr "Accepta automaticamente transferentias de file"
+msgstr "Auto-accepta transferentias de file"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
 #: config/telepathy-kded-config.ui:398
@@ -208,28 +208,28 @@ msgstr "Ora il reproduce"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-msgid "Enable \"Now playing...\" presence on login"
-msgstr "Habilita presentia de 'Ora il reproduce...'  quando on accede"
+msgid "Enable \"Now playing...\" presence"
+msgstr "habilita le presentia de 'Ora il reproduce...' "
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
 #: config/telepathy-kded-config.ui:419
 msgid "Message format:"
-msgstr "Formato de message"
+msgstr "Formato de message:"
 
-#: contact-request-handler.cpp:179
+#: contact-request-handler.cpp:178
 msgid "New contact request"
 msgstr "Requesta de nove contacto"
 
-#: contact-request-handler.cpp:180
+#: contact-request-handler.cpp:179
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "Le contacto %1 vole poter conversar con te."
 
-#: contact-request-handler.cpp:197
+#: contact-request-handler.cpp:196
 msgid "Error adding contact"
 msgstr "Error durante que il addeva contacto"
 
-#: contact-request-handler.cpp:198
+#: contact-request-handler.cpp:197
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -238,77 +238,77 @@ msgstr ""
 "%1 ha essite addite con successo a tu lista de contacto, ma poterea esser "
 "incapace de vider quando tu es in linea.Detalios de error: %2"
 
-#: contact-request-handler.cpp:284
+#: contact-request-handler.cpp:283
 msgid "Error granting contact authorization"
 msgstr "Error durante quie on garanti le authorisation de contacto"
 
-#: contact-request-handler.cpp:285
+#: contact-request-handler.cpp:284
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Il occurreva un error durante que il accettava le requesta: %1"
 
-#: contact-request-handler.cpp:295
+#: contact-request-handler.cpp:294
 msgid "Contact request accepted"
 msgstr "Requesta de contacto acceptate"
 
-#: contact-request-handler.cpp:296
+#: contact-request-handler.cpp:295
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 essera nunc capace de vider quando tu es in linea"
 
-#: contact-request-handler.cpp:363
+#: contact-request-handler.cpp:362
 msgid "Error denying contact request"
 msgstr "Error durante que il refusava requesta de contacto"
 
-#: contact-request-handler.cpp:364
+#: contact-request-handler.cpp:363
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Il occurreva un error durante que il refusava le requesta: %1"
 
-#: contact-request-handler.cpp:373
+#: contact-request-handler.cpp:372
 msgid "Contact request denied"
 msgstr "Requesta de contacto refusate"
 
-#: contact-request-handler.cpp:374
+#: contact-request-handler.cpp:373
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 non essera capace de vider quando tu es in linea"
 
-#: contact-request-handler.cpp:391
+#: contact-request-handler.cpp:390
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Requestas de contacto pendente"
 
-#: contact-request-handler.cpp:395
+#: contact-request-handler.cpp:394
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Requestas de contacto recipite"
 
-#: contact-request-handler.cpp:416
+#: contact-request-handler.cpp:415
 #, kde-format
 msgid "Request from %1"
 msgstr "Requesta ab %1"
 
-#: contact-request-handler.cpp:426
+#: contact-request-handler.cpp:425
 msgid "Contact Details"
-msgstr "Detalios de contacto"
+msgstr "detalios de contacto"
 
-#: contact-request-handler.cpp:434
+#: contact-request-handler.cpp:433
 msgid "Approve"
 msgstr "Approva"
 
-#: contact-request-handler.cpp:440
+#: contact-request-handler.cpp:439
 msgid "Deny"
 msgstr "Nega"
 
-#: contact-request-handler.cpp:467
+#: contact-request-handler.cpp:466
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
 msgstr[0] "Tu ha 1 contacto  que vole conversar con te"
 msgstr[1] "Tu ha %1 contactos que vole conversar con te"
 
-#: contactnotify.cpp:65
+#: contactnotify.cpp:74
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"

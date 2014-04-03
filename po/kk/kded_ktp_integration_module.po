@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-12 01:29+0000\n"
+"POT-Creation-Date: 2013-12-30 05:15+0000\n"
 "PO-Revision-Date: 2013-09-25 04:17+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -95,7 +95,7 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Жүктеп алулары"
 
-#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -208,9 +208,7 @@ msgstr "Ойнап жатыр"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-#, fuzzy
-#| msgid "Enable \"Now playing...\" presence"
-msgid "Enable \"Now playing...\" presence on login"
+msgid "Enable \"Now playing...\" presence"
 msgstr "'Ойнап жатыр...' хабарламасы рұқсат етілсін"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
@@ -218,20 +216,20 @@ msgstr "'Ойнап жатыр...' хабарламасы рұқсат етіл�
 msgid "Message format:"
 msgstr "Хат пішімі:"
 
-#: contact-request-handler.cpp:179
+#: contact-request-handler.cpp:178
 msgid "New contact request"
 msgstr "Жаңа контакт талабы"
 
-#: contact-request-handler.cpp:180
+#: contact-request-handler.cpp:179
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "%1 контакты Сізбен чат мүмкіндігін қалайды."
 
-#: contact-request-handler.cpp:197
+#: contact-request-handler.cpp:196
 msgid "Error adding contact"
 msgstr "Контактты тізімге қосу қатесі"
 
-#: contact-request-handler.cpp:198
+#: contact-request-handler.cpp:197
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -240,76 +238,76 @@ msgstr ""
 "%1 сәтті контакттар тізіміне енгізілді, бірақ желіде бар-жоғыңызды көре "
 "аламайды. Қате туралы мәлімет: %2"
 
-#: contact-request-handler.cpp:284
+#: contact-request-handler.cpp:283
 msgid "Error granting contact authorization"
 msgstr "Контактқа авторизациясын бергенде қате пайда болды"
 
-#: contact-request-handler.cpp:285
+#: contact-request-handler.cpp:284
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Талабын қабылдау кезінде қате пайда болды: %1"
 
-#: contact-request-handler.cpp:295
+#: contact-request-handler.cpp:294
 msgid "Contact request accepted"
 msgstr "Контакт талабы қабылданды"
 
-#: contact-request-handler.cpp:296
+#: contact-request-handler.cpp:295
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 енді Сіз желіде екенін көре алады"
 
-#: contact-request-handler.cpp:363
+#: contact-request-handler.cpp:362
 msgid "Error denying contact request"
 msgstr "Контакт талабынан бас тарту қатесі"
 
-#: contact-request-handler.cpp:364
+#: contact-request-handler.cpp:363
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Талабынан бас тарту кезінде қате пайда болды: %1"
 
-#: contact-request-handler.cpp:373
+#: contact-request-handler.cpp:372
 msgid "Contact request denied"
 msgstr "Контакт талабы қабылданбады"
 
-#: contact-request-handler.cpp:374
+#: contact-request-handler.cpp:373
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 Сіз желіде екенін көре алмайды"
 
-#: contact-request-handler.cpp:391
+#: contact-request-handler.cpp:390
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Кезекте күтіп тұрған контакт талаптар"
 
-#: contact-request-handler.cpp:395
+#: contact-request-handler.cpp:394
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Келген контакт талаптар"
 
-#: contact-request-handler.cpp:416
+#: contact-request-handler.cpp:415
 #, kde-format
 msgid "Request from %1"
 msgstr "%1 дегеннен талап"
 
-#: contact-request-handler.cpp:426
+#: contact-request-handler.cpp:425
 msgid "Contact Details"
 msgstr "Контакттың егжей-тегжейі"
 
-#: contact-request-handler.cpp:434
+#: contact-request-handler.cpp:433
 msgid "Approve"
 msgstr "Мақұлдау"
 
-#: contact-request-handler.cpp:440
+#: contact-request-handler.cpp:439
 msgid "Deny"
 msgstr "Бас тарту"
 
-#: contact-request-handler.cpp:467
+#: contact-request-handler.cpp:466
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
 msgstr[0] "%1 контакт Сізбен чат-әңгімені күтіп тұр"
 
-#: contactnotify.cpp:65
+#: contactnotify.cpp:74
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"
