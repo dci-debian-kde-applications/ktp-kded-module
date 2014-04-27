@@ -2,7 +2,7 @@ ktp-kded-integration-module (0.8.1-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Update Standards-Version to 3.9.5. No changes needed.
-  * Update ktp-common-internals and kde-telepathy-data dependencies to 0.8.0
+  * Update ktp-common-internals and kde-telepathy-data dependencies to 0.8.1
 
  -- Diane Trout <diane@ghic.org>  Sun, 27 Apr 2014 15:00:11 -0700
 

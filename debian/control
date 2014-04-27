@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 9),
  libtelepathy-qt4-dev (>= 0.9.3),
  kdelibs5-dev (>= 4:4.6),
  cmake (>= 2.8),
- libktpcommoninternalsprivate-dev (>= 0.8.0)
+ libktpcommoninternalsprivate-dev (>= 0.8.1)
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/extragear/network/telepathy/ktp-kded-module
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-kded-integration-module.git
@@ -16,7 +16,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepath
 
 Package: kde-telepathy-integration-module
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, kde-telepathy-data (>= 0.8.0)
+Depends: ${shlibs:Depends}, ${misc:Depends}, kde-telepathy-data (>= 0.8.1)
 Recommends: kde-telepathy
 Description: Telepathy integration module for the KDE Workspace
  This package contains a kded module that provides KDE Workspace
