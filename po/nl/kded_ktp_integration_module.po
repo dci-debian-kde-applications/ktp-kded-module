@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2012, 2013.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-30 05:15+0000\n"
-"PO-Revision-Date: 2013-09-24 09:45+0200\n"
+"POT-Creation-Date: 2014-03-12 05:55+0000\n"
+"PO-Revision-Date: 2014-03-12 10:08+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
 "Language: nl\n"
@@ -96,7 +96,7 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Downloads"
 
-#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -210,28 +210,29 @@ msgstr "Nu aan het afspelen"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-msgid "Enable \"Now playing...\" presence"
-msgstr "\"Nu aan het afspelen...\" zichtbaarheid inschakelen"
+msgid "Enable \"Now playing...\" presence on login"
+msgstr ""
+"Zichtbaarheid  van \"Nu aan het afspelen...\" inschakelen bij aanmelden"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
 #: config/telepathy-kded-config.ui:419
 msgid "Message format:"
 msgstr "Berichtformaat:"
 
-#: contact-request-handler.cpp:178
+#: contact-request-handler.cpp:179
 msgid "New contact request"
 msgstr "Nieuw verzoek voor contact"
 
-#: contact-request-handler.cpp:179
+#: contact-request-handler.cpp:180
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "De contactpersoon %1 wil in staat zijn om met u te chatten."
 
-#: contact-request-handler.cpp:196
+#: contact-request-handler.cpp:197
 msgid "Error adding contact"
 msgstr "Fout tijdens toevoegen van contactpersoon"
 
-#: contact-request-handler.cpp:197
+#: contact-request-handler.cpp:198
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -240,77 +241,77 @@ msgstr ""
 "%1 is met succes toegevoegd aan uw contactenlijst, maar kan niet in staat "
 "zijn om te zien of u online bent. Foutdetails: %2"
 
-#: contact-request-handler.cpp:283
+#: contact-request-handler.cpp:284
 msgid "Error granting contact authorization"
 msgstr "Fout bij toekennen van autorisatie voor contact"
 
-#: contact-request-handler.cpp:284
+#: contact-request-handler.cpp:285
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Er deed zich een fout voor bij het accepteren van het verzoek: %1"
 
-#: contact-request-handler.cpp:294
+#: contact-request-handler.cpp:295
 msgid "Contact request accepted"
 msgstr "Verzoek voor contact geaccepteerd"
 
-#: contact-request-handler.cpp:295
+#: contact-request-handler.cpp:296
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 zal nu in staat zijn te zien of u online bent"
 
-#: contact-request-handler.cpp:362
+#: contact-request-handler.cpp:363
 msgid "Error denying contact request"
 msgstr "Fout bij het afwijzen van verzoek voor contact"
 
-#: contact-request-handler.cpp:363
+#: contact-request-handler.cpp:364
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Er deed zich een fout voor bij het afwijzen van het verzoek: %1"
 
-#: contact-request-handler.cpp:372
+#: contact-request-handler.cpp:373
 msgid "Contact request denied"
 msgstr "Verzoek voor contact geweigerd"
 
-#: contact-request-handler.cpp:373
+#: contact-request-handler.cpp:374
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 zal niet in staat zijn te zien of u online bent"
 
-#: contact-request-handler.cpp:390
+#: contact-request-handler.cpp:391
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Wachtende verzoeken voor contact"
 
-#: contact-request-handler.cpp:394
+#: contact-request-handler.cpp:395
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Ontvangen verzoeken voor contact"
 
-#: contact-request-handler.cpp:415
+#: contact-request-handler.cpp:416
 #, kde-format
 msgid "Request from %1"
 msgstr "Verzoek van %1"
 
-#: contact-request-handler.cpp:425
+#: contact-request-handler.cpp:426
 msgid "Contact Details"
 msgstr "Details van contactpersoon"
 
-#: contact-request-handler.cpp:433
+#: contact-request-handler.cpp:434
 msgid "Approve"
 msgstr "Goedkeuren"
 
-#: contact-request-handler.cpp:439
+#: contact-request-handler.cpp:440
 msgid "Deny"
 msgstr "Weigeren"
 
-#: contact-request-handler.cpp:466
+#: contact-request-handler.cpp:467
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
 msgstr[0] "Er is 1 contactpersoon die met u wil chatten"
 msgstr[1] "Er zijn %1 contactpersonen die met u willen chatten"
 
-#: contactnotify.cpp:74
+#: contactnotify.cpp:65
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"
