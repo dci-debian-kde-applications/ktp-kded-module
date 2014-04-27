@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-30 05:15+0000\n"
+"POT-Creation-Date: 2014-03-12 05:55+0000\n"
 "PO-Revision-Date: 2014-03-09 16:18+0900\n"
 "Last-Translator: Park Shinjo <peremen@gmail.com>\n"
 "Language-Team: Korean <kde@peremen.name>\n"
@@ -92,7 +92,7 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "다운로드"
 
-#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -206,7 +206,7 @@ msgstr "지금 재생 중"
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
 #, fuzzy
-msgid "Enable \"Now playing...\" presence"
+msgid "Enable \"Now playing...\" presence on login"
 msgstr "로그인 시 \"지금 재생 중...\" 상태 메시지 사용"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
@@ -214,20 +214,20 @@ msgstr "로그인 시 \"지금 재생 중...\" 상태 메시지 사용"
 msgid "Message format:"
 msgstr "메시지 형식:"
 
-#: contact-request-handler.cpp:178
+#: contact-request-handler.cpp:179
 msgid "New contact request"
 msgstr "새 대화 상대 요청"
 
-#: contact-request-handler.cpp:179
+#: contact-request-handler.cpp:180
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "%1 님이 여러분과 대화하려고 합니다."
 
-#: contact-request-handler.cpp:196
+#: contact-request-handler.cpp:197
 msgid "Error adding contact"
 msgstr "대화 상대 추가 오류"
 
-#: contact-request-handler.cpp:197
+#: contact-request-handler.cpp:198
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -236,76 +236,76 @@ msgstr ""
 "%1 님이 여러분을 대화 상대 목록에 추가하였지만 온라인 상태일 때 보지 못할 수"
 "도 있습니다. 오류 정보: %2"
 
-#: contact-request-handler.cpp:283
+#: contact-request-handler.cpp:284
 msgid "Error granting contact authorization"
 msgstr "대화 상대 인증 수락 오류"
 
-#: contact-request-handler.cpp:284
+#: contact-request-handler.cpp:285
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "요청을 수락하는 중 오류 발생: %1"
 
-#: contact-request-handler.cpp:294
+#: contact-request-handler.cpp:295
 msgid "Contact request accepted"
 msgstr "대화 상대 요청 수락됨"
 
-#: contact-request-handler.cpp:295
+#: contact-request-handler.cpp:296
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 님이 온라인 상태를 볼 수 있습니다"
 
-#: contact-request-handler.cpp:362
+#: contact-request-handler.cpp:363
 msgid "Error denying contact request"
 msgstr "대화 상대 요청 거부 오류"
 
-#: contact-request-handler.cpp:363
+#: contact-request-handler.cpp:364
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "요청을 거부하는 중 오류 발생: %1"
 
-#: contact-request-handler.cpp:372
+#: contact-request-handler.cpp:373
 msgid "Contact request denied"
 msgstr "대화 상대 요청 거부됨"
 
-#: contact-request-handler.cpp:373
+#: contact-request-handler.cpp:374
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 님이 온라인 상태를 볼 수 없습니다"
 
-#: contact-request-handler.cpp:390
+#: contact-request-handler.cpp:391
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "대기 중인 대화 상대 요청"
 
-#: contact-request-handler.cpp:394
+#: contact-request-handler.cpp:395
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "받은 대화 상대 요청"
 
-#: contact-request-handler.cpp:415
+#: contact-request-handler.cpp:416
 #, kde-format
 msgid "Request from %1"
 msgstr "%1 님의 요청"
 
-#: contact-request-handler.cpp:425
+#: contact-request-handler.cpp:426
 msgid "Contact Details"
 msgstr "대화 상대 정보"
 
-#: contact-request-handler.cpp:433
+#: contact-request-handler.cpp:434
 msgid "Approve"
 msgstr "승인"
 
-#: contact-request-handler.cpp:439
+#: contact-request-handler.cpp:440
 msgid "Deny"
 msgstr "거부"
 
-#: contact-request-handler.cpp:466
+#: contact-request-handler.cpp:467
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
 msgstr[0] "%1명이 대화 상대 대기 목록에 있습니다"
 
-#: contactnotify.cpp:74
+#: contactnotify.cpp:65
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"

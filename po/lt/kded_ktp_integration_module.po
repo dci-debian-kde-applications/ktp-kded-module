@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-30 05:15+0000\n"
+"POT-Creation-Date: 2014-03-12 05:55+0000\n"
 "PO-Revision-Date: 2013-04-11 20:26+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -95,7 +95,7 @@ msgctxt "This is the download directory in user's home"
 msgid "Downloads"
 msgstr "Atsiuntimai"
 
-#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:134
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
 #, kde-format
 msgctxt ""
 "The default text displayed by now playing plugin. track title: %1, artist: "
@@ -222,7 +222,7 @@ msgstr "Dabar grojama"
 #: config/telepathy-kded-config.ui:407
 #, fuzzy
 #| msgid "'Now playing...' presence:"
-msgid "Enable \"Now playing...\" presence"
+msgid "Enable \"Now playing...\" presence on login"
 msgstr "'Dabar grojama...' būsena:"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
@@ -230,20 +230,20 @@ msgstr "'Dabar grojama...' būsena:"
 msgid "Message format:"
 msgstr ""
 
-#: contact-request-handler.cpp:178
+#: contact-request-handler.cpp:179
 msgid "New contact request"
 msgstr "Nauja kontakto užklausa"
 
-#: contact-request-handler.cpp:179
+#: contact-request-handler.cpp:180
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
 msgstr "Kontaktas %1 nori galėti kalbėti su Jumis."
 
-#: contact-request-handler.cpp:196
+#: contact-request-handler.cpp:197
 msgid "Error adding contact"
 msgstr "Klaida pridedant kontaktą"
 
-#: contact-request-handler.cpp:197
+#: contact-request-handler.cpp:198
 #, kde-format
 msgid ""
 "%1 has been added successfully to your contact list, but might be unable to "
@@ -252,70 +252,70 @@ msgstr ""
 "%1 buvo sėkmingai pridėtas į Jūsų kontaktų sąrašą, bet gali nematyti Jūsų "
 "buvimo. Klaidos informacija: %2"
 
-#: contact-request-handler.cpp:283
+#: contact-request-handler.cpp:284
 msgid "Error granting contact authorization"
 msgstr "Klaida patvirtinant kontakto prieigos teisę"
 
-#: contact-request-handler.cpp:284
+#: contact-request-handler.cpp:285
 #, kde-format
 msgid "There was an error while accepting the request: %1"
 msgstr "Įvyko klaida patvirtinant užklausą: %1"
 
-#: contact-request-handler.cpp:294
+#: contact-request-handler.cpp:295
 msgid "Contact request accepted"
 msgstr "Kontakto užklausa patvirtinta"
 
-#: contact-request-handler.cpp:295
+#: contact-request-handler.cpp:296
 #, kde-format
 msgid "%1 will now be able to see when you are online"
 msgstr "%1 dabar galės matyti kai esate prisijungę"
 
-#: contact-request-handler.cpp:362
+#: contact-request-handler.cpp:363
 msgid "Error denying contact request"
 msgstr "Klaida uždraudžiant kontakto užklausą"
 
-#: contact-request-handler.cpp:363
+#: contact-request-handler.cpp:364
 #, kde-format
 msgid "There was an error while denying the request: %1"
 msgstr "Įvyko klaida uždraudžiant užklausą: %1"
 
-#: contact-request-handler.cpp:372
+#: contact-request-handler.cpp:373
 msgid "Contact request denied"
 msgstr "Kontakto užklausa uždrausta"
 
-#: contact-request-handler.cpp:373
+#: contact-request-handler.cpp:374
 #, kde-format
 msgid "%1 will not be able to see when you are online"
 msgstr "%1 negalės matyti kada esate prisijungę"
 
-#: contact-request-handler.cpp:390
+#: contact-request-handler.cpp:391
 msgctxt "Menu title"
 msgid "Pending contact requests"
 msgstr "Laukiančios kontakto užklausos"
 
-#: contact-request-handler.cpp:394
+#: contact-request-handler.cpp:395
 msgctxt "Context menu title"
 msgid "Received contact requests"
 msgstr "Gautos kontakto užklausos"
 
-#: contact-request-handler.cpp:415
+#: contact-request-handler.cpp:416
 #, kde-format
 msgid "Request from %1"
 msgstr "Užklausa iš %1"
 
-#: contact-request-handler.cpp:425
+#: contact-request-handler.cpp:426
 msgid "Contact Details"
 msgstr ""
 
-#: contact-request-handler.cpp:433
+#: contact-request-handler.cpp:434
 msgid "Approve"
 msgstr "Patvirtinti"
 
-#: contact-request-handler.cpp:439
+#: contact-request-handler.cpp:440
 msgid "Deny"
 msgstr "Drausti"
 
-#: contact-request-handler.cpp:466
+#: contact-request-handler.cpp:467
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
@@ -324,7 +324,7 @@ msgstr[1] "Turite %1 kontaktus norinčius kalbėti su Jumis"
 msgstr[2] "Turite %1 kontaktų norinčių kalbėti su Jumis"
 msgstr[3] "Turite %1 kontaktą norinti kalbėti su Jumis"
 
-#: contactnotify.cpp:74
+#: contactnotify.cpp:65
 #, kde-format
 msgctxt "%1 is the contact name, %2 is the presence name"
 msgid "%1 is now %2"
