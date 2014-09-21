@@ -1,6 +1,6 @@
 project(ktp-kded-integration-module)
 
-set(KTP_CONTACT_LIST_VERSION "0.8.1")
+set(KTP_CONTACT_LIST_VERSION "0.8.80")
 
 set (CMAKE_MODULE_PATH
      "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules"
@@ -41,6 +41,7 @@ set (kded_ktp_integration_module_SRCS
      telepathy-module.cpp
      autoaway.cpp
      telepathy-mpris.cpp
+     status-handler.cpp
      autoconnect.cpp
      error-handler.cpp
      contactnotify.cpp

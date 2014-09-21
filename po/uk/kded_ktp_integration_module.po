@@ -4,7 +4,7 @@
 # Yuri Chornoivan <yurchor@ukr.net>, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-12 05:55+0000\n"
 "PO-Revision-Date: 2014-03-12 21:11+0200\n"
