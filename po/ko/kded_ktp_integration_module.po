@@ -15,7 +15,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 1.5\n"
 
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -205,7 +204,6 @@ msgstr "지금 재생 중"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-#, fuzzy
 msgid "Enable \"Now playing...\" presence on login"
 msgstr "로그인 시 \"지금 재생 중...\" 상태 메시지 사용"
 

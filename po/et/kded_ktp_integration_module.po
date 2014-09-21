@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Marek Laane <bald@smail.ee>, 2012.
+# Marek Laane <bald@smail.ee>, 2012, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-12 05:55+0000\n"
-"PO-Revision-Date: 2012-12-04 06:45+0200\n"
+"PO-Revision-Date: 2014-06-13 14:01+0300\n"
 "Last-Translator: Marek Laane <bald@smail.ee>\n"
 "Language-Team: Estonian <kde-et@linux.ee>\n"
 "Language: et\n"
@@ -58,7 +58,7 @@ msgstr "%pala"
 #, no-c-format
 msgctxt "Time tag. Use one word and keep the '%' character."
 msgid "%time"
-msgstr ""
+msgstr "%kellaaeg"
 
 #: config/telepathy-kded-config.cpp:81 config/telepathy-kded-config.cpp:84
 msgctxt ""
@@ -75,17 +75,18 @@ msgstr "Jäta tühjaks, kui sa ei soovi sõnumit"
 #: config/telepathy-kded-config.cpp:88
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went away"
-msgstr ""
+msgstr "%kellaaeg kasutamine UTC aja sisestamiseks enda eemaleminekul"
 
 #: config/telepathy-kded-config.cpp:92
 #, no-c-format
 msgid "Use %time to insert UTC time of when you went not available"
-msgstr ""
+msgstr "%kellaaeg kasutamine UTC aja sisestamiseks enda kättesaamatuse korral"
 
 #: config/telepathy-kded-config.cpp:96
 #, no-c-format
 msgid "Use %time to insert UTC time of when the screen saver was activated"
 msgstr ""
+"%kellaaeg kasutamine UTC aja sisestamiseks ekraanisäästja aktiveerimisel"
 
 #: config/telepathy-kded-config.cpp:155
 msgctxt "This is the download directory in user's home"
@@ -107,8 +108,6 @@ msgstr "Automaatne ühendumine"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
 #: config/telepathy-kded-config.ui:44
-#, fuzzy
-#| msgid "Restore last presence on login:"
 msgid "Restore last presence on login"
 msgstr "Viimase oleku taastamine sisselogimisel"
 
@@ -141,10 +140,8 @@ msgstr "tegevusetust"
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
 #: config/telepathy-kded-config.ui:143 config/telepathy-kded-config.ui:300
-#, fuzzy
-#| msgid "With message:"
 msgid "With &message:"
-msgstr "Sõnumiga:"
+msgstr "Sõnu&miga:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
 #: config/telepathy-kded-config.ui:170
@@ -154,19 +151,17 @@ msgstr "Pole saadaval"
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
 #: config/telepathy-kded-config.ui:202
 msgid "Aft&er:"
-msgstr ""
+msgstr "Pär&ast"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
 #: config/telepathy-kded-config.ui:242
-#, fuzzy
-#| msgid "With message:"
 msgid "With messa&ge:"
-msgstr "Sõnumiga:"
+msgstr "Sõnumi&ga:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
 #: config/telepathy-kded-config.ui:273
 msgid "Set my status to Away when the screen saver is activated"
-msgstr ""
+msgstr "Oleku määramine eemalviibivaks ekraanisäästja aktiveerimisel"
 
 #. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
 #: config/telepathy-kded-config.ui:323
@@ -175,10 +170,8 @@ msgstr "Automaatne võrgust väljasolek"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
 #: config/telepathy-kded-config.ui:332
-#, fuzzy
-#| msgid "Go offline when closing the contact list:"
 msgid "Go offline when closing the contact list"
-msgstr "Võrgust väljaminek kontaktiloendi sulgemisel:"
+msgstr "Võrgust väljaminek kontaktiloendi sulgemisel"
 
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
 #: config/telepathy-kded-config.ui:342
@@ -187,15 +180,13 @@ msgstr "Saabunud failid"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
 #: config/telepathy-kded-config.ui:353
-#, fuzzy
-#| msgid "Download Folder:"
 msgid "Download folder:"
 msgstr "Allalaadimiste kataloog:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
 #: config/telepathy-kded-config.ui:366
 msgid "Always Ask"
-msgstr ""
+msgstr "Alati küsitakse"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
@@ -205,10 +196,8 @@ msgstr "Kataloog, kuhu salvestatakse saabunud failid."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
 #: config/telepathy-kded-config.ui:388
-#, fuzzy
-#| msgid "Auto-accept file transfers:"
 msgid "Automatically accept file transfers"
-msgstr "Automaatne nõustumine failiülekannetega:"
+msgstr "Automaatne nõustumine failiülekannetega"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
 #: config/telepathy-kded-config.ui:398
@@ -217,15 +206,13 @@ msgstr "Praegu mängitakse"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
 #: config/telepathy-kded-config.ui:407
-#, fuzzy
-#| msgid "'Now playing...' presence:"
 msgid "Enable \"Now playing...\" presence on login"
-msgstr "\"Praegu mängitakse\" kohalolek:"
+msgstr "\"Praegu mängitakse\" kohaloleku lubamine sisselogimisel"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
 #: config/telepathy-kded-config.ui:419
 msgid "Message format:"
-msgstr ""
+msgstr "Sõnumi vorming:"
 
 #: contact-request-handler.cpp:179
 msgid "New contact request"
@@ -234,7 +221,7 @@ msgstr "Uus kontaktisoov"
 #: contact-request-handler.cpp:180
 #, kde-format
 msgid "The contact %1 wants to be able to chat with you."
-msgstr ""
+msgstr "Kontakt %1 soovib saada võimalust sinuga vestelda"
 
 #: contact-request-handler.cpp:197
 msgid "Error adding contact"
@@ -302,7 +289,7 @@ msgstr "Soov kasutajalt %1"
 
 #: contact-request-handler.cpp:426
 msgid "Contact Details"
-msgstr ""
+msgstr "Kontakti üksikasjad"
 
 #: contact-request-handler.cpp:434
 msgid "Approve"
@@ -316,8 +303,8 @@ msgstr "Lükka tagasi"
 #, kde-format
 msgid "You have 1 contact wanting to chat with you"
 msgid_plural "You have %1 contacts wanting to chat with you"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 kontakt soovib saada võimalust sinuga vestelda"
+msgstr[1] "%1 kontakti soovivad saada võimalust sinuga vestelda"
 
 #: contactnotify.cpp:65
 #, kde-format

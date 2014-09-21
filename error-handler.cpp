@@ -130,7 +130,7 @@ void ErrorHandler::showErrorNotification()
     QString errorMessage;
 
     QHash<Tp::AccountPtr, ConnectionError>::iterator i = m_errorMap.begin();
-    while (i != m_errorMap.constEnd()) {
+    while (i != m_errorMap.end()) {
         const Tp::AccountPtr account = i.key();
         ConnectionError &error = i.value();
 
@@ -176,12 +176,14 @@ void ErrorHandler::onConnectionStatusChanged(const Tp::ConnectionStatus status)
     }
 
     if (status == Tp::ConnectionStatusDisconnected) {
-        //if this is the first error for this account, store the details of the error to show
+        //if we're deliberately disconnected do nothing
+        //else if this is the first error for this account, store the details of the error to show
         if (account->connectionStatusReason() == Tp::ConnectionStatusReasonRequested) {
             m_errorMap.remove(account);
         } else if (!m_errorMap.contains(account)) {
             m_errorMap.insert(account, ConnectionError(account->connectionStatusReason(), account->connectionError(), account->connectionErrorDetails()));
             QTimer::singleShot(30 * 1000, this, SLOT(showErrorNotification())); //a timer is kept per account because we want to show 30 seconds after the first still valid error.
+            account->reconnect();
         }
 
     } else  if (status == Tp::ConnectionStatusConnected) {
