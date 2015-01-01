@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-12 05:55+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2014-03-09 16:18+0900\n"
 "Last-Translator: Park Shinjo <peremen@gmail.com>\n"
 "Language-Team: Korean <kde@peremen.name>\n"
@@ -99,116 +99,106 @@ msgctxt ""
 msgid "Now listening to %1 by %2 from album %3"
 msgstr "지금 재생 중: %2 - %3 - %1"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: config/telepathy-kded-config.ui:35
-msgid "Auto connect"
-msgstr "자동 연결"
-
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
 #: config/telepathy-kded-config.ui:44
 msgid "Restore last presence on login"
 msgstr "로그인 시 마지막 상태 복원"
 
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:51
+msgid "Go offline when closing the contact list"
+msgstr "대화 상대 목록을 닫을 때 오프라인으로 전환"
+
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: config/telepathy-kded-config.ui:54
+#: config/telepathy-kded-config.ui:61
 msgid "Auto away"
 msgstr "자동 자리 비움"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/telepathy-kded-config.ui:63
+#: config/telepathy-kded-config.ui:70
 msgid "Set my status to:"
 msgstr "내 상태를 다음으로 설정:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: config/telepathy-kded-config.ui:74
+#: config/telepathy-kded-config.ui:81
 msgid "Away"
 msgstr "자리 비움"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
-#: config/telepathy-kded-config.ui:103
+#: config/telepathy-kded-config.ui:110
 msgid "After:"
 msgstr "이후:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayInactivityLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaInactivityLabel)
-#: config/telepathy-kded-config.ui:132 config/telepathy-kded-config.ui:231
+#: config/telepathy-kded-config.ui:139 config/telepathy-kded-config.ui:238
 msgid "of inactivity"
 msgstr "비활성 시간"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
-#: config/telepathy-kded-config.ui:143 config/telepathy-kded-config.ui:300
+#: config/telepathy-kded-config.ui:150 config/telepathy-kded-config.ui:307
 msgid "With &message:"
 msgstr "다음 메시지 사용(&M):"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: config/telepathy-kded-config.ui:170
+#: config/telepathy-kded-config.ui:177
 msgid "Not available"
 msgstr "사용할 수 없음"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: config/telepathy-kded-config.ui:202
+#: config/telepathy-kded-config.ui:209
 msgid "Aft&er:"
 msgstr "이후(&E):"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: config/telepathy-kded-config.ui:242
+#: config/telepathy-kded-config.ui:249
 msgid "With messa&ge:"
 msgstr "다음 메시지 사용(&G):"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
-#: config/telepathy-kded-config.ui:273
+#: config/telepathy-kded-config.ui:280
 msgid "Set my status to Away when the screen saver is activated"
 msgstr "화면 보호기가 활성화되었을 때 자리 비움으로 설정"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
-#: config/telepathy-kded-config.ui:323
-msgid "Auto Offline"
-msgstr "자동 오프라인"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
-#: config/telepathy-kded-config.ui:332
-msgid "Go offline when closing the contact list"
-msgstr "대화 상대 목록을 닫을 때 오프라인으로 전환"
-
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
-#: config/telepathy-kded-config.ui:342
+#: config/telepathy-kded-config.ui:330
 msgid "Incoming files"
 msgstr "받는 파일"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: config/telepathy-kded-config.ui:353
+#: config/telepathy-kded-config.ui:341
 msgid "Download folder:"
 msgstr "다운로드 폴더:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
-#: config/telepathy-kded-config.ui:366
+#: config/telepathy-kded-config.ui:354
 msgid "Always Ask"
 msgstr "항상 묻기"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: config/telepathy-kded-config.ui:373 config/telepathy-kded-config.ui:376
+#: config/telepathy-kded-config.ui:361 config/telepathy-kded-config.ui:364
 msgid "This is the folder where received files will be saved."
 msgstr "받은 파일을 저장할 폴더입니다."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
-#: config/telepathy-kded-config.ui:388
+#: config/telepathy-kded-config.ui:373
 msgid "Automatically accept file transfers"
 msgstr "자동으로 들어오는 파일 전송 수락"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: config/telepathy-kded-config.ui:398
+#: config/telepathy-kded-config.ui:383
 msgid "Now playing"
 msgstr "지금 재생 중"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
-#: config/telepathy-kded-config.ui:407
+#: config/telepathy-kded-config.ui:392
 msgid "Enable \"Now playing...\" presence on login"
 msgstr "로그인 시 \"지금 재생 중...\" 상태 메시지 사용"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
-#: config/telepathy-kded-config.ui:419
+#: config/telepathy-kded-config.ui:404
 msgid "Message format:"
 msgstr "메시지 형식:"
 
@@ -322,3 +312,9 @@ msgstr ""
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "%1에 연결할 수 없음 - %2"
+
+#~ msgid "Auto connect"
+#~ msgstr "자동 연결"
+
+#~ msgid "Auto Offline"
+#~ msgstr "자동 오프라인"

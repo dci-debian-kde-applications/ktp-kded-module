@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kded_ktp_integration_module\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-12 05:55+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2014-03-12 09:14+0100\n"
 "Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -104,116 +104,106 @@ msgctxt ""
 msgid "Now listening to %1 by %2 from album %3"
 msgstr "Ich höre gerade %1 von %2 von dem Album %3"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: config/telepathy-kded-config.ui:35
-msgid "Auto connect"
-msgstr "Automatisch verbinden"
-
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
 #: config/telepathy-kded-config.ui:44
 msgid "Restore last presence on login"
 msgstr "Beim Verbinden zuletzt gesetzten Status wiederherstellen"
 
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:51
+msgid "Go offline when closing the contact list"
+msgstr "Offline gehen beim Schließen der Kontaktliste"
+
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: config/telepathy-kded-config.ui:54
+#: config/telepathy-kded-config.ui:61
 msgid "Auto away"
 msgstr "Automatische Abwesenheit"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/telepathy-kded-config.ui:63
+#: config/telepathy-kded-config.ui:70
 msgid "Set my status to:"
 msgstr "Meinen Status setzen auf:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: config/telepathy-kded-config.ui:74
+#: config/telepathy-kded-config.ui:81
 msgid "Away"
 msgstr "Abwesend"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
-#: config/telepathy-kded-config.ui:103
+#: config/telepathy-kded-config.ui:110
 msgid "After:"
 msgstr "Nach:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayInactivityLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaInactivityLabel)
-#: config/telepathy-kded-config.ui:132 config/telepathy-kded-config.ui:231
+#: config/telepathy-kded-config.ui:139 config/telepathy-kded-config.ui:238
 msgid "of inactivity"
 msgstr "Inaktivität"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
-#: config/telepathy-kded-config.ui:143 config/telepathy-kded-config.ui:300
+#: config/telepathy-kded-config.ui:150 config/telepathy-kded-config.ui:307
 msgid "With &message:"
 msgstr "&Mit Nachricht:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: config/telepathy-kded-config.ui:170
+#: config/telepathy-kded-config.ui:177
 msgid "Not available"
 msgstr "Nicht verfügbar"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: config/telepathy-kded-config.ui:202
+#: config/telepathy-kded-config.ui:209
 msgid "Aft&er:"
 msgstr "N&ach:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: config/telepathy-kded-config.ui:242
+#: config/telepathy-kded-config.ui:249
 msgid "With messa&ge:"
 msgstr "Mit Nac&hricht:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
-#: config/telepathy-kded-config.ui:273
+#: config/telepathy-kded-config.ui:280
 msgid "Set my status to Away when the screen saver is activated"
 msgstr "Status bei der Aktivierung des Bildschirmschoners auf Abwesend setzen"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
-#: config/telepathy-kded-config.ui:323
-msgid "Auto Offline"
-msgstr "Automatisch Offline"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
-#: config/telepathy-kded-config.ui:332
-msgid "Go offline when closing the contact list"
-msgstr "Offline gehen beim Schließen der Kontaktliste"
-
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
-#: config/telepathy-kded-config.ui:342
+#: config/telepathy-kded-config.ui:330
 msgid "Incoming files"
 msgstr "Eingehende Dateien"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: config/telepathy-kded-config.ui:353
+#: config/telepathy-kded-config.ui:341
 msgid "Download folder:"
 msgstr "Download-Ordner:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
-#: config/telepathy-kded-config.ui:366
+#: config/telepathy-kded-config.ui:354
 msgid "Always Ask"
 msgstr "Immer nachfragen"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: config/telepathy-kded-config.ui:373 config/telepathy-kded-config.ui:376
+#: config/telepathy-kded-config.ui:361 config/telepathy-kded-config.ui:364
 msgid "This is the folder where received files will be saved."
 msgstr "In diesem Ordner werden empfangene Dateien gespeichert."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
-#: config/telepathy-kded-config.ui:388
+#: config/telepathy-kded-config.ui:373
 msgid "Automatically accept file transfers"
 msgstr "Dateiübertragungen automatisch annehmen"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: config/telepathy-kded-config.ui:398
+#: config/telepathy-kded-config.ui:383
 msgid "Now playing"
 msgstr "Ich höre gerade"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
-#: config/telepathy-kded-config.ui:407
+#: config/telepathy-kded-config.ui:392
 msgid "Enable \"Now playing...\" presence on login"
 msgstr "„Ich höre gerade“-Status bei der Anmeldung aktivieren"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
-#: config/telepathy-kded-config.ui:419
+#: config/telepathy-kded-config.ui:404
 msgid "Message format:"
 msgstr "Nachrichtenformat:"
 
@@ -328,6 +318,12 @@ msgstr ""
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "Beim Verbinden von %1 ist ein Fehler aufgetreten - %2 "
+
+#~ msgid "Auto connect"
+#~ msgstr "Automatisch verbinden"
+
+#~ msgid "Auto Offline"
+#~ msgstr "Automatisch Offline"
 
 #~ msgid "Enabled"
 #~ msgstr "Aktiviert"

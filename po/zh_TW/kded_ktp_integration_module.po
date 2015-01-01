@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-12 05:55+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2014-04-02 14:44+0800\n"
 "Last-Translator: Franklin Weng <franklin at goodhorse dot idv dot tw>\n"
 "Language-Team: Chinese Traditional <kde-tw@googlegroups.com>\n"
@@ -101,116 +101,106 @@ msgctxt ""
 msgid "Now listening to %1 by %2 from album %3"
 msgstr "正在收聽 %2 的專輯 %3 裡的 %1"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: config/telepathy-kded-config.ui:35
-msgid "Auto connect"
-msgstr "自動連線"
-
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
 #: config/telepathy-kded-config.ui:44
 msgid "Restore last presence on login"
 msgstr "登入時回復上次的狀態"
 
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:51
+msgid "Go offline when closing the contact list"
+msgstr "關閉聯絡人清單時自動離線"
+
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: config/telepathy-kded-config.ui:54
+#: config/telepathy-kded-config.ui:61
 msgid "Auto away"
 msgstr "自動離開"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/telepathy-kded-config.ui:63
+#: config/telepathy-kded-config.ui:70
 msgid "Set my status to:"
 msgstr "設定我的狀態為："
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: config/telepathy-kded-config.ui:74
+#: config/telepathy-kded-config.ui:81
 msgid "Away"
 msgstr "離開"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
-#: config/telepathy-kded-config.ui:103
+#: config/telepathy-kded-config.ui:110
 msgid "After:"
 msgstr "多久之後："
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayInactivityLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaInactivityLabel)
-#: config/telepathy-kded-config.ui:132 config/telepathy-kded-config.ui:231
+#: config/telepathy-kded-config.ui:139 config/telepathy-kded-config.ui:238
 msgid "of inactivity"
 msgstr "沒有任何動作"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
-#: config/telepathy-kded-config.ui:143 config/telepathy-kded-config.ui:300
+#: config/telepathy-kded-config.ui:150 config/telepathy-kded-config.ui:307
 msgid "With &message:"
 msgstr "掛上訊息(&M)："
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: config/telepathy-kded-config.ui:170
+#: config/telepathy-kded-config.ui:177
 msgid "Not available"
 msgstr "沒空"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: config/telepathy-kded-config.ui:202
+#: config/telepathy-kded-config.ui:209
 msgid "Aft&er:"
 msgstr "多久之後(&E)："
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: config/telepathy-kded-config.ui:242
+#: config/telepathy-kded-config.ui:249
 msgid "With messa&ge:"
 msgstr "掛上訊息(&G)："
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
-#: config/telepathy-kded-config.ui:273
+#: config/telepathy-kded-config.ui:280
 msgid "Set my status to Away when the screen saver is activated"
 msgstr "當螢幕保護程式啟動時，將我的狀態設為「離開」"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
-#: config/telepathy-kded-config.ui:323
-msgid "Auto Offline"
-msgstr "自動離線"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
-#: config/telepathy-kded-config.ui:332
-msgid "Go offline when closing the contact list"
-msgstr "關閉聯絡人清單時自動離線"
-
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
-#: config/telepathy-kded-config.ui:342
+#: config/telepathy-kded-config.ui:330
 msgid "Incoming files"
 msgstr "進來的檔案"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: config/telepathy-kded-config.ui:353
+#: config/telepathy-kded-config.ui:341
 msgid "Download folder:"
 msgstr "下載資料夾："
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
-#: config/telepathy-kded-config.ui:366
+#: config/telepathy-kded-config.ui:354
 msgid "Always Ask"
 msgstr "總是詢問"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: config/telepathy-kded-config.ui:373 config/telepathy-kded-config.ui:376
+#: config/telepathy-kded-config.ui:361 config/telepathy-kded-config.ui:364
 msgid "This is the folder where received files will be saved."
 msgstr "接收到的檔案要儲存在哪個資料夾。"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
-#: config/telepathy-kded-config.ui:388
+#: config/telepathy-kded-config.ui:373
 msgid "Automatically accept file transfers"
 msgstr "自動接受檔案傳輸"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: config/telepathy-kded-config.ui:398
+#: config/telepathy-kded-config.ui:383
 msgid "Now playing"
 msgstr "現正播放"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
-#: config/telepathy-kded-config.ui:407
+#: config/telepathy-kded-config.ui:392
 msgid "Enable \"Now playing...\" presence on login"
 msgstr "登入時開啟「現正播放」呈現"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
-#: config/telepathy-kded-config.ui:419
+#: config/telepathy-kded-config.ui:404
 msgid "Message format:"
 msgstr "訊息格式："
 
@@ -320,6 +310,12 @@ msgstr "無法連線 %1。網路發生錯誤。請檢查您的網路連線。"
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "試著連線到 %1 時發生問題 - %2"
+
+#~ msgid "Auto connect"
+#~ msgstr "自動連線"
+
+#~ msgid "Auto Offline"
+#~ msgstr "自動離線"
 
 #~ msgid "Enabled"
 #~ msgstr "已開啟"
