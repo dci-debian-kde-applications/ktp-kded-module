@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 9),
  libtelepathy-qt4-dev (>= 0.9.5),
  kdelibs5-dev (>= 4:4.6),
  cmake (>= 2.8),
- libktpcommoninternalsprivate-dev (>= 0.8.80)
+ libktpcommoninternalsprivate-dev (>= 0.9.0)
 Standards-Version: 3.9.5
 Homepage: https://projects.kde.org/projects/extragear/network/telepathy/ktp-kded-module
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-kded-integration-module.git
