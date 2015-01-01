@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-03-12 05:55+0000\n"
+"POT-Creation-Date: 2014-09-17 05:13+0000\n"
 "PO-Revision-Date: 2013-04-11 20:26+0300\n"
 "Last-Translator: Liudas Ališauskas <liudas.alisauskas@gmail.com>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
@@ -103,11 +103,6 @@ msgctxt ""
 msgid "Now listening to %1 by %2 from album %3"
 msgstr "Dabar klausau %1 sukurtą %2 iš albumo %3"
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoConnectGroupBox)
-#: config/telepathy-kded-config.ui:35
-msgid "Auto connect"
-msgstr "Automatiškai prisijungti"
-
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
 #: config/telepathy-kded-config.ui:44
 #, fuzzy
@@ -115,118 +110,113 @@ msgstr "Automatiškai prisijungti"
 msgid "Restore last presence on login"
 msgstr "Atstatyti paskutinę būseną prisijungus:"
 
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:51
+#, fuzzy
+#| msgid "Go offline when closing the contact list:"
+msgid "Go offline when closing the contact list"
+msgstr "Atsijungti kai uždaromas kontaktų sąrašas:"
+
 #. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
-#: config/telepathy-kded-config.ui:54
+#: config/telepathy-kded-config.ui:61
 msgid "Auto away"
 msgstr "Automatiškai pasitraukti"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/telepathy-kded-config.ui:63
+#: config/telepathy-kded-config.ui:70
 msgid "Set my status to:"
 msgstr "Nustatyti mano būseną į:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
-#: config/telepathy-kded-config.ui:74
+#: config/telepathy-kded-config.ui:81
 msgid "Away"
 msgstr "Pasitraukęs"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
-#: config/telepathy-kded-config.ui:103
+#: config/telepathy-kded-config.ui:110
 msgid "After:"
 msgstr "Po:"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayInactivityLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_xaInactivityLabel)
-#: config/telepathy-kded-config.ui:132 config/telepathy-kded-config.ui:231
+#: config/telepathy-kded-config.ui:139 config/telepathy-kded-config.ui:238
 msgid "of inactivity"
 msgstr "neveiklumo"
 
 #. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
-#: config/telepathy-kded-config.ui:143 config/telepathy-kded-config.ui:300
+#: config/telepathy-kded-config.ui:150 config/telepathy-kded-config.ui:307
 #, fuzzy
 #| msgid "With message:"
 msgid "With &message:"
 msgstr "Su pranešimu:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
-#: config/telepathy-kded-config.ui:170
+#: config/telepathy-kded-config.ui:177
 msgid "Not available"
 msgstr "Nepasiekiamas"
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
-#: config/telepathy-kded-config.ui:202
+#: config/telepathy-kded-config.ui:209
 msgid "Aft&er:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
-#: config/telepathy-kded-config.ui:242
+#: config/telepathy-kded-config.ui:249
 #, fuzzy
 #| msgid "With message:"
 msgid "With messa&ge:"
 msgstr "Su pranešimu:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
-#: config/telepathy-kded-config.ui:273
+#: config/telepathy-kded-config.ui:280
 msgid "Set my status to Away when the screen saver is activated"
 msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, autoOfflineGroupBox)
-#: config/telepathy-kded-config.ui:323
-msgid "Auto Offline"
-msgstr "Auto Atsijungęs"
-
-#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
-#: config/telepathy-kded-config.ui:332
-#, fuzzy
-#| msgid "Go offline when closing the contact list:"
-msgid "Go offline when closing the contact list"
-msgstr "Atsijungti kai uždaromas kontaktų sąrašas:"
-
 #. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
-#: config/telepathy-kded-config.ui:342
+#: config/telepathy-kded-config.ui:330
 msgid "Incoming files"
 msgstr "Įeinantis failai"
 
 #. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
-#: config/telepathy-kded-config.ui:353
+#: config/telepathy-kded-config.ui:341
 #, fuzzy
 #| msgid "Download Folder:"
 msgid "Download folder:"
 msgstr "Atsisiuntimų aplankas:"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
-#: config/telepathy-kded-config.ui:366
+#: config/telepathy-kded-config.ui:354
 msgid "Always Ask"
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
-#: config/telepathy-kded-config.ui:373 config/telepathy-kded-config.ui:376
+#: config/telepathy-kded-config.ui:361 config/telepathy-kded-config.ui:364
 msgid "This is the folder where received files will be saved."
 msgstr "Tai yra aplankas, kur bus saugomi gauti failai."
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
-#: config/telepathy-kded-config.ui:388
+#: config/telepathy-kded-config.ui:373
 #, fuzzy
 #| msgid "Auto-accept file transfers:"
 msgid "Automatically accept file transfers"
 msgstr "Automatiškai patvirtinti failų persiuntimus:"
 
 #. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
-#: config/telepathy-kded-config.ui:398
+#: config/telepathy-kded-config.ui:383
 msgid "Now playing"
 msgstr "Dabar grojama"
 
 #. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
-#: config/telepathy-kded-config.ui:407
+#: config/telepathy-kded-config.ui:392
 #, fuzzy
 #| msgid "'Now playing...' presence:"
 msgid "Enable \"Now playing...\" presence on login"
 msgstr "'Dabar grojama...' būsena:"
 
 #. i18n: ectx: property (text), widget (QLabel, message_format_label)
-#: config/telepathy-kded-config.ui:419
+#: config/telepathy-kded-config.ui:404
 msgid "Message format:"
 msgstr ""
 
@@ -341,6 +331,12 @@ msgstr "Nepavyko prisijungti %1. Buvo tinklo klaida, patikrinkite Jūsų ryšį"
 msgctxt "%1 is the account name, %2 the error message"
 msgid "There was a problem while trying to connect %1 - %2"
 msgstr "Buvo problema mėginant prisijungti %1 - %2"
+
+#~ msgid "Auto connect"
+#~ msgstr "Automatiškai prisijungti"
+
+#~ msgid "Auto Offline"
+#~ msgstr "Auto Atsijungęs"
 
 #~ msgid "Enabled"
 #~ msgstr "Įjungta"
