@@ -1,6 +1,1 @@
-usr/lib/kde4/kded_ktp_integration_module.so
-usr/lib/kde4/kcm_ktp_integration_module.so
-usr/share/dbus-1/services/org.freedesktop.Telepathy.Client.KTp.KdedIntegrationModule.service
-usr/share/kde4/services/kded/kded_ktp_integration_module.desktop
-usr/share/kde4/services/kcm_ktp_integration_module.desktop
-usr/share/locale/*
+usr/*
