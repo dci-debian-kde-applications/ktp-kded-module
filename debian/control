@@ -47,9 +47,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/applications/ktp-kded-i
 
 Package: kde-telepathy-integration-module
 Architecture: any
-Depends: kde-telepathy-data (>= ${source:Upstream-Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: kde-telepathy-data, ${misc:Depends}, ${shlibs:Depends}
 Recommends: kde-telepathy
 Description: Telepathy integration module for the KDE Workspace
  This package contains a kded module that provides KDE Workspace
