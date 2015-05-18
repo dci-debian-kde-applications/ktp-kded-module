@@ -1,40 +1,40 @@
 project(ktp-kded-integration-module)
 
-set(KTP_CONTACT_LIST_VERSION "0.8.80")
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 
-set (CMAKE_MODULE_PATH
-     "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules"
-     ${CMAKE_MODULE_PATH}
-)
+set(KTP_KDED_MODULE_VERSION "15.04.1")
+
 cmake_policy(SET CMP0002 OLD)
 
 set(IS_KTP_INTERNAL_MODULE TRUE)
-find_package (KDE4 REQUIRED)
-find_package (TelepathyQt4 0.8.9 REQUIRED)
-find_package (KTp REQUIRED)
 
-# set some default settings
-include (KDE4Defaults)
+find_package(ECM 1.3.0 REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${CMAKE_MODULE_PATH})
+
+include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDECompilerSettings)
+include(FeatureSummary)
+
+find_package (Qt5 REQUIRED COMPONENTS Concurrent Widgets Sql Network)
+find_package (KF5 REQUIRED COMPONENTS DBusAddons WidgetsAddons Config I18n KIO Notifications ConfigWidgets IdleTime KCMUtils)
+
+find_package (KTp REQUIRED)
 
 # Add an option for building tests
 option(ENABLE_TESTS "Enable compilation of tests" FALSE)
 
-# make some more macros available
-include (MacroLibrary)
-
-add_definitions (${KDE4_DEFINITIONS}
-                 -DQT_NO_CAST_FROM_ASCII
+add_definitions (-DQT_NO_CAST_FROM_ASCII
                  -DQT_NO_KEYWORDS
+                 -DTRANSLATION_DOMAIN=\"kded_ktp_integration_module\"
 )
 
-include_directories (${KDE4_INCLUDES}
-                     ${CMAKE_CURRENT_BINARY_DIR}
+include_directories (${CMAKE_CURRENT_BINARY_DIR}
                      ${CMAKE_CURRENT_SOURCE_DIR}
-                     ${TELEPATHY_QT4_INCLUDE_DIR}
-                     ${KTP_INCLUDE_DIR}
 )
 
 set (kded_ktp_integration_module_SRCS
+     ktp_kded_debug.cpp
      contact-cache.cpp
      contact-request-handler.cpp
      telepathy-kded-module-plugin.cpp
@@ -48,25 +48,31 @@ set (kded_ktp_integration_module_SRCS
      screensaveraway.cpp
 )
 
-kde4_add_plugin (kded_ktp_integration_module
-                 ${kded_ktp_integration_module_SRCS}
+add_library (kded_ktp_integration_module MODULE ${kded_ktp_integration_module_SRCS}
 )
 
 target_link_libraries (kded_ktp_integration_module
-                       ${KDE4_KDECORE_LIBS}
-                       ${TELEPATHY_QT4_LIBRARIES}
-                       ${KTP_LIBRARIES}
-                       ${KDE4_KDEUI_LIBS}
-                       ${KDE4_KIDLETIME_LIBRARY}
-                       ${KDE4_SOLID_LIBS}
-                       ${QT_QTSQL_LIBRARIES}
+                       KTp::CommonInternals
+                       KTp::Widgets
+                       KF5::DBusAddons
+                       KF5::ConfigGui
+                       KF5::ConfigCore
+                       KF5::I18n
+                       KF5::Notifications
+                       KF5::IdleTime
+                       KF5::KIOWidgets
+                       KF5::WidgetsAddons
+                       ${TELEPATHY_QT5_LIBRARIES}
+                       Qt5::Concurrent
+                       Qt5::Sql
+                       Qt5::Network
 )
 
 install (TARGETS kded_ktp_integration_module
          DESTINATION ${PLUGIN_INSTALL_DIR}
 )
 
-install (FILES kded_ktp_integration_module.desktop
+install (FILES ktp_integration_module.desktop
          DESTINATION ${SERVICES_INSTALL_DIR}/kded
 )
 
@@ -81,6 +87,3 @@ add_subdirectory(config)
 if(ENABLE_TESTS)
     add_subdirectory(tests)
 endif()
-find_package(Msgfmt REQUIRED)
-find_package(Gettext REQUIRED)
-add_subdirectory( po )

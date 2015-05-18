@@ -34,11 +34,9 @@
 #include <TelepathyQt/Debug>
 
 #include <KConfigGroup>
-#include <KDebug>
 #include <KPluginFactory>
 
 K_PLUGIN_FACTORY(TelepathyModuleFactory, registerPlugin<TelepathyModule>(); )
-K_EXPORT_PLUGIN(TelepathyModuleFactory("ktp_integration_module", "kded_ktp_integration_module"))
 
 TelepathyModule::TelepathyModule(QObject *parent, const QList<QVariant> &args)
     : KDEDModule(parent),

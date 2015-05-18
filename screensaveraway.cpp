@@ -18,10 +18,11 @@
 */
 
 #include "screensaveraway.h"
+#include "ktp_kded_debug.h"
 
 #include <KTp/global-presence.h>
 
-#include <KDebug>
+#include <KSharedConfig>
 #include <KConfig>
 #include <KConfigGroup>
 
@@ -62,7 +63,7 @@ void ScreenSaverAway::onActiveChanged(bool newState)
         setRequestedPresence(Tp::Presence::away(m_screenSaverAwayMessage));
         setActive(true);
     } else {
-        kDebug();
+        qCDebug(KTP_KDED_MODULE);
         setActive(false);
     }
 }
