@@ -1,4 +1,4 @@
-ktp-kded-module (4:15.04.2-0ubuntu1) UNRELEASED; urgency=medium
+ktp-kded-module (4:15.04.2-0ubuntu1) wily; urgency=medium
 
   [ Harald Sitter ]
   * KDE Frameworks 5 port
@@ -10,7 +10,7 @@ ktp-kded-module (4:15.04.2-0ubuntu1) UNRELEASED; urgency=medium
   [ Jonathan Riddell ]
   * New upstream release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 06 Jun 2015 02:04:29 +0200
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 10 Jun 2015 18:59:03 +0200
 
 ktp-kded-integration-module (0.9.0-0ubuntu1) vivid; urgency=medium
 
