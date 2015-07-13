@@ -1,2 +1,2 @@
 version=3
-http://download.kde.org/stable/kde-telepathy/([\d.]+)/src/ktp-kded-integration-module-([\d.]+).tar.(?x:bz2|xz)
+http://download.kde.org/stable/applications/([\d.]+)/src/ktp-kded-module-([\d.]+).tar.(?x:bz2|xz)
