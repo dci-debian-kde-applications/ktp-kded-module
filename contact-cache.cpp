@@ -18,6 +18,7 @@
 */
 
 #include "contact-cache.h"
+#include "ktp_kded_debug.h"
 
 #include <KTp/core.h>
 #include <KTp/contact.h>
@@ -30,10 +31,8 @@
 #include <TelepathyQt/PendingOperation>
 #include <TelepathyQt/PendingReady>
 
-#include <KDebug>
-#include <KGlobal>
-#include <KStandardDirs>
-
+#include <QStandardPaths>
+#include <QDir>
 #include <QSqlQuery>
 #include <QSqlDriver>
 #include <QSqlField>
@@ -58,17 +57,39 @@ ContactCache::ContactCache(QObject *parent):
     QObject(parent),
     m_db(QSqlDatabase::addDatabase(QLatin1String("QSQLITE")))
 {
-    m_db.setDatabaseName(KGlobal::dirs()->locateLocal("data", QLatin1String("ktp/cache.db")));
-    m_db.open();
+    QString path(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QStringLiteral("/ktp"));
+    QDir dir(path);
+    dir.mkpath(path);
 
-    if (!m_db.tables().contains(QLatin1String("groups"))) {
+    m_db.setDatabaseName(dir.absolutePath() + QStringLiteral("/cache.db"));
+    if (!m_db.open()) {
+        qWarning() << "couldn't open database" << m_db.databaseName();
+    }
+
+    // This is the query that creates the contacts table,
+    // SQLite will store this within the sqlite_master table
+    QString createTableQuery = QStringLiteral("CREATE TABLE contacts (accountId VARCHAR NOT NULL, contactId VARCHAR NOT NULL, alias VARCHAR, avatarFileName VARCHAR, isBlocked INT, groupsIds VARCHAR)");
+
+    // Now let's verify that the table we currently have in the database
+    // is the same one as above - get the stored query and compare them,
+    // if they are different (for example when the table structure was
+    // changed), the table will be dropped and recreated
+    QSqlQuery verifyTableQuery(QStringLiteral("SELECT sql FROM sqlite_master WHERE tbl_name = 'contacts' AND type = 'table';"), m_db);
+    verifyTableQuery.exec();
+    verifyTableQuery.first();
+    bool match = verifyTableQuery.value(QStringLiteral("sql")).toString() == createTableQuery;
+    verifyTableQuery.finish();
+
+    if (!m_db.tables().contains(QLatin1String("groups")) || !match) {
         QSqlQuery preparationsQuery(m_db);
         if (m_db.tables().contains(QLatin1String("contacts"))) {
-            preparationsQuery.exec(QLatin1String("DROP TABLE contacts;"));
+            preparationsQuery.exec(QStringLiteral("DROP TABLE 'contacts';"));
+            // Also drop the groups table
+            preparationsQuery.exec(QStringLiteral("DROP TABLE 'groups';"));
         }
 
-        preparationsQuery.exec(QLatin1String("CREATE TABLE contacts (accountId VARCHAR NOT NULL, contactId VARCHAR NOT NULL, alias VARCHAR, avatarFileName VARCHAR, groupsIds VARCHAR);"));
-        preparationsQuery.exec(QLatin1String("CREATE TABLE groups (groupId INTEGER, groupName VARCHAR);"));
+        preparationsQuery.exec(createTableQuery);
+        preparationsQuery.exec(QLatin1String("CREATE TABLE groups (groupId INTEGER UNIQUE, groupName VARCHAR);"));
         preparationsQuery.exec(QLatin1String("CREATE UNIQUE INDEX idIndex ON contacts (accountId, contactId);"));
     }
 
@@ -78,8 +99,8 @@ ContactCache::ContactCache(QObject *parent):
 void ContactCache::onAccountManagerReady(Tp::PendingOperation *op)
 {
     if (!op || op->isError()) {
-        kWarning() << "ContactCache: Failed to initialize AccountManager:" << op->errorName();
-        kWarning() << op->errorMessage();
+        qCWarning(KTP_KDED_MODULE) << "ContactCache: Failed to initialize AccountManager:" << op->errorName();
+        qCWarning(KTP_KDED_MODULE) << op->errorMessage();
 
         return;
     }
@@ -199,7 +220,7 @@ void ContactCache::onAllKnownContactsChanged(const Tp::Contacts &added, const Tp
     }
 
     QSqlQuery insertQuery(m_db);
-    insertQuery.prepare(QLatin1String("INSERT INTO contacts (accountId, contactId, alias, avatarFileName, groupsIds) VALUES (?, ?, ?, ?, ?);"));
+    insertQuery.prepare(QLatin1String("INSERT INTO contacts (accountId, contactId, alias, avatarFileName, isBlocked, groupsIds) VALUES (?, ?, ?, ?, ?, ?);"));
     Q_FOREACH (const Tp::ContactPtr &c, added) {
         if (c->manager()->connection()->protocolName() == QLatin1String("local-xmpp")) {
             continue;
@@ -238,7 +259,7 @@ void ContactCache::syncContactsOfAccount(const Tp::AccountPtr &account)
     purgeQuery.exec();
 
     QSqlQuery insertQuery(m_db);
-    insertQuery.prepare(QLatin1String("INSERT INTO contacts (accountId, contactId, alias, avatarFileName, groupsIds) VALUES (?, ?, ?, ?, ?);"));
+    insertQuery.prepare(QLatin1String("INSERT INTO contacts (accountId, contactId, alias, avatarFileName, isBlocked, groupsIds) VALUES (?, ?, ?, ?, ?, ?);"));
     Q_FOREACH (const Tp::ContactPtr &c, account->connection()->contactManager()->allKnownContacts()) {
         bindContactToQuery(&insertQuery, c);
         insertQuery.exec();
@@ -259,7 +280,7 @@ void ContactCache::checkContactManagerState(const Tp::ContactManagerPtr &contact
         if (!account.isNull()) {
             syncContactsOfAccount(account);
         } else {
-            kWarning() << "Can't access to account by contactManager";
+            qCWarning(KTP_KDED_MODULE) << "Can't access to account by contactManager";
         }
     }
 }
@@ -300,6 +321,7 @@ void ContactCache::bindContactToQuery(QSqlQuery *query, const Tp::ContactPtr &co
     query->bindValue(1, ktpContact->id());
     query->bindValue(2, ktpContact->alias());
     query->bindValue(3, ktpContact->avatarData().fileName);
+    query->bindValue(4, ktpContact->isBlocked());
 
     QStringList groupsIds;
 
@@ -307,5 +329,5 @@ void ContactCache::bindContactToQuery(QSqlQuery *query, const Tp::ContactPtr &co
         groupsIds.append(QString::number(askIdFromGroup(group)));
     }
 
-    query->bindValue(4, groupsIds.join(QLatin1String(",")));
+    query->bindValue(5, groupsIds.join(QLatin1String(",")));
 }

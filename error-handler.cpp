@@ -27,14 +27,12 @@
 #include <TelepathyQt/AccountManager>
 #include <TelepathyQt/Connection>
 
+#include <KLocalizedString>
 #include <KNotification>
-#include <KAboutData>
-#include <KDebug>
-
-#include <Solid/Networking>
 
 #include <QScopedPointer>
 #include <QTimer>
+#include <QNetworkConfigurationManager>
 
 /** Stores the last error message for an account
     For every new error if we're online we wait 30 seconds and show 1 notification for all errors. This will be the only error we show for that account until the user reconnects.
@@ -123,7 +121,8 @@ ErrorHandler::~ErrorHandler()
 void ErrorHandler::showErrorNotification()
 {
     //if we're not currently connected to the network, any older errors were probably related to this, ignore them.
-    if (Solid::Networking::status() != Solid::Networking::Connected) {
+    QNetworkConfigurationManager network;
+    if (!network.isOnline()) {
         return;
     }
 
@@ -171,7 +170,8 @@ void ErrorHandler::onConnectionStatusChanged(const Tp::ConnectionStatus status)
     Tp::AccountPtr account(qobject_cast< Tp::Account* >(sender()));
 
     //if we're not connected to the network, errors are pointless
-    if (Solid::Networking::status() != Solid::Networking::Connected) {
+    QNetworkConfigurationManager network;
+    if (!network.isOnline()) {
         return;
     }
 
@@ -208,8 +208,7 @@ void ErrorHandler::showMessageToUser(const QString &text, const ErrorHandler::Sy
         notification = new KNotification(QLatin1String("telepathyInfo"), KNotification::CloseOnTimeout);
     }
 
-    KAboutData aboutData("ktelepathy",0,KLocalizedString(),0);
-    notification->setComponentData(KComponentData(aboutData));
+    notification->setComponentName(QStringLiteral("ktelepathy"));
 
     notification->setText(text);
     notification->sendEvent();

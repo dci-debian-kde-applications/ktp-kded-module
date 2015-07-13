@@ -26,6 +26,7 @@
 #include <KSharedConfig>
 #include <KLocalizedString>
 
+#include <QUrl>
 #include <QDBusMessage>
 #include <QDBusConnection>
 
@@ -33,11 +34,10 @@
 #include "autoconnect.h"
 
 K_PLUGIN_FACTORY(KCMTelepathyKDEDModuleConfigFactory, registerPlugin<TelepathyKDEDConfig>();)
-K_EXPORT_PLUGIN(KCMTelepathyKDEDModuleConfigFactory("kcm_ktp_integration_module", "kded_ktp_integration_module"))
 
 
 TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& args)
-    : KCModule(KCMTelepathyKDEDModuleConfigFactory::componentData(), parent, args),
+    : KCModule(parent, args),
       ui(new Ui::TelepathyKDEDUi())
 {
     ui->setupUi(this);
@@ -83,15 +83,15 @@ TelepathyKDEDConfig::TelepathyKDEDConfig(QWidget *parent, const QVariantList& ar
     ui->m_xaMins->setSuffix(i18nc("Unit after number in spinbox, denotes time unit 'minutes', keep the leading whitespace!",
                                     " minutes"));
 
-    ui->m_awayMessage->setClickMessage(i18n("Leave empty for no message"));
+    ui->m_awayMessage->setPlaceholderText(i18n("Leave empty for no message"));
     // xgettext: no-c-format
     ui->m_awayMessage->setToolTip(i18n("Use %time to insert UTC time of when you went away"));
 
-    ui->m_xaMessage->setClickMessage(i18n("Leave empty for no message"));
+    ui->m_xaMessage->setPlaceholderText(i18n("Leave empty for no message"));
     // xgettext: no-c-format
     ui->m_xaMessage->setToolTip(i18n("Use %time to insert UTC time of when you went not available"));
 
-    ui->m_screenSaverAwayMessage->setClickMessage(i18n("Leave empty for no message"));
+    ui->m_screenSaverAwayMessage->setPlaceholderText(i18n("Leave empty for no message"));
     // xgettext: no-c-format
     ui->m_screenSaverAwayMessage->setToolTip(i18n("Use %time to insert UTC time of when the screen saver was activated"));
 
@@ -153,7 +153,7 @@ void TelepathyKDEDConfig::load()
     // download directory
     QString downloadDirectory = filetransferConfig.readPathEntry(QLatin1String("downloadDirectory"),
                     QDir::homePath() + QLatin1String("/") + i18nc("This is the download directory in user's home", "Downloads"));
-    ui->m_downloadUrlRequester->setUrl(KUrl(downloadDirectory));
+    ui->m_downloadUrlRequester->setUrl(QUrl::fromUserInput(downloadDirectory));
     ui->m_downloadUrlCheckBox->setChecked(filetransferConfig.readEntry(QLatin1String("alwaysAsk"), false));
     ui->m_downloadUrlRequester->setEnabled(!ui->m_downloadUrlCheckBox->isChecked());
 
@@ -398,3 +398,5 @@ void TelepathyKDEDConfig::downloadUrlCheckBoxChanged(bool checked)
     ui->m_downloadUrlRequester->setEnabled(!checked);
     Q_EMIT changed(true);
 }
+
+#include "telepathy-kded-config.moc"
