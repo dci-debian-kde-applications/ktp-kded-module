@@ -1,10 +1,11 @@
-ktp-kded-integration-module (0.9.0-2) UNRELEASED; urgency=medium
+ktp-kded-integration-module (15.04.3-1) UNRELEASED; urgency=medium
 
   * Apply homepage update patch from Matthew Cope
   * Update watch file for KTp's move to Applications.
   * Update Diane Trout's email address.
+  * New upstream release.
 
- -- Diane Trout <diane@debian.org>  Wed, 27 May 2015 23:13:29 -0700
+ -- Diane Trout <diane@debian.org>  Sun, 12 Jul 2015 19:44:16 -0700
 
 ktp-kded-integration-module (0.9.0-1) unstable; urgency=medium
 
