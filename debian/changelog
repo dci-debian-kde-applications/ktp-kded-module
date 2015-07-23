@@ -4,6 +4,9 @@ ktp-kded-integration-module (15.04.3-1) UNRELEASED; urgency=medium
   * Update watch file for KTp's move to Applications.
   * Update Diane Trout's email address.
   * New upstream release.
+  * Update copyright file.
+    - Add LGPL-2 block
+    - Remove po/* block
 
  -- Diane Trout <diane@debian.org>  Sun, 12 Jul 2015 19:44:16 -0700
 
