@@ -7,6 +7,8 @@ ktp-kded-integration-module (15.04.3-1) UNRELEASED; urgency=medium
   * Update copyright file.
     - Add LGPL-2 block
     - Remove po/* block
+  * Update build-dpends for change to KF5 and rename
+    libktpcommoninternalsprivate-dev to libktp-dev
 
  -- Diane Trout <diane@debian.org>  Sun, 12 Jul 2015 19:44:16 -0700
 
