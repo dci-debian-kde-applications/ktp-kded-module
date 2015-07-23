@@ -9,6 +9,10 @@ ktp-kded-integration-module (15.04.3-1) UNRELEASED; urgency=medium
     - Remove po/* block
   * Update build-dpends for change to KF5 and rename
     libktpcommoninternalsprivate-dev to libktp-dev
+  * Use dhmk from pkg-kde-tools to build ktp.
+    - Change maintainer to debian-qt-kde
+    - Update debian/rules
+    - Update plugins path to qt5/plugins.
 
  -- Diane Trout <diane@debian.org>  Sun, 12 Jul 2015 19:44:16 -0700
 
