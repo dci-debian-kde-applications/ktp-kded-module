@@ -13,6 +13,7 @@ ktp-kded-integration-module (15.04.3-1) UNRELEASED; urgency=medium
     - Change maintainer to debian-qt-kde
     - Update debian/rules
     - Update plugins path to qt5/plugins.
+  * Add KDE's unstable download url to watch file
 
  -- Diane Trout <diane@debian.org>  Sun, 12 Jul 2015 19:44:16 -0700
 
