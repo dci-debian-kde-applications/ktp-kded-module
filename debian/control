@@ -40,7 +40,7 @@ Build-Depends: cmake,
                libtelepathy-qt5-dev,
                pkg-kde-tools (>> 0.15.15),
                qtbase5-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/extragear/network/telepathy/ktp-kded-module
 Vcs-Git: git://anonscm.debian.org/pkg-kde/applications/ktp-kded-integration-module.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/applications/ktp-kded-integration-module.git
