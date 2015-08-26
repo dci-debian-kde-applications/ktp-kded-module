@@ -1,8 +1,8 @@
-ktp-kded-module (4:15.08.0-0ubuntu1) UNRELEASED; urgency=medium
+ktp-kded-module (4:15.08.0-0ubuntu1) wily; urgency=medium
 
   * new upstream release
 
- -- Clive Johnston <clivejo@aol.com>  Thu, 20 Aug 2015 14:09:58 +0000
+ -- Clive Johnston <clivejo@aol.com>  Wed, 26 Aug 2015 17:42:42 +0100
 
 ktp-kded-module (4:15.07.90-0ubuntu1) wily; urgency=medium
 
