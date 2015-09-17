@@ -1,4 +1,4 @@
-ktp-kded-integration-module (15.08.0-1~) UNRELEASED; urgency=medium
+ktp-kded-integration-module (15.08.1-1~) UNRELEASED; urgency=medium
 
   [ Diane Trout ]
   * New upstream release.
@@ -11,8 +11,9 @@ ktp-kded-integration-module (15.08.0-1~) UNRELEASED; urgency=medium
   * New upstream release (15.04.1).
   * New upstream release (15.04.2).
   * New upstream release (15.08.0).
+  * New upstream release (15.08.1).
 
- -- Maximiliano Curia <maxy@debian.org>  Thu, 10 Sep 2015 14:05:36 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 17 Sep 2015 19:50:32 +0200
 
 ktp-kded-integration-module (0.8.1-1) unstable; urgency=medium
 
