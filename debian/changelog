@@ -1,9 +1,9 @@
-ktp-kded-module (4:15.08.2-0ubuntu1) UNRELEASED; urgency=medium
+ktp-kded-module (4:15.08.2-0ubuntu1) wily; urgency=medium
 
   * Vivid backport
   * New upstream release
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 09 Oct 2015 14:59:07 -0700
+ -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 14 Oct 2015 12:51:56 +0100
 
 ktp-kded-module (4:15.08.1-0ubuntu1) wily; urgency=medium
 
