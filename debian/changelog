@@ -1,4 +1,4 @@
-ktp-kded-integration-module (15.08.1-1) UNRELEASED; urgency=medium
+ktp-kded-integration-module (15.08.2-1) UNRELEASED; urgency=medium
 
   * Apply homepage update patch from Matthew Cope
   * Update watch file for KTp's move to Applications.
@@ -15,7 +15,7 @@ ktp-kded-integration-module (15.08.1-1) UNRELEASED; urgency=medium
     - Update plugins path to qt5/plugins.
   * Add KDE's unstable download url to watch file
 
- -- Diane Trout <diane@debian.org>  Sun, 09 Aug 2015 15:01:02 -0700
+ -- Diane Trout <diane@debian.org>  Tue, 03 Nov 2015 22:17:22 -0800
 
 ktp-kded-integration-module (0.9.0-1) unstable; urgency=medium
 
