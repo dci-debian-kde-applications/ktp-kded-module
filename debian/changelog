@@ -1,3 +1,9 @@
+ktp-kded-integration-module (15.08.3-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Diane Trout <diane@ghic.org>  Wed, 02 Dec 2015 23:00:51 -0800
+
 ktp-kded-integration-module (15.08.2-1) unstable; urgency=medium
 
   * Apply homepage update patch from Matthew Cope
