@@ -1,11 +1,5 @@
 ktp-kded-integration-module (15.12.1-1~) UNRELEASED; urgency=medium
 
-  [ Diane Trout ]
-  * New upstream release.
-  * Bump telepathy-qt build-dep to 0.9.5
-  * Bump libktpcommoninternalsprivate build-dep to 0.8.80
-  * Change kde-telepathy-data dependency to source:Upstream-Version
-
   [ Maximiliano Curia ]
   * Update watch file.
   * New upstream release (15.04.1).
@@ -17,6 +11,42 @@ ktp-kded-integration-module (15.12.1-1~) UNRELEASED; urgency=medium
   * New upstream release (15.12.1).
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 26 Jan 2016 10:33:51 +0100
+
+ktp-kded-integration-module (15.08.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Diane Trout <diane@ghic.org>  Wed, 02 Dec 2015 23:01:00 -0800
+
+ktp-kded-integration-module (15.08.2-1) unstable; urgency=medium
+
+  * Apply homepage update patch from Matthew Cope
+  * Update watch file for KTp's move to Applications.
+  * New upstream release.
+  * Update copyright file.
+    - Add LGPL-2 block
+    - Remove po/* block
+  * Update build-dpends for change to KF5 and rename
+    libktpcommoninternalsprivate-dev to libktp-dev
+  * Use dhmk from pkg-kde-tools to build ktp.
+    - Change maintainer to debian-qt-kde
+    - Update debian/rules
+    - Update plugins path to qt5/plugins.
+  * Add KDE's unstable download url to watch file
+
+ -- Diane Trout <diane@ghic.org>  Sat, 07 Nov 2015 10:58:43 -0800
+
+ktp-kded-integration-module (0.9.0-1) unstable; urgency=medium
+
+  [ Diane Trout ]
+  * New upstream release.
+  * Bump telepathy-qt build-dep to 0.9.5
+  * Bump libktpcommoninternalsprivate build-dep to 0.9.0
+  * Update Standards-Version to 3.9.6. No changes needed.
+  * Update copyright file.
+  * Update debian/watch file to use http://download.kde.org
+
+ -- Diane Trout <diane@ghic.org>  Sat, 25 Apr 2015 20:06:27 -0700
 
 ktp-kded-integration-module (0.8.1-1) unstable; urgency=medium
 
@@ -47,7 +77,7 @@ ktp-kded-integration-module (0.6.3-1) unstable; urgency=low
   * Update Standards-Version to 3.9.4. No changes needed.
   * Update watch file as KDE-Telepathy is now in KDE stable.
 
-  [ Mark Purcell ] 
+  [ Mark Purcell ]
   * Imported Upstream version 0.6.3
   * Add myself to Uploaders
   * Update Build-Depends: libktpcommoninternalsprivate-dev (>= 0.6.3)

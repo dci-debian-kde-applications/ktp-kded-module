@@ -1,7 +1,7 @@
 Source: ktp-kded-integration-module
 Section: kde
 Priority: optional
-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Diane Trout <diane@ghic.org>,
            Michał Zając <quintasan@kubuntu.org>,
            Mark Purcell <msp@debian.org>
@@ -16,22 +16,22 @@ Build-Depends: cmake (>= 2.8.12~),
                libkf5idletime-dev,
                libkf5kcmutils-dev,
                libkf5notifications-dev,
+               libkf5wallet-dev,
                libkf5widgetsaddons-dev,
                libktp-dev,
                libktpcommoninternalsprivate-dev (>= 0.8.80),
-               libtelepathy-qt4-dev (>= 0.9.5),
+               libtelepathy-qt5-dev (>= 0.9.5),
+               libtelepathy-logger-qt-dev,
                pkg-kde-tools (>= 0.9),
                qtbase5-dev (>= 5.4)
 Standards-Version: 3.9.6
-Homepage: https://projects.kde.org/projects/extragear/network/telepathy/ktp-kded-module
+Homepage: https://projects.kde.org/projects/kde/kdenetwork/ktp-kded-module
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-kded-integration-module.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepathy/ktp-kded-integration-module.git
 
 Package: kde-telepathy-integration-module
 Architecture: any
-Depends: kde-telepathy-data (>= ${source:Upstream-Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, kde-telepathy-data (>= 0.8.1)
 Recommends: kde-telepathy
 Description: Telepathy integration module for the KDE Workspace
  This package contains a kded module that provides KDE Workspace
