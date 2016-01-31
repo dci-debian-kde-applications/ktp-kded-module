@@ -39,13 +39,3 @@ Description: Telepathy integration module for the KDE Workspace
  .
  This package is not meant to be used standalone. It is recommended
  to install the kde-telepathy metapackage instead.
-
-Package: kde-telepathy-integration-module-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: kde-telepathy-integration-module (= ${binary:Version}),
-         ${misc:Depends}
-Description: Telepathy integration module for the KDE Workspace - debug symbols
- This package provides the debug symbols for the KDE Telepathy
- integration module.
