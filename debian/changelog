@@ -1,6 +1,6 @@
 ktp-kded-integration-module (15.12.1-2~) UNRELEASED; urgency=medium
 
-  * 
+  * Bump build dependencies.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Feb 2016 23:20:55 +0100
 
