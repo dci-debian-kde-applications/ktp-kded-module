@@ -1,4 +1,15 @@
 #!/usr/bin/make -f
 
-%:
-	dh $@ --with kf5 --dbg-package=kde-telepathy-integration-module-dbg
+include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
+
+override_dh_auto_install:
+	$(overridden_command) --destdir=debian/tmp
+
+override_dh_strip:
+	$(overridden_command) --ddeb-migration='kde-telepathy-integration-module-dbg (<= 15.12.1-1~~)'
+
+override_dh_install:
+	$(overridden_command) --fail-missing
+
+#override_dh_auto_configure:
+#	dh_auto_configure -- -DDBUS_SEND_PATH=/usr/bin/dbus-send
