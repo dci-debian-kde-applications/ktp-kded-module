@@ -1,4 +1,4 @@
-Source: ktp-kded-module
+Source: ktp-kded-integration-module
 Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
