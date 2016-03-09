@@ -1,9 +1,9 @@
-ktp-kded-integration-module (15.12.1-2ubuntu1) UNRELEASED; urgency=medium
+ktp-kded-integration-module (15.12.1-2ubuntu1) xenial; urgency=medium
 
   * Merged with Debian
   * New upstream release
 
- -- Clive Johnston <clivejo@aol.com>  Mon, 15 Feb 2016 22:59:48 +0000
+ -- Clive Johnston <clivejo@aol.com>  Wed, 09 Mar 2016 11:21:53 +0100
 
 ktp-kded-integration-module (15.12.1-2) experimental; urgency=medium
 
