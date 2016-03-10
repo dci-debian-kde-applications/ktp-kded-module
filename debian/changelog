@@ -1,3 +1,9 @@
+ktp-kded-integration-module (4:15.12.1-2ubuntu2) xenial; urgency=medium
+
+  * Add the missing epoch back
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 11 Mar 2016 00:41:24 +0100
+
 ktp-kded-integration-module (15.12.1-2ubuntu1) xenial; urgency=medium
 
   * Merged with Debian
