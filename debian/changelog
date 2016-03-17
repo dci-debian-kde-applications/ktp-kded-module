@@ -1,9 +1,10 @@
-ktp-kded-integration-module (4:15.12.2-0ubuntu1) UNRELEASED; urgency=medium
+ktp-kded-integration-module (4:15.12.3-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream bugfix release
   * Add missing epoch to libkt-dev build depend. 
+  * New upstream bugfix release
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 09 Mar 2016 22:13:49 -0800
+ -- Scarlett Clark <sgclark@kubuntu.org>  Wed, 16 Mar 2016 20:27:57 -0700
 
 ktp-kded-integration-module (4:15.12.1-2ubuntu2) xenial; urgency=medium
 
