@@ -19,8 +19,8 @@ Build-Depends: cmake (>= 2.8.12~),
                libkf5wallet-dev,
                libkf5widgetsaddons-dev,
                libktp-dev (>= 15.12~),
-               libtelepathy-qt5-dev (>= 0.9.5),
                libtelepathy-logger-qt-dev,
+               libtelepathy-qt5-dev (>= 0.9.5),
                pkg-kde-tools (>= 0.9),
                qtbase5-dev (>= 5.4)
 Standards-Version: 3.9.6
@@ -30,7 +30,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepath
 
 Package: kde-telepathy-integration-module
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, kde-telepathy-data (>= 0.8.1)
+Depends: kde-telepathy-data (>= 0.8.1), ${misc:Depends}, ${shlibs:Depends}
 Recommends: kde-telepathy
 Description: Telepathy integration module for the KDE Workspace
  This package contains a kded module that provides KDE Workspace
