@@ -21,7 +21,7 @@ Build-Depends: debhelper (>= 9),
  libkf5kcmutils-dev,
  libkf5wallet-dev,
  qtbase5-dev,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: https://projects.kde.org/projects/kde/kdenetwork/ktp-kded-module
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/kde-telepathy/ktp-kded-integration-module.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/kde-telepathy/ktp-kded-integration-module.git
