@@ -1,3 +1,13 @@
+ktp-kded-integration-module (15.12.3-1~1.gbp6084a1) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @6084a195b543c7983d041316707280c4e7d81b07 **
+
+  * Bump Standards-Version to 3.9.8
+  * Update build-deps and deps with the info from cmake
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 13 Apr 2016 12:27:08 +0200
+
 ktp-kded-integration-module (15.12.1-2) experimental; urgency=medium
 
   * Bump build dependencies.
