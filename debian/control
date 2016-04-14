@@ -25,8 +25,8 @@ Build-Depends: cmake (>= 2.8.12~),
                qtbase5-dev (>= 5.4)
 Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/kde/kdenetwork/ktp-kded-module
-Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/ktp-kded-integration-module.git
-Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/applications/ktp-kded-integration-module.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/ktp-kded-module.git
+Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/applications/ktp-kded-module.git
 
 Package: kde-telepathy-integration-module
 Architecture: any
