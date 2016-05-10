@@ -1,13 +1,14 @@
-ktp-kded-integration-module (16.04.0-1~1.gbp3e1fcb) UNRELEASED; urgency=medium
+ktp-kded-integration-module (16.04.1-1~1.gbp50be11) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @3e1fcb344e9b06a50597ced2e702e712d1ec0cc0 **
+  ** SNAPSHOT build @50be11aa667b4a47f7266dfc25762e4deef6b133 **
 
   * Bump Standards-Version to 3.9.8
   * Update build-deps and deps with the info from cmake
   * Refresh patches
   * Add a .gitattributes file to use dpkg-mergechangelogs
+  * UNRELEASED
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 21 Apr 2016 01:26:12 +0200
+ -- Automatic packaging <jenkins@amadeus.gnuservers.com.ar>  Wed, 11 May 2016 01:26:13 +0200
 
 ktp-kded-integration-module (15.12.1-2) experimental; urgency=medium
 
