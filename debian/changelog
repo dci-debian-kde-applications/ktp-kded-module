@@ -1,3 +1,9 @@
+ktp-kded-integration-module (16.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 18 May 2016 18:45:48 +0200
+
 ktp-kded-integration-module (15.12.1-2) experimental; urgency=medium
 
   * Bump build dependencies.
