@@ -1,3 +1,11 @@
+ktp-kded-integration-module (16.04.2-1~1.gbpbd961c) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @bd961c24717812a938db97986e81fa2002e0ef86 **
+
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Wed, 15 Jun 2016 01:26:10 +0200
+
 ktp-kded-integration-module (16.04.1-1) experimental; urgency=medium
 
   [ Automatic packaging ]
