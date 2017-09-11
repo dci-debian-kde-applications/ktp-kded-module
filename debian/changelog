@@ -1,12 +1,20 @@
-ktp-kded-integration-module (16.08.1-1~1.gbpe7fd5d) UNRELEASED; urgency=medium
+ktp-kded-integration-module (17.08.1-1~) UNRELEASED; urgency=medium
 
+  [ Maximiliano Curia ]
   ** SNAPSHOT build @e7fd5dcdd45fcfaff3929cad64c9c9d0edd53678 **
 
   * UNRELEASED
   * UNRELEASED
   * UNRELEASED
+  * Bump Standards-Version to 4.1.0.
+  * Update upstream metadata
+  * Update build-deps and deps with the info from cmake
+  * New upstream release (17.08.1).
 
- -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Fri, 09 Sep 2016 01:26:33 +0200
+  [ Automatic packaging ]
+  * Update changelog for 16.08.1-1~1.gbpe7fd5d release
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 11 Sep 2017 16:20:15 +0200
 
 ktp-kded-integration-module (16.04.2-1) experimental; urgency=medium
 
