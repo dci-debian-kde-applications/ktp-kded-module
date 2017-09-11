@@ -1,0 +1,388 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-11-19 20:16+0100\n"
+"PO-Revision-Date: 2013-10-09 09:36+0200\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: config/telepathy-kded-config.cpp:47
+#, no-c-format, kde-format
+msgctxt ""
+"Title tag in now playing plugin, use one word and keep the '%' character."
+msgid "%title"
+msgstr "%title"
+
+#: config/telepathy-kded-config.cpp:49
+#, no-c-format, kde-format
+msgctxt ""
+"Artist tag in now playing plugin, use one word and keep the '%' character."
+msgid "%artist"
+msgstr "%artist"
+
+#: config/telepathy-kded-config.cpp:51
+#, no-c-format, kde-format
+msgctxt ""
+"Album tag in now playing plugin, use one word and keep the '%' character."
+msgid "%album"
+msgstr "%album"
+
+#: config/telepathy-kded-config.cpp:53
+#, no-c-format, kde-format
+msgctxt ""
+"Track number tag in now playing plugin, use one word and keep the '%' "
+"character."
+msgid "%track"
+msgstr "%track"
+
+#: config/telepathy-kded-config.cpp:55
+#, no-c-format, kde-format
+msgctxt "Time tag. Use one word and keep the '%' character."
+msgid "%time"
+msgstr "%tijd"
+
+#: config/telepathy-kded-config.cpp:81 config/telepathy-kded-config.cpp:84
+#, kde-format
+msgctxt ""
+"Unit after number in spinbox, denotes time unit 'minutes', keep the leading "
+"whitespace!"
+msgid " minutes"
+msgstr " minuten"
+
+#: config/telepathy-kded-config.cpp:86 config/telepathy-kded-config.cpp:90
+#: config/telepathy-kded-config.cpp:94
+#, kde-format
+msgid "Leave empty for no message"
+msgstr "Leeg laten voor geen bericht"
+
+#: config/telepathy-kded-config.cpp:88
+#, no-c-format, kde-format
+msgid "Use %time to insert UTC time of when you went away"
+msgstr "Gebruik %tijd om UTC-tijd, van het moment dat u weg ging, in te voegen"
+
+#: config/telepathy-kded-config.cpp:92
+#, no-c-format, kde-format
+msgid "Use %time to insert UTC time of when you went not available"
+msgstr ""
+"Gebruik %tijd om UTC-tijd, van het moment dat u niet meer beschikbaar was, "
+"in te voegen"
+
+#: config/telepathy-kded-config.cpp:96
+#, no-c-format, kde-format
+msgid "Use %time to insert UTC time of when the screen saver was activated"
+msgstr ""
+"Gebruik %tijd om UTC-tijd, van het moment dat de schermbeveiliging werd "
+"geactiveerd, in te voegen"
+
+#: config/telepathy-kded-config.cpp:155
+#, kde-format
+msgctxt "This is the download directory in user's home"
+msgid "Downloads"
+msgstr "Downloads"
+
+#: config/telepathy-kded-config.cpp:216 telepathy-mpris.cpp:137
+#, kde-format
+msgctxt ""
+"The default text displayed by now playing plugin. track title: %1, artist: "
+"%2, album: %3"
+msgid "Now listening to %1 by %2 from album %3"
+msgstr "Luistert nu naar %1 van %2 uit het album %3"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoConnectCheckBox)
+#: config/telepathy-kded-config.ui:44
+#, kde-format
+msgid "Restore last presence on login"
+msgstr "Laatste aanwezigheid herstellen bij aanmelden"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoOfflineCheckBox)
+#: config/telepathy-kded-config.ui:51
+#, kde-format
+msgid "Go offline when closing the contact list"
+msgstr "Ga offline bij het sluiten van de lijst met contactpersonen"
+
+#. i18n: ectx: property (title), widget (QGroupBox, autoAwayGroupBox)
+#: config/telepathy-kded-config.ui:61
+#, kde-format
+msgid "Auto away"
+msgstr "Auto-afwezig"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: config/telepathy-kded-config.ui:70
+#, kde-format
+msgid "Set my status to:"
+msgstr "Stel mijn status in op:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_awayCheckBox)
+#: config/telepathy-kded-config.ui:81
+#, kde-format
+msgid "Away"
+msgstr "Afwezig"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayMinsLabel)
+#: config/telepathy-kded-config.ui:110
+#, kde-format
+msgid "After:"
+msgstr "Erna:"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayInactivityLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_xaInactivityLabel)
+#: config/telepathy-kded-config.ui:139 config/telepathy-kded-config.ui:238
+#, kde-format
+msgid "of inactivity"
+msgstr "van inactiviteit"
+
+#. i18n: ectx: property (text), widget (QLabel, m_awayMessageLabel)
+#. i18n: ectx: property (text), widget (QLabel, m_screenSaverAwayLabel)
+#: config/telepathy-kded-config.ui:150 config/telepathy-kded-config.ui:307
+#, kde-format
+msgid "With &message:"
+msgstr "Met &bericht:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_xaCheckBox)
+#: config/telepathy-kded-config.ui:177
+#, kde-format
+msgid "Not available"
+msgstr "Niet beschikbaar"
+
+#. i18n: ectx: property (text), widget (QLabel, m_xaMinsLabel)
+#: config/telepathy-kded-config.ui:209
+#, kde-format
+msgid "Aft&er:"
+msgstr "&Na:"
+
+#. i18n: ectx: property (text), widget (QLabel, m_xaMessageLabel)
+#: config/telepathy-kded-config.ui:249
+#, kde-format
+msgid "With messa&ge:"
+msgstr "Met be&richt:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_screenSaverAwayCheckBox)
+#: config/telepathy-kded-config.ui:280
+#, kde-format
+msgid "Set my status to Away when the screen saver is activated"
+msgstr ""
+"Stel mijn status in op Afwezig wanneer de schermbeveiliging is geactiveerd"
+
+#. i18n: ectx: property (title), widget (QGroupBox, incomingFilesGroupBox)
+#: config/telepathy-kded-config.ui:330
+#, kde-format
+msgid "Incoming files"
+msgstr "Inkomende bestanden"
+
+#. i18n: ectx: property (text), widget (QLabel, m_downloadUrlLabel)
+#: config/telepathy-kded-config.ui:341
+#, kde-format
+msgid "Download folder:"
+msgstr "Downloadmap:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_downloadUrlCheckBox)
+#: config/telepathy-kded-config.ui:354
+#, kde-format
+msgid "Always Ask"
+msgstr "Altijd vragen"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, m_downloadUrlRequester)
+#. i18n: ectx: property (whatsThis), widget (KUrlRequester, m_downloadUrlRequester)
+#: config/telepathy-kded-config.ui:361 config/telepathy-kded-config.ui:364
+#, kde-format
+msgid "This is the folder where received files will be saved."
+msgstr "Dit is de map waar ontvangen bestanden zullen worden opgeslagen."
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_autoAcceptCheckBox)
+#: config/telepathy-kded-config.ui:373
+#, kde-format
+msgid "Automatically accept file transfers"
+msgstr "Bestandsoverdrachten automatisch accepteren"
+
+#. i18n: ectx: property (title), widget (QGroupBox, nowPlayingGroupBox)
+#: config/telepathy-kded-config.ui:383
+#, kde-format
+msgid "Now playing"
+msgstr "Nu aan het afspelen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_nowPlayingCheckBox)
+#: config/telepathy-kded-config.ui:392
+#, kde-format
+msgid "Enable \"Now playing...\" presence on login"
+msgstr "\"Nu aan het afspelen...\" zichtbaarheid inschakelen na aanmelden"
+
+#. i18n: ectx: property (text), widget (QLabel, message_format_label)
+#: config/telepathy-kded-config.ui:404
+#, kde-format
+msgid "Message format:"
+msgstr "Berichtformaat:"
+
+#: contact-request-handler.cpp:180
+#, kde-format
+msgid "New contact request"
+msgstr "Nieuw verzoek voor contact"
+
+#: contact-request-handler.cpp:181
+#, kde-format
+msgid "The contact %1 wants to be able to chat with you."
+msgstr "De contactpersoon %1 wil in staat zijn om met u te chatten."
+
+#: contact-request-handler.cpp:198
+#, kde-format
+msgid "Error adding contact"
+msgstr "Fout tijdens toevoegen van contactpersoon"
+
+#: contact-request-handler.cpp:199
+#, kde-format
+msgid ""
+"%1 has been added successfully to your contact list, but might be unable to "
+"see when you are online. Error details: %2"
+msgstr ""
+"%1 is met succes toegevoegd aan uw contactenlijst, maar kan niet in staat "
+"zijn om te zien of u online bent. Foutdetails: %2"
+
+#: contact-request-handler.cpp:285
+#, kde-format
+msgid "Error granting contact authorization"
+msgstr "Fout bij toekennen van autorisatie voor contact"
+
+#: contact-request-handler.cpp:286
+#, kde-format
+msgid "There was an error while accepting the request: %1"
+msgstr "Er deed zich een fout voor bij het accepteren van het verzoek: %1"
+
+#: contact-request-handler.cpp:296
+#, kde-format
+msgid "Contact request accepted"
+msgstr "Verzoek voor contact geaccepteerd"
+
+#: contact-request-handler.cpp:297
+#, kde-format
+msgid "%1 will now be able to see when you are online"
+msgstr "%1 zal nu in staat zijn te zien of u online bent"
+
+#: contact-request-handler.cpp:364
+#, kde-format
+msgid "Error denying contact request"
+msgstr "Fout bij het afwijzen van verzoek voor contact"
+
+#: contact-request-handler.cpp:365
+#, kde-format
+msgid "There was an error while denying the request: %1"
+msgstr "Er deed zich een fout voor bij het afwijzen van het verzoek: %1"
+
+#: contact-request-handler.cpp:374
+#, kde-format
+msgid "Contact request denied"
+msgstr "Verzoek voor contact geweigerd"
+
+#: contact-request-handler.cpp:375
+#, kde-format
+msgid "%1 will not be able to see when you are online"
+msgstr "%1 zal niet in staat zijn te zien of u online bent"
+
+#: contact-request-handler.cpp:392
+#, kde-format
+msgctxt "Menu title"
+msgid "Pending contact requests"
+msgstr "Wachtende verzoeken voor contact"
+
+#: contact-request-handler.cpp:396
+#, kde-format
+msgctxt "Context menu title"
+msgid "Received contact requests"
+msgstr "Ontvangen verzoeken voor contact"
+
+#: contact-request-handler.cpp:417
+#, kde-format
+msgid "Request from %1"
+msgstr "Verzoek van %1"
+
+#: contact-request-handler.cpp:422
+#, kde-format
+msgid "Contact Details"
+msgstr "Details van contactpersoon"
+
+#: contact-request-handler.cpp:436
+#, kde-format
+msgid "Approve"
+msgstr "Goedkeuren"
+
+#: contact-request-handler.cpp:442
+#, kde-format
+msgid "Deny"
+msgstr "Weigeren"
+
+#: contact-request-handler.cpp:469
+#, kde-format
+msgid "You have 1 contact wanting to chat with you"
+msgid_plural "You have %1 contacts wanting to chat with you"
+msgstr[0] "Er is 1 contactpersoon die met u wil chatten"
+msgstr[1] "Er zijn %1 contactpersonen die met u willen chatten"
+
+#: contactnotify.cpp:65
+#, kde-format
+msgctxt "%1 is the contact name, %2 is the presence name"
+msgid "%1 is now %2"
+msgstr "%1 is nu %2"
+
+#: error-handler.cpp:141
+#, kde-format
+msgctxt "%1 is the account name"
+msgid "Could not connect %1. There was a network error, check your connection"
+msgstr ""
+"Kon niet verbinden met %1. Er was een netwerkfout, controleer uw verbinding"
+
+#: error-handler.cpp:148 error-handler.cpp:150
+#, kde-format
+msgctxt "%1 is the account name, %2 the error message"
+msgid "There was a problem while trying to connect %1 - %2"
+msgstr "Fout opgetreden tijdens het pogen om %1 - %2 te verbinden"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Freek de Kruijf"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "freekdekruijf@kde.nl"
+
+#~ msgid "Auto connect"
+#~ msgstr "Automatisch verbinden"
+
+#~ msgid "Auto Offline"
+#~ msgstr "Automatisch offline"
+
+#~ msgid "Enabled"
+#~ msgstr "Ingeschakeld"
+
+#~ msgctxt "%1 is the account name"
+#~ msgid ""
+#~ "Could not connect %1. Authentication failed (is your password correct?)"
+#~ msgstr ""
+#~ "Kon geen verbinding opzetten met %1. Authenticatie is mislukt (is uw "
+#~ "wachtwoord juist?)"
+
+#~ msgid ""
+#~ "The contact %1 added you to its contact list. You can answer this request "
+#~ "using the tray icon."
+#~ msgstr ""
+#~ "De contactpersoon %1 heeft u toegevoegd aan zijn contactenlijst. U kunt "
+#~ "op dit verzoek antwoorden met het pictogram in het systeemvak."
+
+#~ msgid "You have 1 incoming contact request"
+#~ msgid_plural "You have %1 incoming contact requests"
+#~ msgstr[0] "Er is 1 verzoek voor contact"
+#~ msgstr[1] "Er zijn %1 verzoeken voor contact"
+
+#~ msgid "No pending contact requests at the moment"
+#~ msgstr "Op dit moment geen wachtend verzoek voor contact"
+
+#~ msgid "No incoming contact requests"
+#~ msgstr "Geen inkomende verzoeken voor contact"

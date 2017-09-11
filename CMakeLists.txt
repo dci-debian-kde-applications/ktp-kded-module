@@ -3,7 +3,7 @@ project(ktp-kded-integration-module)
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 
 # KDE Application Version, managed by release script
-set(KDE_APPLICATIONS_VERSION_MAJOR "16")
+set(KDE_APPLICATIONS_VERSION_MAJOR "17")
 set(KDE_APPLICATIONS_VERSION_MINOR "08")
 set(KDE_APPLICATIONS_VERSION_MICRO "1")
 set(KTP_KDED_MODULE_VERSION "${KDE_APPLICATIONS_VERSION_MAJOR}.${KDE_APPLICATIONS_VERSION_MINOR}.${KDE_APPLICATIONS_VERSION_MICRO}")
@@ -91,3 +91,4 @@ add_subdirectory(config)
 if(ENABLE_TESTS)
     add_subdirectory(tests)
 endif()
+ki18n_install(po)
