@@ -1,5 +1,0 @@
-usr/lib/*/qt5/plugins/kcm_ktp_integration_module.so
-usr/lib/*/qt5/plugins/kded_ktp_integration_module.so
-usr/share/dbus-1/services/org.freedesktop.Telepathy.Client.KTp.KdedIntegrationModule.service
-usr/share/kservices5/kcm_ktp_integration_module.desktop
-usr/share/kservices5/kded/ktp_integration_module.desktop
