@@ -1,11 +1,14 @@
-ktp-kded-integration-module (17.08.1-1~) UNRELEASED; urgency=medium
+ktp-kded-integration-module (17.08.1-1) experimental; urgency=medium
 
   * Bump Standards-Version to 4.1.0.
   * Update upstream metadata
   * Update build-deps and deps with the info from cmake
   * New upstream release (17.08.1).
+  * Drop soon to be deprecated fail-missing
+  * Add breaks/replaces against the kde-l10n packages
+  * Release to experimental
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 11 Sep 2017 16:20:15 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 11 Sep 2017 19:59:15 +0200
 
 ktp-kded-integration-module (16.04.2-1) experimental; urgency=medium
 
