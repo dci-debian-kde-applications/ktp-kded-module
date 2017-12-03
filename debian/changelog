@@ -8,6 +8,7 @@ ktp-kded-integration-module (17.08.3-0r1) UNRELEASED; urgency=medium
     - libktp-dev to >= 17.08.3
     - libtelepathy-logger-qt-dev to >= 17.08
     - libtelepathy-qt5-dev to >= 0.9.7
+  * Remove unused libkf5wallet-dev build dependency.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Dec 2017 15:07:47 +0100
 
