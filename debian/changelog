@@ -1,3 +1,10 @@
+ktp-kded-integration-module (17.08.3-0r1) UNRELEASED; urgency=medium
+
+  [ Pino Toscano ]
+  * New upstream release.
+
+ -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Dec 2017 15:07:47 +0100
+
 ktp-kded-integration-module (17.08.1-1) experimental; urgency=medium
 
   * Bump Standards-Version to 4.1.0.
