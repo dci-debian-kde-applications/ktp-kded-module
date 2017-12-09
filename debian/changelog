@@ -2,7 +2,7 @@ ktp-kded-integration-module (17.08.3-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
-  * Bump Standards-Version to 4.1.1, no changes required.
+  * Bump Standards-Version to 4.1.2, no changes required.
   * Simplify watch file, and switch it to https.
   * Bump telepathy-related build dependencies:
     - libktp-dev to >= 17.08.3
